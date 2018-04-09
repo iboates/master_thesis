@@ -196,6 +196,11 @@ def import_Network(citygml, cur):
 
                     storagedevice = network_component
                     import_StorageDevice(storagedevice, networkgraph, cur)
+                    
+                elif network_component.tag == '{http://www.citygml.org/ade/utility/0.9.2}MeasurementDevice':
+
+                    measurementdevice = network_component
+                    import_MeasurementDevice(measurementdevice, networkgraph, cur)
 
         # Iterate through the NetworkGraph element to get all of InterFeatureLinks
         for networkgraph_child in list(networkgraph):
@@ -1423,6 +1428,175 @@ def import_StorageDevice(storagedevice, networkgraph, cur):
                 """)
 
     featuregraph_sql_dict['ntw_feature_id'] = int(storagedevice_id)
+    # print(cur.mogrify(insert_featuregraph_sql, featuregraph_sql_dict))
+    cur.execute(insert_featuregraph_sql, featuregraph_sql_dict)
+    featuregraph_id = cur.fetchone()[0]
+    # print("I just inserted a featuregraph that got an id of {0}".format(featuregraph_id))
+
+    # ==============================================================================================================
+    # IMPORT NODES
+    # ==============================================================================================================
+
+    node_id_list = []
+    for node_sql_dict in node_sql_dict_list:
+        insert_node_sql = sql.SQL("""
+
+                        SELECT citydb_view.utn9_insert_node(
+                            gmlid := %(gmlid)s,
+                            type := %(type)s,
+                            feat_graph_id := %(feat_graph_id)s,
+                            point_geom := ST_GeomFromText(%(geom)s,26910)
+                        );
+
+                    """)
+
+        node_sql_dict["feat_graph_id"] = featuregraph_id
+        # print(cur.mogrify(insert_node_sql, node_sql_dict))
+        cur.execute(insert_node_sql, node_sql_dict)
+        node_id_list.append(cur.fetchone()[0])
+
+
+def import_MeasurementDevice(MeasurementDevice, networkgraph, cur):
+    
+    print("importing measurementdevice")
+
+    MeasurementDevice_sql_dict = {}
+    featuregraph_sql_dict = {}
+    node_sql_dict_list = []
+
+    MeasurementDevice_gmlid = MeasurementDevice.attrib['{http://www.opengis.net/gml}id']
+    MeasurementDevice_sql_dict["gmlid"] = MeasurementDevice_gmlid
+
+    MeasurementDevice_gmlid = MeasurementDevice.attrib['{http://www.opengis.net/gml}id']
+    MeasurementDevice_sql_dict["gmlid"] = MeasurementDevice_gmlid
+
+    for MeasurementDevice_child in list(MeasurementDevice):
+
+        if MeasurementDevice_child.tag == "{http://www.citygml.org/ade/utility/0.9.2}lod1Geometry":
+
+            MeasurementDevice_lod1Geometry = list(MeasurementDevice_child)[0]
+            MeasurementDevice_lineString = list(MeasurementDevice_lod1Geometry)[0]
+            MeasurementDevice_points = MeasurementDevice_lineString.text.split(" ")
+
+            i = 0
+            MeasurementDevice_geom = "POINT Z ("
+            while i <= len(MeasurementDevice_points) - 3:
+                MeasurementDevice_geom += (
+                    MeasurementDevice_points[0 + i] + " " + MeasurementDevice_points[1 + i] + " " +
+                    MeasurementDevice_points[
+                        2 + i] + ",")
+                i += 3
+            MeasurementDevice_geom = MeasurementDevice_geom[:-1] + ")"
+            MeasurementDevice_sql_dict['geom'] = MeasurementDevice_geom
+
+        # ==========================================================================================================
+        # GET FEATUREGRAPH INFO
+        # ==========================================================================================================
+
+        elif MeasurementDevice_child.tag == "{http://www.citygml.org/ade/utility/0.9.2}topoGraph":
+
+            topograph = MeasurementDevice_child.attrib['{http://www.w3.org/1999/xlink}href'][1:]
+            MeasurementDevice_sql_dict['topoGraph'] = topograph
+
+            featuregraph = networkgraph.findall('.//utility:FeatureGraph[@gml:id="{0}"]'.format(topograph), ns)[0]
+
+            featuregraph_gmlid = featuregraph.attrib['{http://www.opengis.net/gml}id']
+            featuregraph_sql_dict["gmlid"] = featuregraph_gmlid
+
+            for featuregraph_child in list(featuregraph):
+
+                # ==================================================================================================
+                # GET NODE INFO
+                # ==================================================================================================
+
+                if featuregraph_child.tag == "{http://www.citygml.org/ade/utility/0.9.2}nodeMember":
+
+                    nodemember = featuregraph_child
+                    node_sql_dict = {
+                        'gmlid': 'NULL',
+                        'type': 'NULL',
+                        'geom': 'NULL',
+                    }
+
+                    for nodemember_child in list(nodemember):
+
+                        node = nodemember_child
+                        node_gmlid = node.attrib['{http://www.opengis.net/gml}id']
+                        node_sql_dict['gmlid'] = node_gmlid
+
+                        for node_child in list(node):
+
+                            if node_child.tag == "{http://www.citygml.org/ade/utility/0.9.2}type":
+
+                                node_type = node_child.text
+                                node_sql_dict['type'] = node_type
+
+                            elif node_child.tag == "{http://www.citygml.org/ade/utility/0.9.2}realization":
+
+                                realization = node_child
+                                node_poslist = list(node_child)[0]
+                                point = list(node_poslist)[0].text  # nodes only have a single point as geometry
+                                node_geom = "POINT(" + point + ")"
+                                node_sql_dict['geom'] = node_geom
+
+                        node_sql_dict_list.append(node_sql_dict)
+                        node_sql_dict = node_sql_dict.copy()
+
+        else:
+
+            MeasurementDevice_property = MeasurementDevice_child.tag[
+                                        MeasurementDevice_child.tag.find("}") + 1:]
+            MeasurementDevice_sql_dict[MeasurementDevice_property] = MeasurementDevice_child.text
+
+    # ==============================================================================================================
+    # IMPORT MEASUREMENTDEVICE
+    # ==============================================================================================================
+
+    # TODO: once buildings are added, need to get their id via the connectedCityObject property gml id
+    insert_MeasurementDevice_sql = sql.SQL("""
+
+                    SELECT citydb_view.utn9_insert_ntw_feat_device_meas(
+                        gmlid := %(gmlid)s,
+                        class := %(class)s,
+                        status := %(status)s,
+                        geom := ST_GeomFromText(%(geom)s,26910)
+                    );
+
+                """)
+
+    # print(cur.mogrify(insert_MeasurementDevice_sql, MeasurementDevice_sql_dict))
+    cur.execute(insert_MeasurementDevice_sql, MeasurementDevice_sql_dict)
+    MeasurementDevice_id = cur.fetchone()[0]
+    # print("I just inserted a MeasurementDevice that got an id of {0}".format(MeasurementDevice_id))
+
+    # ==============================================================================================================
+    # IMPORT FEATUREGRAPH
+    # ==============================================================================================================
+
+    # First we need to get the networkgraph id (not the gmlid)
+
+    networkgraph_id_query = sql.SQL("""
+
+            SELECT id from citydb_view.utn9_network_graph WHERE gmlid = %(networkgraph_gmlid)s;
+
+        """)
+
+    networkgraph_gmlid = networkgraph.attrib["{http://www.opengis.net/gml}id"]
+    cur.execute(networkgraph_id_query, {"networkgraph_gmlid": networkgraph_gmlid})
+    networkgraph_id = cur.fetchone()[0]
+    featuregraph_sql_dict["ntw_graph_id"] = networkgraph_id
+
+    insert_featuregraph_sql = sql.SQL("""
+
+                    SELECT citydb_view.utn9_insert_feature_graph(
+                        gmlid := %(gmlid)s,
+                        ntw_feature_id := %(ntw_feature_id)s,
+                        ntw_graph_id := %(ntw_graph_id)s
+                    );
+
+                """)
+
+    featuregraph_sql_dict['ntw_feature_id'] = int(MeasurementDevice_id)
     # print(cur.mogrify(insert_featuregraph_sql, featuregraph_sql_dict))
     cur.execute(insert_featuregraph_sql, featuregraph_sql_dict)
     featuregraph_id = cur.fetchone()[0]

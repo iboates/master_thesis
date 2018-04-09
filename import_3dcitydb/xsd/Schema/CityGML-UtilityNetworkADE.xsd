@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.08.2012 14:18:11-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:utility="http://www.citygml.org/ade/utility" targetNamespace="http://www.citygml.org/ade/utility" xmlns:kit="http://www.kit.edu" elementFormDefault="qualified" version="0.9">
+  <import namespace="http://www.citygml.org/ade/utilcore" schemaLocation="CityGML-UtilityNetworkADE_Core.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilcomp" schemaLocation="CityGML-UtilityNetworkADE_NetworkComponents.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilnetprop" schemaLocation="CityGML-UtilityNetworkADE_NetworkProperties.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilfeatmat" schemaLocation="CityGML-UtilityNetworkADE_FeatureMaterial.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilholspac" schemaLocation="CityGML-UtilityNetworkADE_HollowSpace.xsd" />
+</schema>

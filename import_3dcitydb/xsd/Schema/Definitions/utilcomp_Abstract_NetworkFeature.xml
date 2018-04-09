@@ -1,0 +1,272 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:16-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcomp_Abstract_NetworkFeature">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:Abstract_NetworkFeature</gml:identifier>
+  <gml:name>utilcomp:Abstract_NetworkFeature</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_Abstract_NetworkFeature_yearOfConstruction">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:Abstract_NetworkFeature:attribute:yearOfConstruction</gml:identifier>
+      <gml:name>utilcomp:yearOfConstruction</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>Date</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_Abstract_NetworkFeature_status">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:Abstract_NetworkFeature:attribute:status</gml:identifier>
+      <gml:name>utilcomp:status</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_status_StatusType_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:status:StatusType:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_status_StatusType_outOfService">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:status:StatusType:outOfService</gml:identifier>
+          <gml:name>outOfService</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_status_StatusType_tempOutOfService">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:status:StatusType:tempOutOfService</gml:identifier>
+          <gml:name>tempOutOfService</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_status_StatusType_inUse">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:status:StatusType:inUse</gml:identifier>
+          <gml:name>inUse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>StatusType</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_Abstract_NetworkFeature_function">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:Abstract_NetworkFeature:attribute:function</gml:identifier>
+      <gml:name>utilcomp:function</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_shutOff">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:shutOff</gml:identifier>
+          <gml:name>shutOff</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_venting">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:venting</gml:identifier>
+          <gml:name>venting</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_feeding">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:feeding</gml:identifier>
+          <gml:name>feeding</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_abstraction">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:abstraction</gml:identifier>
+          <gml:name>abstraction</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_draining">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:draining</gml:identifier>
+          <gml:name>draining</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_measurement">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:measurement</gml:identifier>
+          <gml:name>measurement</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_shortCircuit">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:shortCircuit</gml:identifier>
+          <gml:name>shortCircuit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_branch">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:branch</gml:identifier>
+          <gml:name>branch</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_observer">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:observer</gml:identifier>
+          <gml:name>observer</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_distribution">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:distribution</gml:identifier>
+          <gml:name>distribution</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_protection">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:protection</gml:identifier>
+          <gml:name>protection</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_function_FunctionType_control">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:function:FunctionType:control</gml:identifier>
+          <gml:name>control</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>FunctionType</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_Abstract_NetworkFeature_locationQuality">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:Abstract_NetworkFeature:attribute:locationQuality</gml:identifier>
+      <gml:name>utilcomp:locationQuality</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_locationQuality_SpatialQualityType_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:locationQuality:SpatialQualityType:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_locationQuality_SpatialQualityType_surveyed">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:locationQuality:SpatialQualityType:surveyed</gml:identifier>
+          <gml:name>surveyed</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_locationQuality_SpatialQualityType_calculated">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:locationQuality:SpatialQualityType:calculated</gml:identifier>
+          <gml:name>calculated</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_locationQuality_SpatialQualityType_interpolated">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:locationQuality:SpatialQualityType:interpolated</gml:identifier>
+          <gml:name>interpolated</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_locationQuality_SpatialQualityType_estimated">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:locationQuality:SpatialQualityType:estimated</gml:identifier>
+          <gml:name>estimated</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_locationQuality_SpatialQualityType_assumed">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:locationQuality:SpatialQualityType:assumed</gml:identifier>
+          <gml:name>assumed</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>SpatialQualityType</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_Abstract_NetworkFeature_elevationQuality">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:Abstract_NetworkFeature:attribute:elevationQuality</gml:identifier>
+      <gml:name>utilcomp:elevationQuality</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_elevationQuality_SpatialQualityType_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:elevationQuality:SpatialQualityType:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_elevationQuality_SpatialQualityType_surveyed">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:elevationQuality:SpatialQualityType:surveyed</gml:identifier>
+          <gml:name>surveyed</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_elevationQuality_SpatialQualityType_calculated">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:elevationQuality:SpatialQualityType:calculated</gml:identifier>
+          <gml:name>calculated</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_elevationQuality_SpatialQualityType_interpolated">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:elevationQuality:SpatialQualityType:interpolated</gml:identifier>
+          <gml:name>interpolated</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_elevationQuality_SpatialQualityType_estimated">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:elevationQuality:SpatialQualityType:estimated</gml:identifier>
+          <gml:name>estimated</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_Abstract_NetworkFeature_elevationQuality_SpatialQualityType_assumed">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:Abstract_NetworkFeature:elevationQuality:SpatialQualityType:assumed</gml:identifier>
+          <gml:name>assumed</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>SpatialQualityType</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_Abstract_NetworkFeature_representedBy">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:Abstract_NetworkFeature:association-role:representedBy</gml:identifier>
+      <gml:name>utilcomp:representedBy</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcomp:Profile2D" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_Abstract_NetworkFeature_transportedMedium">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:Abstract_NetworkFeature:association-role:transportedMedium</gml:identifier>
+      <gml:name>utilcomp:transportedMedium</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilnetprop:Abstract_CommodityType" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_Abstract_NetworkFeature_hasMaterial">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:Abstract_NetworkFeature:association-role:hasMaterial</gml:identifier>
+      <gml:name>utilcomp:hasMaterial</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilfeatmat:Abstract_FeatureMaterialType" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_Abstract_NetworkFeature_occupiedHollowSpace">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:Abstract_NetworkFeature:association-role:occupiedHollowSpace</gml:identifier>
+      <gml:name>utilcomp:occupiedHollowSpace</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilholspac:Abstract_UtilityHollowSpace" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:utilcore:Abstract_NetworkFeature" />
+</TypeDefinition>

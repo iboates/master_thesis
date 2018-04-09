@@ -1,0 +1,42 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:18-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcomp_AnyDevice">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:AnyDevice</gml:identifier>
+  <gml:name>utilcomp:AnyDevice</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_AnyDevice_class">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:AnyDevice:attribute:class</gml:identifier>
+      <gml:name>utilcomp:class</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_AnyDevice_class_AnyDeviceClass_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:AnyDevice:class:AnyDeviceClass:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_AnyDevice_class_AnyDeviceClass_flange">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:AnyDevice:class:AnyDeviceClass:flange</gml:identifier>
+          <gml:name>flange</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_AnyDevice_class_AnyDeviceClass_coupling">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:AnyDevice:class:AnyDeviceClass:coupling</gml:identifier>
+          <gml:name>coupling</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_AnyDevice_class_AnyDeviceClass_adapter">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:AnyDevice:class:AnyDeviceClass:adapter</gml:identifier>
+          <gml:name>adapter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>AnyDeviceClass</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:utilcomp:Abstract_Device" />
+</TypeDefinition>

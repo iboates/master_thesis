@@ -1,0 +1,28 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:15-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcore_NetworkGraph">
+  <gml:description>A &lt;i&gt;NetworkGraph&lt;/i&gt; represents the graph structure of the entire utility network. For this purpose, it links the &lt;i&gt;FeatureGraph&lt;/i&gt; instances of the aggregated network features. Thus, a &lt;i&gt;NetworkGraph&lt;/i&gt; conceptually is to be seen as graph of graphs. It results from the pair-wise linking of exterior nodes in different &lt;i&gt;FeatureGraph &lt;/i&gt;instances being parts of the same &lt;i&gt;Network&lt;/i&gt;.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:NetworkGraph</gml:identifier>
+  <gml:name>utilcore:NetworkGraph</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_NetworkGraph_linkMember">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:NetworkGraph:association-role:linkMember</gml:identifier>
+      <gml:name>utilcore:linkMember</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcore:InterFeatureLink" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_NetworkGraph_featureGraphMember">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:NetworkGraph:association-role:featureGraphMember</gml:identifier>
+      <gml:name>utilcore:featureGraphMember</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcore:FeatureGraph" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:core:_CityObject" />
+</TypeDefinition>

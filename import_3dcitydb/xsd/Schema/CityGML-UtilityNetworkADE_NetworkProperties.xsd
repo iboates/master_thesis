@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.08.2012 14:18:22-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:utilnetprop="http://www.citygml.org/ade/utilnetprop" targetNamespace="http://www.citygml.org/ade/utilnetprop" xmlns:kit="http://www.kit.edu" xmlns:utilcomp="http://www.citygml.org/ade/utilcomp" xmlns:utilfeatmat="http://www.citygml.org/ade/utilfeatmat" xmlns:utilholspac="http://www.citygml.org/ade/utilholspac" xmlns:gml="http://www.opengis.net/gml" xmlns:utilcore="http://www.citygml.org/ade/utilcore" elementFormDefault="qualified" version="0.9">
+  <import namespace="http://www.citygml.org/ade/utilcomp" schemaLocation="CityGML-UtilityNetworkADE_NetworkComponents.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilfeatmat" schemaLocation="CityGML-UtilityNetworkADE_FeatureMaterial.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilholspac" schemaLocation="CityGML-UtilityNetworkADE_HollowSpace.xsd" />
+  <import namespace="http://www.opengis.net/gml" schemaLocation="gml\3.1.1\base\gml.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilcore" schemaLocation="CityGML-UtilityNetworkADE_Core.xsd" />
+  <!--=========================================================================================-->
+  <!--ChemicalClassifier-->
+  <!--=========================================================================================-->
+  <element name="ChemicalClassifier" type="utilnetprop:ChemicalClassifierType" substitutionGroup="utilnetprop:Abstract_CommodityClassifier" />
+  <complexType name="ChemicalClassifierType">
+    <complexContent>
+      <extension base="utilnetprop:Abstract_CommodityClassifierType">
+        <sequence>
+          <element name="ECNo" type="string" minOccurs="0" />
+          <element name="CasNo" type="string" minOccurs="0" />
+          <element name="IUCLIDChemicalDataSheet" type="anyURI" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ChemicalClassifierPropertyType">
+    <sequence>
+      <element ref="utilnetprop:ChemicalClassifier" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Abstract_CommodityClassifier-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="Abstract_CommodityClassifier" type="utilnetprop:Abstract_CommodityClassifierType" substitutionGroup="gml:_Feature" />
+  <complexType abstract="true" name="Abstract_CommodityClassifierType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="molFormula" type="string" minOccurs="0" />
+          <element name="isChemicalComplex" type="boolean" minOccurs="0" />
+          <element name="signalWord" type="utilnetprop:signalWordType" minOccurs="0" />
+          <element name="hazardClass" type="utilnetprop:HazardClass" minOccurs="0" />
+          <element name="description" type="string" minOccurs="0" />
+          <element name="physicalForm" type="string" minOccurs="0" />
+          <element name="molecularWeight" type="string" minOccurs="0" />
+          <element name="definesCommodity" type="utilnetprop:Abstract_CommodityTypePropertyType" minOccurs="0" />
+          <element name="consistsOfFurtherElements" type="utilnetprop:Abstract_CommodityClassifierPropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="definesMaterial" type="utilfeatmat:Abstract_FeatureMaterialTypePropertyType" minOccurs="0" />
+          <element name="boundedBy" type="utilholspac:Abstract_UtilityHollowSpacePropertyType" minOccurs="0" />
+          <element ref="utilnetprop:_GenericApplicationPropertyOfAbstract_CommodityClassifier" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfAbstract_CommodityClassifier" type="anyType" abstract="true" />
+  <complexType name="Abstract_CommodityClassifierPropertyType">
+    <sequence>
+      <element ref="utilnetprop:Abstract_CommodityClassifier" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Abstract_CommodityType-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="Abstract_CommodityType" type="utilnetprop:Abstract_CommodityTypeType" substitutionGroup="gml:_Feature" />
+  <complexType abstract="true" name="Abstract_CommodityTypeType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="owner" type="string" minOccurs="0" />
+          <element name="isClassifiedBy" type="utilnetprop:Abstract_CommodityClassifierPropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="associatedComponent" type="utilcomp:Abstract_NetworkFeaturePropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element ref="utilnetprop:_GenericApplicationPropertyOfAbstract_CommodityType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfAbstract_CommodityType" type="anyType" abstract="true" />
+  <complexType name="Abstract_CommodityTypePropertyType">
+    <sequence>
+      <element ref="utilnetprop:Abstract_CommodityType" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Electrical-->
+  <!--=========================================================================================-->
+  <element name="Electrical" type="utilnetprop:ElectricalType" substitutionGroup="utilnetprop:Abstract_CommodityType" />
+  <complexType name="ElectricalType">
+    <complexContent>
+      <extension base="utilnetprop:Abstract_CommodityTypeType">
+        <sequence>
+          <element name="type" type="utilnetprop:ElectricalMedia" />
+          <element name="voltageRange" type="gml:QuantityExtentType" minOccurs="0" />
+          <element name="amperageRange" type="gml:QuantityExtentType" minOccurs="0" />
+          <element name="bandWith" type="gml:QuantityExtentType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ElectricalPropertyType">
+    <sequence>
+      <element ref="utilnetprop:Electrical" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ElectricalMedia-->
+  <!--=========================================================================================-->
+  <simpleType name="ElectricalMedia">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="directCurrent" />
+      <enumeration value="threePhaseAltenatingCurrent" />
+      <enumeration value="singlePhaseAltenatingCurrent" />
+      <enumeration value="undulatoryCurrent" />
+      <enumeration value="telephone" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--GaseousMedium-->
+  <!--=========================================================================================-->
+  <element name="GaseousMedium" type="utilnetprop:GaseousMediumType" substitutionGroup="utilnetprop:Abstract_CommodityType" />
+  <complexType name="GaseousMediumType">
+    <complexContent>
+      <extension base="utilnetprop:Abstract_CommodityTypeType">
+        <sequence>
+          <element name="type" type="utilnetprop:GaseousMediumTypes" />
+          <element name="concentration" type="gml:MeasureType" minOccurs="0" />
+          <element name="isExplosive" type="boolean" minOccurs="0" />
+          <element name="pressureRange" type="gml:QuantityExtentType" />
+          <element name="electricConductivity" type="gml:QuantityExtentType" />
+          <element name="lighterThanAir" type="boolean" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GaseousMediumPropertyType">
+    <sequence>
+      <element ref="utilnetprop:GaseousMedium" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--GaseousMediumTypes-->
+  <!--=========================================================================================-->
+  <simpleType name="GaseousMediumTypes">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="naturalGas" />
+      <enumeration value="helium" />
+      <enumeration value="petroleumGas" />
+      <enumeration value="air" />
+      <enumeration value="dioxygen" />
+      <enumeration value="nitrogen" />
+      <enumeration value="hydrogen" />
+      <enumeration value="carbon" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--GenericClassifier-->
+  <!--=========================================================================================-->
+  <element name="GenericClassifier" type="utilnetprop:GenericClassifierType" substitutionGroup="utilnetprop:Abstract_CommodityClassifier" />
+  <complexType name="GenericClassifierType">
+    <complexContent>
+      <extension base="utilnetprop:Abstract_CommodityClassifierType" />
+    </complexContent>
+  </complexType>
+  <complexType name="GenericClassifierPropertyType">
+    <sequence>
+      <element ref="utilnetprop:GenericClassifier" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--GHSClassifier-->
+  <!--=========================================================================================-->
+  <element name="GHSClassifier" type="utilnetprop:GHSClassifierType" substitutionGroup="utilnetprop:Abstract_CommodityClassifier" />
+  <complexType name="GHSClassifierType">
+    <complexContent>
+      <extension base="utilnetprop:Abstract_CommodityClassifierType">
+        <sequence>
+          <element name="ECNo" type="string" minOccurs="0" />
+          <element name="CasNo" type="string" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GHSClassifierPropertyType">
+    <sequence>
+      <element ref="utilnetprop:GHSClassifier" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--HazardClass-->
+  <!--=========================================================================================-->
+  <simpleType name="HazardClass">
+    <restriction base="string">
+      <enumeration value="hazardClass" />
+      <enumeration value="categoryCode" />
+      <enumeration value="pictogrammCode" />
+      <enumeration value="statementCode" />
+      <enumeration value="pictogrammURI" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--LiquidMedium-->
+  <!--=========================================================================================-->
+  <element name="LiquidMedium" type="utilnetprop:LiquidMediumType" substitutionGroup="utilnetprop:Abstract_CommodityType" />
+  <complexType name="LiquidMediumType">
+    <complexContent>
+      <extension base="utilnetprop:Abstract_CommodityTypeType">
+        <sequence>
+          <element name="type" type="utilnetprop:LiquidMediumTypes" />
+          <element name="isCorrosive" type="boolean" minOccurs="0" />
+          <element name="isExplosive" type="boolean" minOccurs="0" />
+          <element name="flammable" type="double" minOccurs="0" />
+          <element name="electricConductivity" type="gml:QuantityExtentType" />
+          <element name="pHValueRange" type="gml:QuantityExtentType" />
+          <element name="temperatureRange" type="gml:QuantityExtentType" />
+          <element name="flowRateRange" type="gml:QuantityExtentType" />
+          <element name="pressureRange" type="gml:QuantityExtentType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LiquidMediumPropertyType">
+    <sequence>
+      <element ref="utilnetprop:LiquidMedium" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--LiquidMediumTypes-->
+  <!--=========================================================================================-->
+  <simpleType name="LiquidMediumTypes">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="freshWater" />
+      <enumeration value="wasteWater" />
+      <enumeration value="stormWater" />
+      <enumeration value="districtHeatingWater" />
+      <enumeration value="petrol" />
+      <enumeration value="oil" />
+      <enumeration value="gasohol" />
+      <enumeration value="acid" />
+      <enumeration value="kerosine" />
+      <enumeration value="liquidPG" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--Optical-->
+  <!--=========================================================================================-->
+  <element name="Optical" type="utilnetprop:OpticalType" substitutionGroup="utilnetprop:Abstract_CommodityType" />
+  <complexType name="OpticalType">
+    <complexContent>
+      <extension base="utilnetprop:Abstract_CommodityTypeType">
+        <sequence>
+          <element name="type" type="utilnetprop:OpticalMediaTypes" />
+          <element name="modeType" type="utilnetprop:OpticalModeType" />
+          <element name="bandWith" type="gml:QuantityExtentType" minOccurs="0" />
+          <element name="coreCrossSection" type="gml:LengthType" minOccurs="0" />
+          <element name="claddingCrossSection" type="gml:LengthType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OpticalPropertyType">
+    <sequence>
+      <element ref="utilnetprop:Optical" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--OpticalMediaTypes-->
+  <!--=========================================================================================-->
+  <simpleType name="OpticalMediaTypes">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="light" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--OpticalModeType-->
+  <!--=========================================================================================-->
+  <simpleType name="OpticalModeType">
+    <restriction base="string">
+      <enumeration value="SingleMode" />
+      <enumeration value="MultiMode" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--signalWordType-->
+  <!--=========================================================================================-->
+  <simpleType name="signalWordType">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="nonHazardeous" />
+      <enumeration value="hazardeous" />
+      <enumeration value="attention" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--SolidMedium-->
+  <!--=========================================================================================-->
+  <element name="SolidMedium" type="utilnetprop:SolidMediumType" substitutionGroup="utilnetprop:Abstract_CommodityType" />
+  <complexType name="SolidMediumType">
+    <complexContent>
+      <extension base="utilnetprop:Abstract_CommodityTypeType">
+        <sequence>
+          <element name="type" type="utilnetprop:SolidMediumTypes" />
+          <element name="isExplosive" type="boolean" minOccurs="0" />
+          <element name="flammable" type="double" minOccurs="0" />
+          <element name="concentration" type="gml:MeasureType" />
+          <element name="electricConductivity" type="gml:QuantityExtentType" />
+          <element name="pressureRange" type="gml:QuantityExtentType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SolidMediumPropertyType">
+    <sequence>
+      <element ref="utilnetprop:SolidMedium" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SolidMediumTypes-->
+  <!--=========================================================================================-->
+  <simpleType name="SolidMediumTypes">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="carbonDust" />
+      <enumeration value="ore" />
+      <enumeration value="stone" />
+      <enumeration value="sand" />
+    </restriction>
+  </simpleType>
+</schema>

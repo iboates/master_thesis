@@ -1,0 +1,42 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:19-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcomp_ControllerDevice">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:ControllerDevice</gml:identifier>
+  <gml:name>utilcomp:ControllerDevice</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_ControllerDevice_class">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:ControllerDevice:attribute:class</gml:identifier>
+      <gml:name>utilcomp:class</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ControllerDevice_class_ControllerDeviceClass_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ControllerDevice:class:ControllerDeviceClass:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ControllerDevice_class_ControllerDeviceClass_switch">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ControllerDevice:class:ControllerDeviceClass:switch</gml:identifier>
+          <gml:name>switch</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ControllerDevice_class_ControllerDeviceClass_valve">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ControllerDevice:class:ControllerDeviceClass:valve</gml:identifier>
+          <gml:name>valve</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ControllerDevice_class_ControllerDeviceClass_slideValve">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ControllerDevice:class:ControllerDeviceClass:slideValve</gml:identifier>
+          <gml:name>slideValve</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>ControllerDeviceClass</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:utilcomp:Abstract_Device" />
+</TypeDefinition>

@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.08.2012 14:18:15-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:utilcomp="http://www.citygml.org/ade/utilcomp" targetNamespace="http://www.citygml.org/ade/utilcomp" xmlns:kit="http://www.kit.edu" xmlns:utilholspac="http://www.citygml.org/ade/utilholspac" xmlns:utilfeatmat="http://www.citygml.org/ade/utilfeatmat" xmlns:gml="http://www.opengis.net/gml" xmlns:utilcore="http://www.citygml.org/ade/utilcore" xmlns:utilnetprop="http://www.citygml.org/ade/utilnetprop" elementFormDefault="qualified" version="0.9">
+  <import namespace="http://www.citygml.org/ade/utilholspac" schemaLocation="CityGML-UtilityNetworkADE_HollowSpace.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilfeatmat" schemaLocation="CityGML-UtilityNetworkADE_FeatureMaterial.xsd" />
+  <import namespace="http://www.opengis.net/gml" schemaLocation="gml\3.1.1\base\gml.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilcore" schemaLocation="CityGML-UtilityNetworkADE_Core.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilnetprop" schemaLocation="CityGML-UtilityNetworkADE_NetworkProperties.xsd" />
+  <!--=========================================================================================-->
+  <!--_DistributionElement-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="_DistributionElement" type="utilcomp:_DistributionElementType" substitutionGroup="gml:_Feature" />
+  <complexType abstract="true" name="_DistributionElementType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element ref="utilcomp:_GenericApplicationPropertyOf_DistributionElement" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOf_DistributionElement" type="anyType" abstract="true" />
+  <complexType name="_DistributionElementPropertyType">
+    <sequence>
+      <element ref="utilcomp:_DistributionElement" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Abstract_DistributionElement-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="Abstract_DistributionElement" type="utilcomp:Abstract_DistributionElementType" substitutionGroup="utilcomp:Abstract_NetworkFeature" />
+  <complexType abstract="true" name="Abstract_DistributionElementType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_NetworkFeatureType">
+        <sequence>
+          <element name="class" type="utilcomp:LineClassType" minOccurs="0" />
+          <element name="functionOfLine" type="utilcomp:LineMeaningType" minOccurs="0" />
+          <element ref="utilcomp:_GenericApplicationPropertyOfAbstract_DistributionElement" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfAbstract_DistributionElement" type="anyType" abstract="true" />
+  <complexType name="Abstract_DistributionElementPropertyType">
+    <sequence>
+      <element ref="utilcomp:Abstract_DistributionElement" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Abstract_NetworkFeature-->
+  <!--=========================================================================================-->
+  <element name="Abstract_NetworkFeature" type="utilcomp:Abstract_NetworkFeatureType" substitutionGroup="utilcore:Abstract_NetworkFeature" />
+  <complexType name="Abstract_NetworkFeatureType">
+    <complexContent>
+      <extension base="utilcore:Abstract_NetworkFeatureType">
+        <sequence>
+          <element name="yearOfConstruction" type="date" />
+          <element name="status" type="utilcomp:StatusType" />
+          <element name="function" type="utilcomp:FunctionType" />
+          <element name="locationQuality" type="utilcomp:SpatialQualityType" />
+          <element name="elevationQuality" type="utilcomp:SpatialQualityType" />
+          <element name="representedBy" type="utilcomp:Profile2DPropertyType" minOccurs="0" />
+          <element name="transportedMedium" type="utilnetprop:Abstract_CommodityTypePropertyType" minOccurs="0" />
+          <element name="hasMaterial" type="utilfeatmat:Abstract_FeatureMaterialTypePropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="occupiedHollowSpace" type="utilholspac:Abstract_UtilityHollowSpacePropertyType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="Abstract_NetworkFeaturePropertyType">
+    <sequence>
+      <element ref="utilcomp:Abstract_NetworkFeature" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Abstract_Pipe-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="Abstract_Pipe" type="utilcomp:Abstract_PipeType" substitutionGroup="utilcomp:Abstract_DistributionElement" />
+  <complexType abstract="true" name="Abstract_PipeType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_DistributionElementType">
+        <sequence>
+          <element name="isGravity" type="boolean" minOccurs="0" />
+          <element name="exteriorWidth" type="gml:LengthType" minOccurs="0" />
+          <element name="exteriorHeight" type="gml:LengthType" minOccurs="0" />
+          <element name="exteriorDiameter" type="gml:LengthType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="Abstract_PipePropertyType">
+    <sequence>
+      <element ref="utilcomp:Abstract_Pipe" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Bedding-->
+  <!--=========================================================================================-->
+  <element name="Bedding" type="utilcomp:BeddingType" substitutionGroup="utilcomp:ProtectiveElement" />
+  <complexType name="BeddingType">
+    <complexContent>
+      <extension base="utilcomp:ProtectiveElementType">
+        <sequence>
+          <element name="width" type="gml:LengthType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BeddingPropertyType">
+    <sequence>
+      <element ref="utilcomp:Bedding" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Cable-->
+  <!--=========================================================================================-->
+  <element name="Cable" type="utilcomp:CableType" substitutionGroup="utilcomp:Abstract_DistributionElement" />
+  <complexType name="CableType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_DistributionElementType">
+        <sequence>
+          <element name="isTransmission" type="boolean" minOccurs="0" />
+          <element name="isCommunication" type="boolean" minOccurs="0" />
+          <element name="crossSection" type="gml:LengthType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CablePropertyType">
+    <sequence>
+      <element ref="utilcomp:Cable" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Canal-->
+  <!--=========================================================================================-->
+  <element name="Canal" type="utilcomp:CanalType" substitutionGroup="utilcomp:Abstract_DistributionElement" />
+  <complexType name="CanalType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_DistributionElementType">
+        <sequence>
+          <element name="profileName" type="string" />
+          <element name="slope" type="gml:QuantityExtentType" minOccurs="0" />
+          <element name="isGravity" type="boolean" minOccurs="0" />
+          <element name="exteriorWidth" type="gml:LengthType" minOccurs="0" />
+          <element name="exteriorHeight" type="gml:LengthType" minOccurs="0" />
+          <element name="exteriorDiameter" type="gml:LengthType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CanalPropertyType">
+    <sequence>
+      <element ref="utilcomp:Canal" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Closed-->
+  <!--=========================================================================================-->
+  <element name="Closed" type="utilcomp:ClosedType" substitutionGroup="utilcomp:Canal" />
+  <complexType name="ClosedType">
+    <complexContent>
+      <extension base="utilcomp:CanalType" />
+    </complexContent>
+  </complexType>
+  <complexType name="ClosedPropertyType">
+    <sequence>
+      <element ref="utilcomp:Closed" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ComplexFunctionalElement-->
+  <!--=========================================================================================-->
+  <element name="ComplexFunctionalElement" type="utilcomp:ComplexFunctionalElementType" substitutionGroup="utilcomp:Abstract_NetworkFeature" />
+  <complexType name="ComplexFunctionalElementType">
+    <annotation>
+      <documentation>network elements that do contain any kind of device</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="utilcomp:Abstract_NetworkFeatureType">
+        <sequence>
+          <element name="class" type="utilcomp:ComplexFunctionClass" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ComplexFunctionalElementPropertyType">
+    <sequence>
+      <element ref="utilcomp:ComplexFunctionalElement" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ComplexFunctionClass-->
+  <!--=========================================================================================-->
+  <simpleType name="ComplexFunctionClass">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="station" />
+      <enumeration value="structure" />
+      <enumeration value="factory" />
+      <enumeration value="waterWork" />
+      <enumeration value="treatmentPlant" />
+      <enumeration value="heatingPlant" />
+      <enumeration value="powerPlant" />
+      <enumeration value="pumpingStation" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--FunctionType-->
+  <!--=========================================================================================-->
+  <simpleType name="FunctionType">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="shutOff" />
+      <enumeration value="venting" />
+      <enumeration value="feeding" />
+      <enumeration value="abstraction" />
+      <enumeration value="draining" />
+      <enumeration value="measurement" />
+      <enumeration value="shortCircuit" />
+      <enumeration value="branch" />
+      <enumeration value="observer" />
+      <enumeration value="distribution" />
+      <enumeration value="protection" />
+      <enumeration value="control" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--LineClassType-->
+  <!--=========================================================================================-->
+  <simpleType name="LineClassType">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="mainLine" />
+      <enumeration value="transportLine" />
+      <enumeration value="supplyLine" />
+      <enumeration value="houseServiceLine" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--LineMeaningType-->
+  <!--=========================================================================================-->
+  <simpleType name="LineMeaningType">
+    <restriction base="string">
+      <enumeration value="coolingLine" />
+      <enumeration value="unknown" />
+      <enumeration value="constantLine" />
+      <enumeration value="flowLine" />
+      <enumeration value="returnLine" />
+      <enumeration value="steamLine" />
+      <enumeration value="condensateLine" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--OtherShapePipe-->
+  <!--=========================================================================================-->
+  <element name="OtherShapePipe" type="utilcomp:OtherShapePipeType" substitutionGroup="utilcomp:Abstract_Pipe" />
+  <complexType name="OtherShapePipeType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_PipeType" />
+    </complexContent>
+  </complexType>
+  <complexType name="OtherShapePipePropertyType">
+    <sequence>
+      <element ref="utilcomp:OtherShapePipe" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--OtherShell-->
+  <!--=========================================================================================-->
+  <element name="OtherShell" type="utilcomp:OtherShellType" substitutionGroup="utilcomp:_ProtectionShell" />
+  <complexType name="OtherShellType">
+    <complexContent>
+      <extension base="utilcomp:_ProtectionShellType" />
+    </complexContent>
+  </complexType>
+  <complexType name="OtherShellPropertyType">
+    <sequence>
+      <element ref="utilcomp:OtherShell" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ProtectiveElement-->
+  <!--=========================================================================================-->
+  <element name="ProtectiveElement" type="utilcomp:ProtectiveElementType" substitutionGroup="utilcomp:Abstract_NetworkFeature" />
+  <complexType name="ProtectiveElementType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_NetworkFeatureType">
+        <sequence>
+          <element name="contains" type="utilcomp:Abstract_NetworkFeaturePropertyType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ProtectiveElementPropertyType">
+    <sequence>
+      <element ref="utilcomp:ProtectiveElement" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RectangularPipe-->
+  <!--=========================================================================================-->
+  <element name="RectangularPipe" type="utilcomp:RectangularPipeType" substitutionGroup="utilcomp:Abstract_Pipe" />
+  <complexType name="RectangularPipeType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_PipeType">
+        <sequence>
+          <element name="interiorWidth" type="gml:LengthType" minOccurs="0" />
+          <element name="interiorHeight" type="gml:LengthType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RectangularPipePropertyType">
+    <sequence>
+      <element ref="utilcomp:RectangularPipe" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RectangularShell-->
+  <!--=========================================================================================-->
+  <element name="RectangularShell" type="utilcomp:RectangularShellType" substitutionGroup="utilcomp:_ProtectionShell" />
+  <complexType name="RectangularShellType">
+    <complexContent>
+      <extension base="utilcomp:_ProtectionShellType">
+        <sequence>
+          <element name="interiorWidth" type="gml:LengthType" minOccurs="0" />
+          <element name="interiorHeight" type="gml:LengthType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RectangularShellPropertyType">
+    <sequence>
+      <element ref="utilcomp:RectangularShell" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RoundPipe-->
+  <!--=========================================================================================-->
+  <element name="RoundPipe" type="utilcomp:RoundPipeType" substitutionGroup="utilcomp:Abstract_Pipe" />
+  <complexType name="RoundPipeType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_PipeType">
+        <sequence>
+          <element name="interiorDiameter" type="gml:LengthType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoundPipePropertyType">
+    <sequence>
+      <element ref="utilcomp:RoundPipe" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RoundShell-->
+  <!--=========================================================================================-->
+  <element name="RoundShell" type="utilcomp:RoundShellType" substitutionGroup="utilcomp:_ProtectionShell" />
+  <complexType name="RoundShellType">
+    <complexContent>
+      <extension base="utilcomp:_ProtectionShellType">
+        <sequence>
+          <element name="interiorDiameter" type="gml:LengthType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoundShellPropertyType">
+    <sequence>
+      <element ref="utilcomp:RoundShell" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SemiOpen-->
+  <!--=========================================================================================-->
+  <element name="SemiOpen" type="utilcomp:SemiOpenType" substitutionGroup="utilcomp:Canal" />
+  <complexType name="SemiOpenType">
+    <complexContent>
+      <extension base="utilcomp:CanalType" />
+    </complexContent>
+  </complexType>
+  <complexType name="SemiOpenPropertyType">
+    <sequence>
+      <element ref="utilcomp:SemiOpen" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SimpleFunctionalElement-->
+  <!--=========================================================================================-->
+  <element name="SimpleFunctionalElement" type="utilcomp:SimpleFunctionalElementType" substitutionGroup="utilcomp:Abstract_NetworkFeature" />
+  <complexType name="SimpleFunctionalElementType">
+    <annotation>
+      <documentation>network elements that do &lt;b&gt;&lt;u&gt;not&lt;/u&gt;&lt;/b&gt; contain any kind of device</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="utilcomp:Abstract_NetworkFeatureType">
+        <sequence>
+          <element name="class" type="utilcomp:SimpleFunctionClass" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SimpleFunctionalElementPropertyType">
+    <sequence>
+      <element ref="utilcomp:SimpleFunctionalElement" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SimpleFunctionClass-->
+  <!--=========================================================================================-->
+  <simpleType name="SimpleFunctionClass">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="manhole" />
+      <enumeration value="invertedSyphon" />
+      <enumeration value="transformer" />
+      <enumeration value="voltageRegulator" />
+      <enumeration value="teeFitting" />
+      <enumeration value="crossFitting" />
+      <enumeration value="tap" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--SpatialQualityType-->
+  <!--=========================================================================================-->
+  <simpleType name="SpatialQualityType">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="surveyed" />
+      <enumeration value="calculated" />
+      <enumeration value="interpolated" />
+      <enumeration value="estimated" />
+      <enumeration value="assumed" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--StatusType-->
+  <!--=========================================================================================-->
+  <simpleType name="StatusType">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="outOfService" />
+      <enumeration value="tempOutOfService" />
+      <enumeration value="inUse" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--TerminalClass-->
+  <!--=========================================================================================-->
+  <simpleType name="TerminalClass">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="lamp" />
+      <enumeration value="cock" />
+      <enumeration value="streetLight" />
+      <enumeration value="hydrant" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--TerminalElement-->
+  <!--=========================================================================================-->
+  <element name="TerminalElement" type="utilcomp:TerminalElementType" substitutionGroup="utilcomp:Abstract_NetworkFeature" />
+  <complexType name="TerminalElementType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_NetworkFeatureType">
+        <sequence>
+          <element name="class" type="utilcomp:TerminalClass" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TerminalElementPropertyType">
+    <sequence>
+      <element ref="utilcomp:TerminalElement" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--_ProtectionShell-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="_ProtectionShell" type="utilcomp:_ProtectionShellType" substitutionGroup="utilcomp:ProtectiveElement" />
+  <complexType abstract="true" name="_ProtectionShellType">
+    <complexContent>
+      <extension base="utilcomp:ProtectiveElementType">
+        <sequence>
+          <element name="exteriorWidth" type="gml:LengthType" minOccurs="0" />
+          <element name="exteriorHeight" type="gml:LengthType" minOccurs="0" />
+          <element name="exteriorDiameter" type="gml:LengthType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="_ProtectionShellPropertyType">
+    <sequence>
+      <element ref="utilcomp:_ProtectionShell" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Abstract_Device-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="Abstract_Device" type="utilcomp:Abstract_DeviceType" substitutionGroup="utilcomp:Abstract_NetworkFeature" />
+  <complexType abstract="true" name="Abstract_DeviceType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_NetworkFeatureType">
+        <sequence>
+          <element name="description" type="string" minOccurs="0" />
+          <element ref="utilcomp:_GenericApplicationPropertyOfAbstract_Device" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfAbstract_Device" type="anyType" abstract="true" />
+  <complexType name="Abstract_DevicePropertyType">
+    <sequence>
+      <element ref="utilcomp:Abstract_Device" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AnyDevice-->
+  <!--=========================================================================================-->
+  <element name="AnyDevice" type="utilcomp:AnyDeviceType" substitutionGroup="utilcomp:Abstract_Device" />
+  <complexType name="AnyDeviceType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_DeviceType">
+        <sequence>
+          <element name="class" type="utilcomp:AnyDeviceClass" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AnyDevicePropertyType">
+    <sequence>
+      <element ref="utilcomp:AnyDevice" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AnyDeviceClass-->
+  <!--=========================================================================================-->
+  <simpleType name="AnyDeviceClass">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="flange" />
+      <enumeration value="coupling" />
+      <enumeration value="adapter" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--ControllerDevice-->
+  <!--=========================================================================================-->
+  <element name="ControllerDevice" type="utilcomp:ControllerDeviceType" substitutionGroup="utilcomp:Abstract_Device" />
+  <complexType name="ControllerDeviceType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_DeviceType">
+        <sequence>
+          <element name="class" type="utilcomp:ControllerDeviceClass" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ControllerDevicePropertyType">
+    <sequence>
+      <element ref="utilcomp:ControllerDevice" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ControllerDeviceClass-->
+  <!--=========================================================================================-->
+  <simpleType name="ControllerDeviceClass">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="switch" />
+      <enumeration value="valve" />
+      <enumeration value="slideValve" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--MeasurementDevice-->
+  <!--=========================================================================================-->
+  <element name="MeasurementDevice" type="utilcomp:MeasurementDeviceType" substitutionGroup="utilcomp:Abstract_Device" />
+  <complexType name="MeasurementDeviceType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_DeviceType">
+        <sequence>
+          <element name="class" type="utilcomp:MeasurementDeviceClass" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MeasurementDevicePropertyType">
+    <sequence>
+      <element ref="utilcomp:MeasurementDevice" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--MeasurementDeviceClass-->
+  <!--=========================================================================================-->
+  <simpleType name="MeasurementDeviceClass">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="anode" />
+      <enumeration value="corrosionDetector" />
+      <enumeration value="pressureSensor" />
+      <enumeration value="meter" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--Profile2D-->
+  <!--=========================================================================================-->
+  <element name="Profile2D" type="utilcomp:Profile2DType" substitutionGroup="gml:_Feature" />
+  <complexType name="Profile2DType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType" />
+    </complexContent>
+  </complexType>
+  <complexType name="Profile2DPropertyType">
+    <sequence>
+      <element ref="utilcomp:Profile2D" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--StorageDevice-->
+  <!--=========================================================================================-->
+  <element name="StorageDevice" type="utilcomp:StorageDeviceType" substitutionGroup="utilcomp:Abstract_Device" />
+  <complexType name="StorageDeviceType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_DeviceType">
+        <sequence>
+          <element name="class" type="utilcomp:StorageDeviceClass" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StorageDevicePropertyType">
+    <sequence>
+      <element ref="utilcomp:StorageDevice" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--StorageDeviceClass-->
+  <!--=========================================================================================-->
+  <simpleType name="StorageDeviceClass">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="storageBasin" />
+      <enumeration value="battery" />
+      <enumeration value="tank" />
+      <enumeration value="cistern" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--TechDevice-->
+  <!--=========================================================================================-->
+  <element name="TechDevice" type="utilcomp:TechDeviceType" substitutionGroup="utilcomp:Abstract_Device" />
+  <complexType name="TechDeviceType">
+    <complexContent>
+      <extension base="utilcomp:Abstract_DeviceType">
+        <sequence>
+          <element name="class" type="utilcomp:TechDeviceClass" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TechDevicePropertyType">
+    <sequence>
+      <element ref="utilcomp:TechDevice" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--TechDeviceClass-->
+  <!--=========================================================================================-->
+  <simpleType name="TechDeviceClass">
+    <restriction base="string">
+      <enumeration value="pump" />
+      <enumeration value="slideValve" />
+      <enumeration value="generator" />
+      <enumeration value="valve" />
+      <enumeration value="turbine" />
+      <enumeration value="unknown" />
+    </restriction>
+  </simpleType>
+</schema>

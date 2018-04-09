@@ -1,0 +1,113 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:21-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilfeatmat_FillingMaterial">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilfeatmat:FillingMaterial</gml:identifier>
+  <gml:name>utilfeatmat:FillingMaterial</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilfeatmat_FillingMaterial_type">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilfeatmat:FillingMaterial:attribute:type</gml:identifier>
+      <gml:name>utilfeatmat:type</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_Steel">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:Steel</gml:identifier>
+          <gml:name>Steel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_Stoneware">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:Stoneware</gml:identifier>
+          <gml:name>Stoneware</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_PE">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:PE</gml:identifier>
+          <gml:name>PE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_casting">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:casting</gml:identifier>
+          <gml:name>casting</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_Iron">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:Iron</gml:identifier>
+          <gml:name>Iron</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_concrete">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:concrete</gml:identifier>
+          <gml:name>concrete</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_brick">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:brick</gml:identifier>
+          <gml:name>brick</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_glass">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:glass</gml:identifier>
+          <gml:name>glass</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_copper">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:copper</gml:identifier>
+          <gml:name>copper</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_rubber">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:rubber</gml:identifier>
+          <gml:name>rubber</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_polymericOpticalFibre">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:polymericOpticalFibre</gml:identifier>
+          <gml:name>polymericOpticalFibre</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_quartzSilica">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:quartzSilica</gml:identifier>
+          <gml:name>quartzSilica</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_air">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:air</gml:identifier>
+          <gml:name>air</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_carbon">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:carbon</gml:identifier>
+          <gml:name>carbon</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_FillingMaterial_type_MaterialType_sand">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:FillingMaterial:type:MaterialType:sand</gml:identifier>
+          <gml:name>sand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>MaterialType</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

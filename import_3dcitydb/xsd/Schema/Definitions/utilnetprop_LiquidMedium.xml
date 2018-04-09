@@ -1,0 +1,164 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:20-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilnetprop_LiquidMedium">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:LiquidMedium</gml:identifier>
+  <gml:name>utilnetprop:LiquidMedium</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_LiquidMedium_type">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:LiquidMedium:attribute:type</gml:identifier>
+      <gml:name>utilnetprop:type</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_LiquidMedium_type_LiquidMediumTypes_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:LiquidMedium:type:LiquidMediumTypes:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_LiquidMedium_type_LiquidMediumTypes_freshWater">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:LiquidMedium:type:LiquidMediumTypes:freshWater</gml:identifier>
+          <gml:name>freshWater</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_LiquidMedium_type_LiquidMediumTypes_wasteWater">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:LiquidMedium:type:LiquidMediumTypes:wasteWater</gml:identifier>
+          <gml:name>wasteWater</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_LiquidMedium_type_LiquidMediumTypes_stormWater">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:LiquidMedium:type:LiquidMediumTypes:stormWater</gml:identifier>
+          <gml:name>stormWater</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_LiquidMedium_type_LiquidMediumTypes_districtHeatingWater">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:LiquidMedium:type:LiquidMediumTypes:districtHeatingWater</gml:identifier>
+          <gml:name>districtHeatingWater</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_LiquidMedium_type_LiquidMediumTypes_petrol">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:LiquidMedium:type:LiquidMediumTypes:petrol</gml:identifier>
+          <gml:name>petrol</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_LiquidMedium_type_LiquidMediumTypes_oil">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:LiquidMedium:type:LiquidMediumTypes:oil</gml:identifier>
+          <gml:name>oil</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_LiquidMedium_type_LiquidMediumTypes_gasohol">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:LiquidMedium:type:LiquidMediumTypes:gasohol</gml:identifier>
+          <gml:name>gasohol</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_LiquidMedium_type_LiquidMediumTypes_acid">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:LiquidMedium:type:LiquidMediumTypes:acid</gml:identifier>
+          <gml:name>acid</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_LiquidMedium_type_LiquidMediumTypes_kerosine">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:LiquidMedium:type:LiquidMediumTypes:kerosine</gml:identifier>
+          <gml:name>kerosine</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_LiquidMedium_type_LiquidMediumTypes_liquidPG">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:LiquidMedium:type:LiquidMediumTypes:liquidPG</gml:identifier>
+          <gml:name>liquidPG</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>LiquidMediumTypes</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_LiquidMedium_isCorrosive">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:LiquidMedium:attribute:isCorrosive</gml:identifier>
+      <gml:name>utilnetprop:isCorrosive</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_LiquidMedium_isExplosive">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:LiquidMedium:attribute:isExplosive</gml:identifier>
+      <gml:name>utilnetprop:isExplosive</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_LiquidMedium_flammable">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:LiquidMedium:attribute:flammable</gml:identifier>
+      <gml:name>utilnetprop:flammable</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>DoubleBetween0and1</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_LiquidMedium_electricConductivity">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:LiquidMedium:attribute:electricConductivity</gml:identifier>
+      <gml:name>utilnetprop:electricConductivity</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>QuantityExtent</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_LiquidMedium_pHValueRange">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:LiquidMedium:attribute:pHValueRange</gml:identifier>
+      <gml:name>utilnetprop:pHValueRange</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>QuantityExtent</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_LiquidMedium_temperatureRange">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:LiquidMedium:attribute:temperatureRange</gml:identifier>
+      <gml:name>utilnetprop:temperatureRange</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>QuantityExtent</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_LiquidMedium_flowRateRange">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:LiquidMedium:attribute:flowRateRange</gml:identifier>
+      <gml:name>utilnetprop:flowRateRange</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>QuantityExtent</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_LiquidMedium_pressureRange">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:LiquidMedium:attribute:pressureRange</gml:identifier>
+      <gml:name>utilnetprop:pressureRange</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>QuantityExtent</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:utilnetprop:Abstract_CommodityType" />
+</TypeDefinition>

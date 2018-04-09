@@ -1,0 +1,7 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 27.07.2012 13:55:22-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="_Data types">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element::Data types</gml:identifier>
+  <gml:name>:Data types</gml:name>
+  <def:classification>objectType</def:classification>
+</TypeDefinition>

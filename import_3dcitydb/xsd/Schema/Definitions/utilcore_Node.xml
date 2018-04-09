@@ -1,0 +1,61 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:15-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcore_Node">
+  <gml:description>Due to the semantic differentiation of nodes and edges and the possibility to model attributes, the resulting graph can be classified as both typed and attributed. This requires the conceptual modeling of nodes and edges as semantic objects. Consequently, the topological primitives &lt;i&gt;TP_Node&lt;/i&gt; and &lt;i&gt;TP_Edge&lt;/i&gt; specified by ISO 19107 are infeasible for their representation. Nodes and edges are rather mapped onto two corresponding GFM feature types called &lt;i&gt;Node&lt;/i&gt; and &lt;i&gt;Edge&lt;/i&gt;. The geometric embedding of both &lt;i&gt;Node&lt;/i&gt; and &lt;i&gt;Edge&lt;/i&gt; is realized as spatial &lt;i&gt;realization&lt;/i&gt; association to a &lt;i&gt;GM_Point&lt;/i&gt; respectively a &lt;i&gt;GM_Curve&lt;/i&gt; primitive. Furthermore, the exterior nodes of the &lt;i&gt;FeatureGraph&lt;/i&gt; may denote a &lt;i&gt;ConnectionSignature&lt;/i&gt;.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Node</gml:identifier>
+  <gml:name>utilcore:Node</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Node_connectionSignature">
+      <gml:description>The exterior nodes of the &lt;i&gt;FeatureGraph&lt;/i&gt; may denote a &lt;i&gt;ConnectionSignature&lt;/i&gt;. Only those network components having an identical or compatible &lt;i&gt;ConnectionSignature&lt;/i&gt; are allowed to connect. A &lt;i&gt;ConnectionSignature&lt;/i&gt; is to be seen as set of connectivity constraints addressing arbitrary aspects of a &lt;i&gt;NetworkFeature&lt;/i&gt; such as functional, physical, logical, or even geometric properties.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Node:attribute:connectionSignature</gml:identifier>
+      <gml:name>utilcore:connectionSignature</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcore:Abstract_Signature" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Node_linkControl">
+      <gml:description>In order to support sophisticated graph-based analyses and simulations, both nodes and edges may carry additional attributes, e.g. to model weights or the &lt;i&gt;LinkControl&lt;/i&gt; of a &lt;i&gt;NetworkFeature&lt;/i&gt;. Examples for &lt;i&gt;LinkControl&lt;/i&gt; are the on/off state of a switch within an electrical circuit or the gradual impact of a valve on the flow of water.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Node:attribute:linkControl</gml:identifier>
+      <gml:name>utilcore:linkControl</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcore:Abstract_LinkControl" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Node_type">
+      <gml:description>The graph structure&lt;i&gt; &lt;/i&gt;follows the general principles of graph theory and has clear semantics. Two types of nodes were distinguished: exterior and interior nodes.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Node:attribute:type</gml:identifier>
+      <gml:name>utilcore:type</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcore_Node_type_NodeTypes_exterior">
+          <gml:description>An exterior node represents a topological connection point where other network components may be attached.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcore:Node:type:NodeTypes:exterior</gml:identifier>
+          <gml:name>exterior</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcore_Node_type_NodeTypes_interior">
+          <gml:description>Interior nodes are used to model internal structural, physical, or logical aspects of the network component.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcore:Node:type:NodeTypes:interior</gml:identifier>
+          <gml:name>interior</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>NodeTypes</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Node_realization">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Node:association-role:realization</gml:identifier>
+      <gml:name>utilcore:realization</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:gml:GM_Point" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

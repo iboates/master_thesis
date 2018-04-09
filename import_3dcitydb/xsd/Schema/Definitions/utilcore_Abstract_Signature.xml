@@ -1,0 +1,7 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:15-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcore_Abstract_Signature">
+  <gml:description>A _&lt;i&gt;Signature&lt;/i&gt; is to be seen as set of connectivity constraints addressing arbitrary aspects of a &lt;i&gt;NetworkFeature&lt;/i&gt; such as functional, physical, logical, or even geometric properties.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_Signature</gml:identifier>
+  <gml:name>utilcore:Abstract_Signature</gml:name>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

@@ -1,0 +1,66 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:18-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcomp_SimpleFunctionalElement">
+  <gml:description>network elements that do &lt;b&gt;&lt;u&gt;not&lt;/u&gt;&lt;/b&gt; contain any kind of device</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:SimpleFunctionalElement</gml:identifier>
+  <gml:name>utilcomp:SimpleFunctionalElement</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_SimpleFunctionalElement_class">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:SimpleFunctionalElement:attribute:class</gml:identifier>
+      <gml:name>utilcomp:class</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_SimpleFunctionalElement_class_SimpleFunctionClass_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:SimpleFunctionalElement:class:SimpleFunctionClass:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_SimpleFunctionalElement_class_SimpleFunctionClass_manhole">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:SimpleFunctionalElement:class:SimpleFunctionClass:manhole</gml:identifier>
+          <gml:name>manhole</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_SimpleFunctionalElement_class_SimpleFunctionClass_invertedSyphon">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:SimpleFunctionalElement:class:SimpleFunctionClass:invertedSyphon</gml:identifier>
+          <gml:name>invertedSyphon</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_SimpleFunctionalElement_class_SimpleFunctionClass_transformer">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:SimpleFunctionalElement:class:SimpleFunctionClass:transformer</gml:identifier>
+          <gml:name>transformer</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_SimpleFunctionalElement_class_SimpleFunctionClass_voltageRegulator">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:SimpleFunctionalElement:class:SimpleFunctionClass:voltageRegulator</gml:identifier>
+          <gml:name>voltageRegulator</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_SimpleFunctionalElement_class_SimpleFunctionClass_teeFitting">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:SimpleFunctionalElement:class:SimpleFunctionClass:teeFitting</gml:identifier>
+          <gml:name>teeFitting</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_SimpleFunctionalElement_class_SimpleFunctionClass_crossFitting">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:SimpleFunctionalElement:class:SimpleFunctionClass:crossFitting</gml:identifier>
+          <gml:name>crossFitting</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_SimpleFunctionalElement_class_SimpleFunctionClass_tap">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:SimpleFunctionalElement:class:SimpleFunctionClass:tap</gml:identifier>
+          <gml:name>tap</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SimpleFunctionClass</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:utilcomp:Abstract_NetworkFeature" />
+</TypeDefinition>

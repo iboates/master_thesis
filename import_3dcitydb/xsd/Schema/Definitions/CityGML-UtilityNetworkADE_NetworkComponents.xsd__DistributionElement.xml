@@ -1,0 +1,8 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 23.07.2012 15:20:46-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="CityGML-UtilityNetworkADE_NetworkComponents.xsd__DistributionElement">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:CityGML-UtilityNetworkADE_NetworkComponents.xsd:_DistributionElement</gml:identifier>
+  <gml:name>CityGML-UtilityNetworkADE_NetworkComponents.xsd:_DistributionElement</gml:name>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:utilcore:_NetworkFeature" />
+</TypeDefinition>

@@ -1,0 +1,58 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:14-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcore_Abstract_Edge">
+  <gml:description>Due to the semantic differentiation of nodes and edges and the possibility to model attributes, the resulting graph can be classified as both typed and attributed. This requires the conceptual modeling of nodes and edges as semantic objects. Consequently, the topological primitives &lt;i&gt;TP_Node&lt;/i&gt; and &lt;i&gt;TP_Edge&lt;/i&gt; specified by ISO 19107 are infeasible for their representation. Nodes and edges are rather mapped onto two corresponding GFM feature types called &lt;i&gt;Node&lt;/i&gt; and &lt;i&gt;Edge&lt;/i&gt;. The geometric embedding of both &lt;i&gt;Node&lt;/i&gt; and &lt;i&gt;Edge&lt;/i&gt; is realized as spatial &lt;i&gt;realization&lt;/i&gt; association to a &lt;i&gt;GM_Point&lt;/i&gt; respectively a &lt;i&gt;GM_Curve&lt;/i&gt; primitive.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_Edge</gml:identifier>
+  <gml:name>utilcore:Abstract_Edge</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Abstract_Edge_direction">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_Edge:attribute:direction</gml:identifier>
+      <gml:name>utilcore:direction</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Sign</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Abstract_Edge_linkControl">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_Edge:attribute:linkControl</gml:identifier>
+      <gml:name>utilcore:linkControl</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcore:Abstract_LinkControl" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Abstract_Edge_realization">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_Edge:association-role:realization</gml:identifier>
+      <gml:name>utilcore:realization</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:gml:GM_Curve" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Abstract_Edge_start">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_Edge:association-role:start</gml:identifier>
+      <gml:name>utilcore:start</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcore:Node" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Abstract_Edge_end">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_Edge:association-role:end</gml:identifier>
+      <gml:name>utilcore:end</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcore:Node" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:core:_CityObject" />
+</TypeDefinition>

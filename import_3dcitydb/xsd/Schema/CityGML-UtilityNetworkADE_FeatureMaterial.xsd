@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.08.2012 14:18:27-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:utilfeatmat="http://www.citygml.org/ade/utilfeatmat" targetNamespace="http://www.citygml.org/ade/utilfeatmat" xmlns:kit="http://www.kit.edu" xmlns:utilnetprop="http://www.citygml.org/ade/utilnetprop" xmlns:utilcomp="http://www.citygml.org/ade/utilcomp" xmlns:gml="http://www.opengis.net/gml" xmlns:utilcore="http://www.citygml.org/ade/utilcore" elementFormDefault="qualified" version="0.9">
+  <import namespace="http://www.citygml.org/ade/utilnetprop" schemaLocation="CityGML-UtilityNetworkADE_NetworkProperties.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilcomp" schemaLocation="CityGML-UtilityNetworkADE_NetworkComponents.xsd" />
+  <import namespace="http://www.opengis.net/gml" schemaLocation="gml\3.1.1\base\gml.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilcore" schemaLocation="CityGML-UtilityNetworkADE_Core.xsd" />
+  <!--=========================================================================================-->
+  <!--Abstract_FeatureMaterialType-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="Abstract_FeatureMaterialType" type="utilfeatmat:Abstract_FeatureMaterialTypeType" substitutionGroup="gml:_Feature" />
+  <complexType abstract="true" name="Abstract_FeatureMaterialTypeType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="type" type="utilfeatmat:MaterialType" />
+          <element name="usedBy" type="utilcomp:Abstract_NetworkFeaturePropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="isClassifiedBy" type="utilnetprop:Abstract_CommodityClassifierPropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="consistsOf" type="utilfeatmat:InteriorMaterialPropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="consistsOfFM" type="utilfeatmat:FillingMaterialPropertyType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="Abstract_FeatureMaterialTypePropertyType">
+    <sequence>
+      <element ref="utilfeatmat:Abstract_FeatureMaterialType" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ExteriorMaterial-->
+  <!--=========================================================================================-->
+  <element name="ExteriorMaterial" type="utilfeatmat:ExteriorMaterialType" substitutionGroup="utilfeatmat:Abstract_FeatureMaterialType" />
+  <complexType name="ExteriorMaterialType">
+    <complexContent>
+      <extension base="utilfeatmat:Abstract_FeatureMaterialTypeType" />
+    </complexContent>
+  </complexType>
+  <complexType name="ExteriorMaterialPropertyType">
+    <sequence>
+      <element ref="utilfeatmat:ExteriorMaterial" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--MaterialType-->
+  <!--=========================================================================================-->
+  <simpleType name="MaterialType">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="Steel" />
+      <enumeration value="Stoneware" />
+      <enumeration value="PE" />
+      <enumeration value="casting" />
+      <enumeration value="Iron" />
+      <enumeration value="concrete" />
+      <enumeration value="brick" />
+      <enumeration value="glass" />
+      <enumeration value="copper" />
+      <enumeration value="rubber" />
+      <enumeration value="polymericOpticalFibre" />
+      <enumeration value="quartzSilica" />
+      <enumeration value="air" />
+      <enumeration value="carbon" />
+      <enumeration value="sand" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--FillingMaterial-->
+  <!--=========================================================================================-->
+  <element name="FillingMaterial" type="utilfeatmat:FillingMaterialType" substitutionGroup="gml:_Feature" />
+  <complexType name="FillingMaterialType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="type" type="utilfeatmat:MaterialType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FillingMaterialPropertyType">
+    <sequence>
+      <element ref="utilfeatmat:FillingMaterial" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--InteriorMaterial-->
+  <!--=========================================================================================-->
+  <element name="InteriorMaterial" type="utilfeatmat:InteriorMaterialType" substitutionGroup="utilfeatmat:Abstract_FeatureMaterialType" />
+  <complexType name="InteriorMaterialType">
+    <complexContent>
+      <extension base="utilfeatmat:Abstract_FeatureMaterialTypeType" />
+    </complexContent>
+  </complexType>
+  <complexType name="InteriorMaterialPropertyType">
+    <sequence>
+      <element ref="utilfeatmat:InteriorMaterial" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+</schema>

@@ -1,0 +1,28 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:15-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcore_FeatureGraph">
+  <gml:description>The main concept of utility network modeling approach is the &lt;i&gt;dual representation&lt;/i&gt; of a &lt;i&gt;NetworkFeature &lt;/i&gt;according to which each network component can be represented both by its 3D topography and by means of a complementary graph structure called &lt;i&gt;FeatureGraph&lt;/i&gt;. The &lt;i&gt;FeatureGraph&lt;/i&gt; explicitly allows for a graph-based representation of each &lt;i&gt;NetworkFeature&lt;/i&gt;. A &lt;i&gt;FeatureGraph&lt;/i&gt; is modeled as feature collection of &lt;i&gt;Node&lt;/i&gt; and &lt;i&gt;Edge&lt;/i&gt; instances.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:FeatureGraph</gml:identifier>
+  <gml:name>utilcore:FeatureGraph</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_FeatureGraph_linkMember">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:FeatureGraph:association-role:linkMember</gml:identifier>
+      <gml:name>utilcore:linkMember</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcore:InteriorFeatureLink" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_FeatureGraph_nodeMember">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:FeatureGraph:association-role:nodeMember</gml:identifier>
+      <gml:name>utilcore:nodeMember</gml:name>
+      <def:cardinality>1..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcore:Node" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:core:_CityObject" />
+</TypeDefinition>

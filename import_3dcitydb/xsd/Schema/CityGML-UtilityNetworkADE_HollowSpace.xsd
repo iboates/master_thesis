@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.08.2012 14:18:28-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:utilholspac="http://www.citygml.org/ade/utilholspac" targetNamespace="http://www.citygml.org/ade/utilholspac" xmlns:kit="http://www.kit.edu" xmlns:utilnetprop="http://www.citygml.org/ade/utilnetprop" xmlns:gml="http://www.opengis.net/gml" xmlns:utilcore="http://www.citygml.org/ade/utilcore" elementFormDefault="qualified" version="0.9">
+  <import namespace="http://www.citygml.org/ade/utilnetprop" schemaLocation="CityGML-UtilityNetworkADE_NetworkProperties.xsd" />
+  <import namespace="http://www.opengis.net/gml" schemaLocation="gml\3.1.1\base\gml.xsd" />
+  <import namespace="http://www.citygml.org/ade/utilcore" schemaLocation="CityGML-UtilityNetworkADE_Core.xsd" />
+  <!--=========================================================================================-->
+  <!--Abstract_UtilityHollowSpace-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="Abstract_UtilityHollowSpace" type="utilholspac:Abstract_UtilityHollowSpaceType" substitutionGroup="gml:_Feature" />
+  <complexType abstract="true" name="Abstract_UtilityHollowSpaceType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="description" type="string" />
+          <element name="consistsOfParts" type="utilholspac:UtilityHollowSpacePartPropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="containedCommodity" type="utilnetprop:Abstract_CommodityClassifierPropertyType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="Abstract_UtilityHollowSpacePropertyType">
+    <sequence>
+      <element ref="utilholspac:Abstract_UtilityHollowSpace" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--UtilityHollowSpace-->
+  <!--=========================================================================================-->
+  <element name="UtilityHollowSpace" type="utilholspac:UtilityHollowSpaceType" substitutionGroup="utilholspac:Abstract_UtilityHollowSpace" />
+  <complexType name="UtilityHollowSpaceType">
+    <complexContent>
+      <extension base="utilholspac:Abstract_UtilityHollowSpaceType" />
+    </complexContent>
+  </complexType>
+  <complexType name="UtilityHollowSpacePropertyType">
+    <sequence>
+      <element ref="utilholspac:UtilityHollowSpace" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--UtilityHollowSpacePart-->
+  <!--=========================================================================================-->
+  <element name="UtilityHollowSpacePart" type="utilholspac:UtilityHollowSpacePartType" substitutionGroup="utilholspac:Abstract_UtilityHollowSpace" />
+  <complexType name="UtilityHollowSpacePartType">
+    <complexContent>
+      <extension base="utilholspac:Abstract_UtilityHollowSpaceType" />
+    </complexContent>
+  </complexType>
+  <complexType name="UtilityHollowSpacePartPropertyType">
+    <sequence>
+      <element ref="utilholspac:UtilityHollowSpacePart" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+</schema>

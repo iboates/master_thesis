@@ -1,0 +1,72 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:17-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcomp_ComplexFunctionalElement">
+  <gml:description>network elements that do contain any kind of device</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:ComplexFunctionalElement</gml:identifier>
+  <gml:name>utilcomp:ComplexFunctionalElement</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcomp_ComplexFunctionalElement_class">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcomp:ComplexFunctionalElement:attribute:class</gml:identifier>
+      <gml:name>utilcomp:class</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ComplexFunctionalElement_class_ComplexFunctionClass_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ComplexFunctionalElement:class:ComplexFunctionClass:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ComplexFunctionalElement_class_ComplexFunctionClass_station">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ComplexFunctionalElement:class:ComplexFunctionClass:station</gml:identifier>
+          <gml:name>station</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ComplexFunctionalElement_class_ComplexFunctionClass_structure">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ComplexFunctionalElement:class:ComplexFunctionClass:structure</gml:identifier>
+          <gml:name>structure</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ComplexFunctionalElement_class_ComplexFunctionClass_factory">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ComplexFunctionalElement:class:ComplexFunctionClass:factory</gml:identifier>
+          <gml:name>factory</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ComplexFunctionalElement_class_ComplexFunctionClass_waterWork">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ComplexFunctionalElement:class:ComplexFunctionClass:waterWork</gml:identifier>
+          <gml:name>waterWork</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ComplexFunctionalElement_class_ComplexFunctionClass_treatmentPlant">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ComplexFunctionalElement:class:ComplexFunctionClass:treatmentPlant</gml:identifier>
+          <gml:name>treatmentPlant</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ComplexFunctionalElement_class_ComplexFunctionClass_heatingPlant">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ComplexFunctionalElement:class:ComplexFunctionClass:heatingPlant</gml:identifier>
+          <gml:name>heatingPlant</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ComplexFunctionalElement_class_ComplexFunctionClass_powerPlant">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ComplexFunctionalElement:class:ComplexFunctionClass:powerPlant</gml:identifier>
+          <gml:name>powerPlant</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilcomp_ComplexFunctionalElement_class_ComplexFunctionClass_pumpingStation">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilcomp:ComplexFunctionalElement:class:ComplexFunctionClass:pumpingStation</gml:identifier>
+          <gml:name>pumpingStation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>ComplexFunctionClass</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:utilcomp:Abstract_NetworkFeature" />
+</TypeDefinition>

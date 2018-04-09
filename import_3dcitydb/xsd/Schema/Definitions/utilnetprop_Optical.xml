@@ -1,0 +1,82 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:21-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilnetprop_Optical">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Optical</gml:identifier>
+  <gml:name>utilnetprop:Optical</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Optical_type">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Optical:attribute:type</gml:identifier>
+      <gml:name>utilnetprop:type</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Optical_type_OpticalMediaTypes_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Optical:type:OpticalMediaTypes:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Optical_type_OpticalMediaTypes_light">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Optical:type:OpticalMediaTypes:light</gml:identifier>
+          <gml:name>light</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>OpticalMediaTypes</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Optical_modeType">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Optical:attribute:modeType</gml:identifier>
+      <gml:name>utilnetprop:modeType</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Optical_modeType_OpticalModeType_SingleMode">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Optical:modeType:OpticalModeType:SingleMode</gml:identifier>
+          <gml:name>SingleMode</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Optical_modeType_OpticalModeType_MultiMode">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Optical:modeType:OpticalModeType:MultiMode</gml:identifier>
+          <gml:name>MultiMode</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>OpticalModeType</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Optical_bandWith">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Optical:attribute:bandWith</gml:identifier>
+      <gml:name>utilnetprop:bandWith</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>QuantityExtent</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Optical_coreCrossSection">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Optical:attribute:coreCrossSection</gml:identifier>
+      <gml:name>utilnetprop:coreCrossSection</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Optical_claddingCrossSection">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Optical:attribute:claddingCrossSection</gml:identifier>
+      <gml:name>utilnetprop:claddingCrossSection</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:utilnetprop:Abstract_CommodityType" />
+</TypeDefinition>

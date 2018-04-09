@@ -1,0 +1,151 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:19-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilnetprop_Abstract_CommodityClassifier">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Abstract_CommodityClassifier</gml:identifier>
+  <gml:name>utilnetprop:Abstract_CommodityClassifier</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_molFormula">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Abstract_CommodityClassifier:attribute:molFormula</gml:identifier>
+      <gml:name>utilnetprop:molFormula</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>CharacterString</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_isChemicalComplex">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Abstract_CommodityClassifier:attribute:isChemicalComplex</gml:identifier>
+      <gml:name>utilnetprop:isChemicalComplex</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_signalWord">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Abstract_CommodityClassifier:attribute:signalWord</gml:identifier>
+      <gml:name>utilnetprop:signalWord</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_signalWord_signalWordType_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Abstract_CommodityClassifier:signalWord:signalWordType:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_signalWord_signalWordType_nonHazardeous">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Abstract_CommodityClassifier:signalWord:signalWordType:nonHazardeous</gml:identifier>
+          <gml:name>nonHazardeous</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_signalWord_signalWordType_hazardeous">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Abstract_CommodityClassifier:signalWord:signalWordType:hazardeous</gml:identifier>
+          <gml:name>hazardeous</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_signalWord_signalWordType_attention">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Abstract_CommodityClassifier:signalWord:signalWordType:attention</gml:identifier>
+          <gml:name>attention</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>signalWordType</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_hazardClass">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Abstract_CommodityClassifier:attribute:hazardClass</gml:identifier>
+      <gml:name>utilnetprop:hazardClass</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_hazardClass_HazardClass_hazardClass">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Abstract_CommodityClassifier:hazardClass:HazardClass:hazardClass</gml:identifier>
+          <gml:name>hazardClass</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_hazardClass_HazardClass_categoryCode">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Abstract_CommodityClassifier:hazardClass:HazardClass:categoryCode</gml:identifier>
+          <gml:name>categoryCode</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_hazardClass_HazardClass_pictogrammCode">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Abstract_CommodityClassifier:hazardClass:HazardClass:pictogrammCode</gml:identifier>
+          <gml:name>pictogrammCode</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_hazardClass_HazardClass_statementCode">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Abstract_CommodityClassifier:hazardClass:HazardClass:statementCode</gml:identifier>
+          <gml:name>statementCode</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_hazardClass_HazardClass_pictogrammURI">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:Abstract_CommodityClassifier:hazardClass:HazardClass:pictogrammURI</gml:identifier>
+          <gml:name>pictogrammURI</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>HazardClass</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_description">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Abstract_CommodityClassifier:attribute:description</gml:identifier>
+      <gml:name>utilnetprop:description</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>CharacterString</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_physicalForm">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Abstract_CommodityClassifier:attribute:physicalForm</gml:identifier>
+      <gml:name>utilnetprop:physicalForm</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>CharacterString</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_molecularWeight">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Abstract_CommodityClassifier:attribute:molecularWeight</gml:identifier>
+      <gml:name>utilnetprop:molecularWeight</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>CharacterString</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_consistsOfFurtherElements">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Abstract_CommodityClassifier:association-role:consistsOfFurtherElements</gml:identifier>
+      <gml:name>utilnetprop:consistsOfFurtherElements</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilnetprop:Abstract_CommodityClassifier" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_Abstract_CommodityClassifier_boundedBy">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:Abstract_CommodityClassifier:association-role:boundedBy</gml:identifier>
+      <gml:name>utilnetprop:boundedBy</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilholspac:Abstract_UtilityHollowSpace" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

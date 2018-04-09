@@ -1,0 +1,153 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:21-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilfeatmat_Abstract_FeatureMaterialType">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilfeatmat:Abstract_FeatureMaterialType</gml:identifier>
+  <gml:name>utilfeatmat:Abstract_FeatureMaterialType</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilfeatmat:Abstract_FeatureMaterialType:attribute:type</gml:identifier>
+      <gml:name>utilfeatmat:type</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_Steel">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:Steel</gml:identifier>
+          <gml:name>Steel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_Stoneware">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:Stoneware</gml:identifier>
+          <gml:name>Stoneware</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_PE">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:PE</gml:identifier>
+          <gml:name>PE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_casting">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:casting</gml:identifier>
+          <gml:name>casting</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_Iron">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:Iron</gml:identifier>
+          <gml:name>Iron</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_concrete">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:concrete</gml:identifier>
+          <gml:name>concrete</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_brick">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:brick</gml:identifier>
+          <gml:name>brick</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_glass">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:glass</gml:identifier>
+          <gml:name>glass</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_copper">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:copper</gml:identifier>
+          <gml:name>copper</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_rubber">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:rubber</gml:identifier>
+          <gml:name>rubber</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_polymericOpticalFibre">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:polymericOpticalFibre</gml:identifier>
+          <gml:name>polymericOpticalFibre</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_quartzSilica">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:quartzSilica</gml:identifier>
+          <gml:name>quartzSilica</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_air">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:air</gml:identifier>
+          <gml:name>air</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_carbon">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:carbon</gml:identifier>
+          <gml:name>carbon</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_type_MaterialType_sand">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilfeatmat:Abstract_FeatureMaterialType:type:MaterialType:sand</gml:identifier>
+          <gml:name>sand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>MaterialType</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_usedBy">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilfeatmat:Abstract_FeatureMaterialType:association-role:usedBy</gml:identifier>
+      <gml:name>utilfeatmat:usedBy</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcomp:Abstract_NetworkFeature" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_isClassifiedBy">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilfeatmat:Abstract_FeatureMaterialType:association-role:isClassifiedBy</gml:identifier>
+      <gml:name>utilfeatmat:isClassifiedBy</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilnetprop:Abstract_CommodityClassifier" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_consistsOf">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilfeatmat:Abstract_FeatureMaterialType:association-role:consistsOf</gml:identifier>
+      <gml:name>utilfeatmat:consistsOf</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilfeatmat:InteriorMaterial" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilfeatmat_Abstract_FeatureMaterialType_consistsOfFM">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilfeatmat:Abstract_FeatureMaterialType:association-role:consistsOfFM</gml:identifier>
+      <gml:name>utilfeatmat:consistsOfFM</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilfeatmat:FillingMaterial" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

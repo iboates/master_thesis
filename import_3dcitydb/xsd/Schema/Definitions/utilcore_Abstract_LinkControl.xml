@@ -1,0 +1,7 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:14-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcore_Abstract_LinkControl">
+  <gml:description>In order to support sophisticated graph-based analyses and simulations, both nodes and edges may carry additional attributes, e.g. to model weights or the &lt;i&gt;LinkControl&lt;/i&gt; of a &lt;i&gt;NetworkFeature&lt;/i&gt;. Examples for &lt;i&gt;LinkControl&lt;/i&gt; are the on/off state of a switch within an electrical circuit or the gradual impact of a valve on the flow of water.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_LinkControl</gml:identifier>
+  <gml:name>utilcore:Abstract_LinkControl</gml:name>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

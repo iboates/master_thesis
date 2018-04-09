@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.08.2012 14:18:12-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:utilcore="http://www.citygml.org/ade/utilcore" targetNamespace="http://www.citygml.org/ade/utilcore" xmlns:kit="http://www.kit.edu" xmlns:gml="http://www.opengis.net/gml" xmlns:core="http://www.opengis.net/citygml/2.0" elementFormDefault="qualified" version="0.9">
+  <import namespace="http://www.opengis.net/gml" schemaLocation="gml\3.1.1\base\gml.xsd" />
+  <import namespace="http://www.opengis.net/citygml/2.0" schemaLocation="http://schemas.opengis.net/citygml/2.0/cityGMLBase.xsd" />
+  <!--=========================================================================================-->
+  <!--Abstract_Edge-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="Abstract_Edge" type="utilcore:Abstract_EdgeType" substitutionGroup="core:_CityObject" />
+  <complexType abstract="true" name="Abstract_EdgeType">
+    <annotation>
+      <documentation>Due to the semantic differentiation of nodes and edges and the possibility to model attributes, the resulting graph can be classified as both typed and attributed. This requires the conceptual modeling of nodes and edges as semantic objects. Consequently, the topological primitives &lt;i&gt;TP_Node&lt;/i&gt; and &lt;i&gt;TP_Edge&lt;/i&gt; specified by ISO 19107 are infeasible for their representation. Nodes and edges are rather mapped onto two corresponding GFM feature types called &lt;i&gt;Node&lt;/i&gt; and &lt;i&gt;Edge&lt;/i&gt;. The geometric embedding of both &lt;i&gt;Node&lt;/i&gt; and &lt;i&gt;Edge&lt;/i&gt; is realized as spatial &lt;i&gt;realization&lt;/i&gt; association to a &lt;i&gt;GM_Point&lt;/i&gt; respectively a &lt;i&gt;GM_Curve&lt;/i&gt; primitive.</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="core:AbstractCityObjectType">
+        <sequence>
+          <element name="direction" type="gml:SignType" minOccurs="0" />
+          <element name="linkControl" type="utilcore:Abstract_LinkControlPropertyType" minOccurs="0" />
+          <element name="realization" type="gml:CurvePropertyType" minOccurs="0" />
+          <element name="start" type="utilcore:NodePropertyType" />
+          <element name="end" type="utilcore:NodePropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="Abstract_EdgePropertyType">
+    <sequence>
+      <element ref="utilcore:Abstract_Edge" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Abstract_LinkControl-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="Abstract_LinkControl" type="utilcore:Abstract_LinkControlType" />
+  <complexType abstract="true" name="Abstract_LinkControlType">
+    <annotation>
+      <documentation>In order to support sophisticated graph-based analyses and simulations, both nodes and edges may carry additional attributes, e.g. to model weights or the &lt;i&gt;LinkControl&lt;/i&gt; of a &lt;i&gt;NetworkFeature&lt;/i&gt;. Examples for &lt;i&gt;LinkControl&lt;/i&gt; are the on/off state of a switch within an electrical circuit or the gradual impact of a valve on the flow of water.</documentation>
+    </annotation>
+  </complexType>
+  <complexType name="Abstract_LinkControlPropertyType">
+    <sequence>
+      <element ref="utilcore:Abstract_LinkControl" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Abstract_NetworkFeature-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="Abstract_NetworkFeature" type="utilcore:Abstract_NetworkFeatureType" substitutionGroup="core:_CityObject" />
+  <complexType abstract="true" name="Abstract_NetworkFeatureType">
+    <annotation>
+      <documentation>&lt;i&gt;NetworkFeature&lt;/i&gt; is an abstract concept which maps topographic network components onto respective General Feature Model (GFM, ISO 19109) feature types. It allows for the modeling of thematic properties as well as the definition of taxonomies and partonomies of network components. Hence, it forms the base for the semantic modeling of concrete network features in various infrastructures such as gas, power, or water supply networks.</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="core:AbstractCityObjectType">
+        <sequence>
+          <element name="topoGraph" type="utilcore:FeatureGraphPropertyType" minOccurs="0" />
+          <element name="consistsOf" type="utilcore:Abstract_NetworkFeaturePropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="connectedCityObject" type="gml:ReferenceType" minOccurs="0">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>core:_CityObject</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="Abstract_NetworkFeaturePropertyType">
+    <sequence>
+      <element ref="utilcore:Abstract_NetworkFeature" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Abstract_Signature-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="Abstract_Signature" type="utilcore:Abstract_SignatureType" />
+  <complexType abstract="true" name="Abstract_SignatureType">
+    <annotation>
+      <documentation>A _&lt;i&gt;Signature&lt;/i&gt; is to be seen as set of connectivity constraints addressing arbitrary aspects of a &lt;i&gt;NetworkFeature&lt;/i&gt; such as functional, physical, logical, or even geometric properties.</documentation>
+    </annotation>
+  </complexType>
+  <complexType name="Abstract_SignaturePropertyType">
+    <sequence>
+      <element ref="utilcore:Abstract_Signature" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--FeatureGraph-->
+  <!--=========================================================================================-->
+  <element name="FeatureGraph" type="utilcore:FeatureGraphType" substitutionGroup="core:_CityObject" />
+  <complexType name="FeatureGraphType">
+    <annotation>
+      <documentation>The main concept of utility network modeling approach is the &lt;i&gt;dual representation&lt;/i&gt; of a &lt;i&gt;NetworkFeature &lt;/i&gt;according to which each network component can be represented both by its 3D topography and by means of a complementary graph structure called &lt;i&gt;FeatureGraph&lt;/i&gt;. The &lt;i&gt;FeatureGraph&lt;/i&gt; explicitly allows for a graph-based representation of each &lt;i&gt;NetworkFeature&lt;/i&gt;. A &lt;i&gt;FeatureGraph&lt;/i&gt; is modeled as feature collection of &lt;i&gt;Node&lt;/i&gt; and &lt;i&gt;Edge&lt;/i&gt; instances.</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="core:AbstractCityObjectType">
+        <sequence>
+          <element name="linkMember" type="utilcore:InteriorFeatureLinkPropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="nodeMember" type="utilcore:NodePropertyType" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FeatureGraphPropertyType">
+    <sequence>
+      <element ref="utilcore:FeatureGraph" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--InterFeatureLink-->
+  <!--=========================================================================================-->
+  <element name="InterFeatureLink" type="utilcore:InterFeatureLinkType" substitutionGroup="utilcore:Abstract_Edge" />
+  <complexType name="InterFeatureLinkType">
+    <annotation>
+      <documentation>The main purpose of &lt;i&gt;InterFeatureLink&lt;/i&gt; is to establish a topological connection between two network features. Since it is derived from &lt;i&gt;Edge&lt;/i&gt;, it can additionally be embedded into 3D space. However, the concept of the &lt;i&gt;InterFeatureLink&lt;/i&gt; has to be augmented such that it additionally provides information about whether the network components are connected on the same level or over different levels of the hierarchy (&lt;i&gt;InterFeatureLinkTypes&lt;/i&gt;).</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="utilcore:Abstract_EdgeType">
+        <sequence>
+          <element name="type" type="utilcore:InterFeatureLinkTypes" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="InterFeatureLinkPropertyType">
+    <sequence>
+      <element ref="utilcore:InterFeatureLink" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--InterFeatureLinkTypes-->
+  <!--=========================================================================================-->
+  <simpleType name="InterFeatureLinkTypes">
+    <restriction base="string">
+      <enumeration value="connects" />
+      <enumeration value="contains" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--InteriorFeatureLink-->
+  <!--=========================================================================================-->
+  <element name="InteriorFeatureLink" type="utilcore:InteriorFeatureLinkType" substitutionGroup="utilcore:Abstract_Edge" />
+  <complexType name="InteriorFeatureLinkType">
+    <annotation>
+      <documentation>In order to link a pair of nodes within the graph structure of a &lt;i&gt;NetworkFeature&lt;/i&gt;, a special type of edge called &lt;i&gt;InteriorFeatureLink&lt;/i&gt; is introduced which is only allowed to relate two nodes belonging to the same &lt;i&gt;FeatureGraph&lt;/i&gt; instance. Modeling a single &lt;i&gt;InteriorFeatureLink&lt;/i&gt; is not allowed because an edge has always to be bounded by exactly two nodes.</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="utilcore:Abstract_EdgeType" />
+    </complexContent>
+  </complexType>
+  <complexType name="InteriorFeatureLinkPropertyType">
+    <sequence>
+      <element ref="utilcore:InteriorFeatureLink" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Network-->
+  <!--=========================================================================================-->
+  <element name="Network" type="utilcore:NetworkType" substitutionGroup="core:_CityObject" />
+  <complexType name="NetworkType">
+    <annotation>
+      <documentation>The aggregation of &lt;i&gt;NetworkFeature&lt;/i&gt; instances to an entire utility network is called &lt;i&gt;Network&lt;/i&gt;. A&lt;i&gt; Network&lt;/i&gt; is characterized by a homogeneous type of commodity such as water, electricity, or gas. Analogously to &lt;i&gt;NetworkFeature&lt;/i&gt;,&lt;i&gt; &lt;/i&gt;a &lt;i&gt;Network&lt;/i&gt; employs the concept of &lt;i&gt;dual representation&lt;/i&gt;. Whereas its 3D topography is implicitly given by the 3D topography of its components, the graph-based mapping is explicitly modeled as &lt;i&gt;NetworkGraph&lt;/i&gt;.</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="core:AbstractCityObjectType">
+        <sequence>
+          <element name="linkMember" type="utilcore:NetworkLinkPropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="topoGraph" type="utilcore:NetworkGraphPropertyType" minOccurs="0" />
+          <element name="subNetwork" type="utilcore:NetworkPropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="component" type="utilcore:Abstract_NetworkFeaturePropertyType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NetworkPropertyType">
+    <sequence>
+      <element ref="utilcore:Network" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--NetworkGraph-->
+  <!--=========================================================================================-->
+  <element name="NetworkGraph" type="utilcore:NetworkGraphType" substitutionGroup="core:_CityObject" />
+  <complexType name="NetworkGraphType">
+    <annotation>
+      <documentation>A &lt;i&gt;NetworkGraph&lt;/i&gt; represents the graph structure of the entire utility network. For this purpose, it links the &lt;i&gt;FeatureGraph&lt;/i&gt; instances of the aggregated network features. Thus, a &lt;i&gt;NetworkGraph&lt;/i&gt; conceptually is to be seen as graph of graphs. It results from the pair-wise linking of exterior nodes in different &lt;i&gt;FeatureGraph &lt;/i&gt;instances being parts of the same &lt;i&gt;Network&lt;/i&gt;.</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="core:AbstractCityObjectType">
+        <sequence>
+          <element name="linkMember" type="utilcore:InterFeatureLinkPropertyType" minOccurs="0" maxOccurs="unbounded" />
+          <element name="featureGraphMember" type="utilcore:FeatureGraphPropertyType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NetworkGraphPropertyType">
+    <sequence>
+      <element ref="utilcore:NetworkGraph" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--NetworkLink-->
+  <!--=========================================================================================-->
+  <element name="NetworkLink" type="utilcore:NetworkLinkType" substitutionGroup="utilcore:Abstract_Edge" />
+  <complexType name="NetworkLinkType">
+    <annotation>
+      <documentation>&lt;i&gt;NetworkLink&lt;/i&gt; is defined to be used to connect the exterior nodes of two &lt;i&gt;FeatureGraph&lt;/i&gt; instances when crossing &lt;i&gt;Network&lt;/i&gt; borders (connecting to Networks of different commodity types).</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="utilcore:Abstract_EdgeType" />
+    </complexContent>
+  </complexType>
+  <complexType name="NetworkLinkPropertyType">
+    <sequence>
+      <element ref="utilcore:NetworkLink" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Node-->
+  <!--=========================================================================================-->
+  <element name="Node" type="utilcore:NodeType" substitutionGroup="gml:_Feature" />
+  <complexType name="NodeType">
+    <annotation>
+      <documentation>Due to the semantic differentiation of nodes and edges and the possibility to model attributes, the resulting graph can be classified as both typed and attributed. This requires the conceptual modeling of nodes and edges as semantic objects. Consequently, the topological primitives &lt;i&gt;TP_Node&lt;/i&gt; and &lt;i&gt;TP_Edge&lt;/i&gt; specified by ISO 19107 are infeasible for their representation. Nodes and edges are rather mapped onto two corresponding GFM feature types called &lt;i&gt;Node&lt;/i&gt; and &lt;i&gt;Edge&lt;/i&gt;. The geometric embedding of both &lt;i&gt;Node&lt;/i&gt; and &lt;i&gt;Edge&lt;/i&gt; is realized as spatial &lt;i&gt;realization&lt;/i&gt; association to a &lt;i&gt;GM_Point&lt;/i&gt; respectively a &lt;i&gt;GM_Curve&lt;/i&gt; primitive. Furthermore, the exterior nodes of the &lt;i&gt;FeatureGraph&lt;/i&gt; may denote a &lt;i&gt;ConnectionSignature&lt;/i&gt;.</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="connectionSignature" type="utilcore:Abstract_SignaturePropertyType" minOccurs="0" />
+          <element name="linkControl" type="utilcore:Abstract_LinkControlPropertyType" minOccurs="0" />
+          <element name="type" type="utilcore:NodeTypes" />
+          <element name="realization" type="gml:PointPropertyType" minOccurs="0" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NodePropertyType">
+    <sequence>
+      <element ref="utilcore:Node" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--NodeTypes-->
+  <!--=========================================================================================-->
+  <simpleType name="NodeTypes">
+    <annotation>
+      <documentation>The graph structure&lt;i&gt; &lt;/i&gt;follows the general principles of graph theory and has clear semantics. Two types of nodes were distinguished: exterior and interior nodes.</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="exterior" />
+      <enumeration value="interior" />
+    </restriction>
+  </simpleType>
+</schema>

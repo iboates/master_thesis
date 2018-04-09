@@ -1,0 +1,98 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:21-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilnetprop_SolidMedium">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:SolidMedium</gml:identifier>
+  <gml:name>utilnetprop:SolidMedium</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_SolidMedium_type">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:SolidMedium:attribute:type</gml:identifier>
+      <gml:name>utilnetprop:type</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_SolidMedium_type_SolidMediumTypes_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:SolidMedium:type:SolidMediumTypes:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_SolidMedium_type_SolidMediumTypes_carbonDust">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:SolidMedium:type:SolidMediumTypes:carbonDust</gml:identifier>
+          <gml:name>carbonDust</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_SolidMedium_type_SolidMediumTypes_ore">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:SolidMedium:type:SolidMediumTypes:ore</gml:identifier>
+          <gml:name>ore</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_SolidMedium_type_SolidMediumTypes_stone">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:SolidMedium:type:SolidMediumTypes:stone</gml:identifier>
+          <gml:name>stone</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_SolidMedium_type_SolidMediumTypes_sand">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:SolidMedium:type:SolidMediumTypes:sand</gml:identifier>
+          <gml:name>sand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>SolidMediumTypes</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_SolidMedium_isExplosive">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:SolidMedium:attribute:isExplosive</gml:identifier>
+      <gml:name>utilnetprop:isExplosive</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_SolidMedium_flammable">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:SolidMedium:attribute:flammable</gml:identifier>
+      <gml:name>utilnetprop:flammable</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>DoubleBetween0and1</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_SolidMedium_concentration">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:SolidMedium:attribute:concentration</gml:identifier>
+      <gml:name>utilnetprop:concentration</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>Measure</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_SolidMedium_electricConductivity">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:SolidMedium:attribute:electricConductivity</gml:identifier>
+      <gml:name>utilnetprop:electricConductivity</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>QuantityExtent</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_SolidMedium_pressureRange">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:SolidMedium:attribute:pressureRange</gml:identifier>
+      <gml:name>utilnetprop:pressureRange</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>QuantityExtent</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:utilnetprop:Abstract_CommodityType" />
+</TypeDefinition>

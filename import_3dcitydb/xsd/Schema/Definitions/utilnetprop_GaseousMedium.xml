@@ -1,0 +1,122 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:20-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilnetprop_GaseousMedium">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:GaseousMedium</gml:identifier>
+  <gml:name>utilnetprop:GaseousMedium</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_GaseousMedium_type">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:GaseousMedium:attribute:type</gml:identifier>
+      <gml:name>utilnetprop:type</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_GaseousMedium_type_GaseousMediumTypes_unknown">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:GaseousMedium:type:GaseousMediumTypes:unknown</gml:identifier>
+          <gml:name>unknown</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_GaseousMedium_type_GaseousMediumTypes_naturalGas">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:GaseousMedium:type:GaseousMediumTypes:naturalGas</gml:identifier>
+          <gml:name>naturalGas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_GaseousMedium_type_GaseousMediumTypes_helium">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:GaseousMedium:type:GaseousMediumTypes:helium</gml:identifier>
+          <gml:name>helium</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_GaseousMedium_type_GaseousMediumTypes_petroleumGas">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:GaseousMedium:type:GaseousMediumTypes:petroleumGas</gml:identifier>
+          <gml:name>petroleumGas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_GaseousMedium_type_GaseousMediumTypes_air">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:GaseousMedium:type:GaseousMediumTypes:air</gml:identifier>
+          <gml:name>air</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_GaseousMedium_type_GaseousMediumTypes_dioxygen">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:GaseousMedium:type:GaseousMediumTypes:dioxygen</gml:identifier>
+          <gml:name>dioxygen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_GaseousMedium_type_GaseousMediumTypes_nitrogen">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:GaseousMedium:type:GaseousMediumTypes:nitrogen</gml:identifier>
+          <gml:name>nitrogen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_GaseousMedium_type_GaseousMediumTypes_hydrogen">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:GaseousMedium:type:GaseousMediumTypes:hydrogen</gml:identifier>
+          <gml:name>hydrogen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="utilnetprop_GaseousMedium_type_GaseousMediumTypes_carbon">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:utilnetprop:GaseousMedium:type:GaseousMediumTypes:carbon</gml:identifier>
+          <gml:name>carbon</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>GaseousMediumTypes</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_GaseousMedium_concentration">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:GaseousMedium:attribute:concentration</gml:identifier>
+      <gml:name>utilnetprop:concentration</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Measure</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_GaseousMedium_isExplosive">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:GaseousMedium:attribute:isExplosive</gml:identifier>
+      <gml:name>utilnetprop:isExplosive</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_GaseousMedium_pressureRange">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:GaseousMedium:attribute:pressureRange</gml:identifier>
+      <gml:name>utilnetprop:pressureRange</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>QuantityExtent</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_GaseousMedium_electricConductivity">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:GaseousMedium:attribute:electricConductivity</gml:identifier>
+      <gml:name>utilnetprop:electricConductivity</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>QuantityExtent</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilnetprop_GaseousMedium_lighterThanAir">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilnetprop:GaseousMedium:attribute:lighterThanAir</gml:identifier>
+      <gml:name>utilnetprop:lighterThanAir</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:utilnetprop:Abstract_CommodityType" />
+</TypeDefinition>

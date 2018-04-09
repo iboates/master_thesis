@@ -1,0 +1,1622 @@
+#! <?xml version="1.0" encoding="iso-8859-1" ?>
+#! <TRANSFORMER
+# TRANSFORMER_BEGIN SmartCleaner_2013,1,Geometries,e70a093d-cc32-4553-ac51-28ba0a6363ed,"Embedded by Default",No,NO_PARALLELISM,,No,14230,YES,No
+# <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">SmartCleaner adds two new capabilities to the Intersector - extending undershot lines to intersection and deleting overshoots shorter than a specified length. </p>
+# <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">
+#     <br/>
+# </p>
+# <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Both the undershoot and overshoot tolerances may be taken from a feature attribute or a keyin. This transformer works only on lines, all other features are sent to the &lt;REJECTED&gt; port.</p>
+# <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">
+#     <br/>
+# </p>
+# <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">See http://knowledge.safe.com/articles/How_To/Example-of-the-SmartCleaner-Custom-Transformer for more information.</p>
+# <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">
+#     <br/>
+# </p>
+# 
+# TRANSFORMER_END
+#! PASSWORD=""
+#! ATTR_TYPE_ENCODING="SDF"
+#! VIEW_POSITION="45 -147"
+#! SHOW_INFO_NODES="true"
+#! FME_LINKED_TRANSFORMER_VERSION="1"
+#! FMX_INSERT_MODE="Embedded by Default"
+#! BLOCKED_LOOPING="No"
+#! DESCRIPTION="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;SmartCleaner adds two new capabilities to the Intersector - extending undershot lines to intersection and deleting overshoots shorter than a specified length. &lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Both the undershoot and overshoot tolerances may be taken from a feature attribute or a keyin. This transformer works only on lines, all other features are sent to the &amp;lt;REJECTED&amp;gt; port.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;See http://knowledge.safe.com/articles/How_To/Example-of-the-SmartCleaner-Custom-Transformer for more information.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;"
+#! TITLE="SmartCleaner_2013"
+#! MAX_LOOP_ITERATIONS=""
+#! ITERATION_COUNT_ATTR=""
+#! FME_BUILD_NUM="14230"
+#! ZOOM_SCALE="100"
+#! CATEGORY="Geometries"
+#! LEGAL_TERMS_CONDITIONS="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Copyright (c) 2013 Safe Software Inc.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Permission is granted to anyone, free of charge, to use, modify and distribute the object code form of this transformer for any purpose, subject to the following restrictions:&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1) The origin of this transformer and associated FME(R) software must not be misrepresented.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2) This transformer may only be used in conjunction with a validly licensed copy of FME software.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;THIS SOFTWARE IS PROVIDED BY SAFE SOFTWARE INC. &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, NONINFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SAFE SOFTWARE INC. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &lt;/p&gt;&#10;"
+#! FME_PROCESS_GROUP_BY=""
+#! USAGE="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The transformer has two parameters:&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;span style=&quot; font-weight:600;&quot;&gt;Extension Length:&lt;/span&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The distance to extend undershot lines in order to intersect another line.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;span style=&quot; font-weight:600;&quot;&gt;Overshoot Length:&lt;/span&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The minimum length a dangling line must be in order to be retained. &lt;/p&gt;&#10;"
+#! HISTORY="March&lt;space&gt;2006,Dave&lt;space&gt;Campanas,Initial&lt;space&gt;Creation,Jan&lt;space&gt;2013,Dave&lt;space&gt;Campanas,Restructured&lt;space&gt;to&lt;space&gt;make&lt;space&gt;use&lt;space&gt;of&lt;space&gt;2013&lt;space&gt;transformers"
+#! FME_DOCUMENT_PRIORGUID="d25a0bfb-5cef-47f0-8206-3604914f8f10"
+#! DOC_TOP_LEFT="52 -1731"
+#! XFORM_DEPRECATED="No"
+#! REQUIREMENTS_KEYWORD="none"
+#! LAST_SAVE_DATE="2015-08-26T17:25:33"
+#! WORKSPACE_VERSION="1"
+#! LAST_SAVE_BUILD="FME(R) 2014 (20140112 - Build 14230 - WIN32)"
+#! FME_SERVER_SERVICES=""
+#! REQUIREMENTS="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FME 2013 &lt;/p&gt;&#10;"
+#! DOC_EXTENTS="8227 1502"
+#! FME_DOCUMENT_GUID="e70a093d-cc32-4553-ac51-28ba0a6363ed"
+#! FME_PROCESS_COUNT="NO_PARALLELISM"
+#! SHOW_ANNOTATIONS="true"
+#! FME_PROCESS_GROUPS_ORDERED="No"
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI FLOAT_OR_ATTR LEN Extension Length:"
+#! DEFAULT_VALUE="1"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI OPTIONAL STRING_OR_ATTR VAL Overshoot Length:"
+#! DEFAULT_VALUE="1"
+#! IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#! IDENTIFIER="139"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Route any non-line features&#13;&lt;br&gt;to rejected port&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="617 -479"
+#! ORDER="40"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="617 -479"
+#! BOTTOM_RIGHT="617 -479"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="123"
+#! />
+#! <COMMENT
+#! IDENTIFIER="107"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Attached to other lines only&#13;&lt;br&gt;at the start, so extend end &#13;&lt;br&gt;of line&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="3230 -1176"
+#! ORDER="44"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="3230 -1176"
+#! BOTTOM_RIGHT="3230 -1176"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="98"
+#! />
+#! <COMMENT
+#! IDENTIFIER="108"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Attached to other lines only&#13;&lt;br&gt;at the end, so extend start&#13;&lt;br&gt;of line&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="3242 -229"
+#! ORDER="45"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="3242 -229"
+#! BOTTOM_RIGHT="3242 -229"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="95"
+#! />
+#! <COMMENT
+#! IDENTIFIER="120"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Flag extensions for&#13;&lt;br&gt;future cleanup&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="4002 -751"
+#! ORDER="48"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="4002 -751"
+#! BOTTOM_RIGHT="4002 -751"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="34"
+#! />
+#! <COMMENT
+#! IDENTIFIER="149"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Attached at both&#13;&lt;br&gt;ends, so no extension&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="3273 -1627"
+#! ORDER="50"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="3273 -1627"
+#! BOTTOM_RIGHT="3273 -1627"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="118"
+#! />
+#! <COMMENT
+#! IDENTIFIER="159"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Remove extended dangles&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="5758 -793"
+#! ORDER="53"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="5758 -793"
+#! BOTTOM_RIGHT="5758 -793"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="161"
+#! />
+#! <COMMENT
+#! IDENTIFIER="121"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Clean up unneeded&#13;&lt;br&gt;attributes&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="3996 -1422"
+#! ORDER="62"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="3996 -1422"
+#! BOTTOM_RIGHT="3996 -1422"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="36"
+#! />
+#! <COMMENT
+#! IDENTIFIER="76"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Fix geometry problems&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="1307 -669"
+#! ORDER="63"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="1307 -669"
+#! BOTTOM_RIGHT="1307 -669"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="141"
+#! />
+#! <COMMENT
+#! IDENTIFIER="77"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Intersect lines&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="1395 -1440"
+#! ORDER="64"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="1395 -1440"
+#! BOTTOM_RIGHT="1395 -1440"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="142"
+#! />
+#! <COMMENT
+#! IDENTIFIER="155"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Create node/line&#13;&lt;br&gt;topology to query&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="1907 -598"
+#! ORDER="65"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="1907 -598"
+#! BOTTOM_RIGHT="1907 -598"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="140"
+#! />
+#! <COMMENT
+#! IDENTIFIER="150"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Recreate query topology&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="5146 -792"
+#! ORDER="66"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="5146 -792"
+#! BOTTOM_RIGHT="5146 -792"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="99"
+#! />
+#! <COMMENT
+#! IDENTIFIER="78"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Fix geometry problems&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="4570 -797"
+#! ORDER="67"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="4570 -797"
+#! BOTTOM_RIGHT="4570 -797"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="152"
+#! />
+#! <COMMENT
+#! IDENTIFIER="79"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Intersect lines and extensions&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="4531 -1580"
+#! ORDER="68"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="4531 -1580"
+#! BOTTOM_RIGHT="4531 -1580"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="151"
+#! />
+#! <COMMENT
+#! IDENTIFIER="80"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Clean up attributes&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="5828 -1445"
+#! ORDER="69"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="5828 -1445"
+#! BOTTOM_RIGHT="5828 -1445"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="160"
+#! />
+#! <COMMENT
+#! IDENTIFIER="165"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Recreate query topology&#13;&lt;br&gt;with extensions removed&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="6404 -740"
+#! ORDER="70"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="6404 -740"
+#! BOTTOM_RIGHT="6404 -740"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="164"
+#! />
+#! <COMMENT
+#! IDENTIFIER="81"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Calculate line length&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="7019 -802"
+#! ORDER="71"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="7019 -802"
+#! BOTTOM_RIGHT="7019 -802"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="122"
+#! />
+#! <COMMENT
+#! IDENTIFIER="82"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Remove any dangling&#13;&lt;br&gt;lines less than Overshoot&#13;&lt;br&gt;Length&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="6988 -1453"
+#! ORDER="72"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="6988 -1453"
+#! BOTTOM_RIGHT="6988 -1453"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="167"
+#! />
+#! <COMMENT
+#! IDENTIFIER="83"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Clean up attributes&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="7649 -796"
+#! ORDER="73"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="7649 -796"
+#! BOTTOM_RIGHT="7649 -796"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="168"
+#! />
+#! <COMMENT
+#! IDENTIFIER="90"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Find dangling lines to extend&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="2453 -638"
+#! ORDER="75"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="2453 -638"
+#! BOTTOM_RIGHT="2453 -638"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="89"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#! IDENTIFIER="34"
+#! TYPE="AttributeCreator"
+#! VERSION="2"
+#! POSITION="3977 -900"
+#! ORDER="47"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_smartcleaner_extended,1"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="36"
+#! TYPE="AttributeRemover"
+#! VERSION="0"
+#! POSITION="3971 -1176"
+#! ORDER="49"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="_overlaps,_segments,_arc_id,_right_polygon,_left_polygon,_right_edge,_left_edge,_from_node,_to_node,_polygons,_copynum"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_3"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="123"
+#! TYPE="GeometryFilter"
+#! VERSION="4"
+#! POSITION="670 -627"
+#! ORDER="51"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="POINT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <OUTPUT_FEAT NAME="LINE"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <OUTPUT_FEAT NAME="ARC"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <OUTPUT_FEAT NAME="AREA"/>
+#! <FEAT_COLLAPSED COLLAPSED="3"/>
+#! <OUTPUT_FEAT NAME="ELLIPSE"/>
+#! <FEAT_COLLAPSED COLLAPSED="4"/>
+#! <OUTPUT_FEAT NAME="TEXT"/>
+#! <FEAT_COLLAPSED COLLAPSED="5"/>
+#! <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#! <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#! <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#! <OUTPUT_FEAT NAME="RASTER"/>
+#! <FEAT_COLLAPSED COLLAPSED="6"/>
+#! <OUTPUT_FEAT NAME="POINTCLOUD"/>
+#! <FEAT_COLLAPSED COLLAPSED="7"/>
+#! <OUTPUT_FEAT NAME="SURFACE"/>
+#! <FEAT_COLLAPSED COLLAPSED="8"/>
+#! <OUTPUT_FEAT NAME="SOLID"/>
+#! <FEAT_COLLAPSED COLLAPSED="9"/>
+#! <OUTPUT_FEAT NAME="COLLECTION"/>
+#! <FEAT_COLLAPSED COLLAPSED="10"/>
+#! <OUTPUT_FEAT NAME="NULL"/>
+#! <FEAT_COLLAPSED COLLAPSED="11"/>
+#! <OUTPUT_FEAT NAME="INSTANCE"/>
+#! <FEAT_COLLAPSED COLLAPSED="12"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryFilter"/>
+#! <XFORM_PARM PARM_NAME="BREAK_AGG" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="140"
+#! TYPE="TopologyBuilder"
+#! VERSION="6"
+#! POSITION="1895 -738"
+#! ORDER="43"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="NODE"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_node_number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_node_angle{}.fme_arc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_node_angle{}.fme_arc_angle" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="LINE"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="AREA"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="_polygon_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_perimeter" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_area" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_lines" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <OUTPUT_FEAT NAME="UNIVERSE"/>
+#! <FEAT_COLLAPSED COLLAPSED="3"/>
+#! <XFORM_ATTR ATTR_NAME="_polygon_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_perimeter" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_area" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_lines" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="OVERLAPPING_MODE" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="PROP_ATTRS" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="ALL_EDGES" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TopologyBuilder"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="CLEAN_DATA" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="ALLOW_CYCLES" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="MAX" PARM_VALUE="0"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="142"
+#! TYPE="Intersector"
+#! VERSION="7"
+#! POSITION="1320 -1111"
+#! ORDER="42"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="INTERSECTED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="NODE"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="_node_number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="DUPLICATE_Z_NODES" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
+#! <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Intersector"/>
+#! <XFORM_PARM PARM_NAME="GRP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SEPARATE_COLLINEAR_SEGMENTS" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="PERFORM_SELF_INTERSECTION" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SEG_ATTR" PARM_VALUE="_segments"/>
+#! <XFORM_PARM PARM_NAME="OV_ATTR" PARM_VALUE="_overlaps"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="141"
+#! TYPE="GeometryValidator"
+#! VERSION="1"
+#! POSITION="1307 -749"
+#! ORDER="41"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="PASSED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <OUTPUT_FEAT NAME="FAILED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <OUTPUT_FEAT NAME="REPAIRED"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_PARM PARM_NAME="SHELL_VALIDATION" PARM_VALUE="SHELL_VALIDATION"/>
+#! <XFORM_PARM PARM_NAME="CHECK_HOLE_TOUCHING_POLYGON" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="DUP_COORDS_CHECK_Z" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="PLANAR_TOLERANCE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NULL_REMOVAL" PARM_VALUE="NULL_REMOVAL"/>
+#! <XFORM_PARM PARM_NAME="TYPE_REPAIR" PARM_VALUE="TYPE_REPAIR"/>
+#! <XFORM_PARM PARM_NAME="SELF_INTERSECTING" PARM_VALUE="SELF_INTERSECTING"/>
+#! <XFORM_PARM PARM_NAME="SELF_INTERSECTING_PARAMS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PRESETS" PARM_VALUE="All"/>
+#! <XFORM_PARM PARM_NAME="ARC_ENDPOINT_TOLERANCE_MODE" PARM_VALUE="Auto"/>
+#! <XFORM_PARM PARM_NAME="RULES" PARM_VALUE="NAN_REMOVAL%&quot;&quot;%&quot;Yes&quot;%NULL_REMOVAL%&quot;&quot;%&quot;Yes&quot;%CONSECUTIVE_IDENTICAL_VERTICES_2D%CONSECUTIVE_IDENTICAL_VERTICES_2D_PARAMS%&quot;Yes&quot;%TYPE_REPAIR%TYPE_REPAIR_PARAMS%&quot;Yes&quot;%SELF_INTERSECTING%&quot;&quot;%&quot;Yes&quot;%MISSING_VERTEX_NORMALS%&quot;&quot;%&quot;Yes&quot;%PLANAR_SURFACE%PLANAR_SURFACE_PARAMS%&quot;Yes&quot;%SHELL_VALIDATION%&quot;&quot;%&quot;Yes&quot;%SOLID_VOID_REPAIR%&quot;&quot;%&quot;Yes&quot;%OGC_SIMPLE_CHECK%&quot;&quot;%&quot;No&quot;%OGC_VALID_CHECK%&quot;&quot;%&quot;No&quot;%MISSING_TEXTURE_COORDINATES%&quot;&quot;%&quot;Yes&quot;"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PLANAR_SURFACE" PARM_VALUE="PLANAR_SURFACE"/>
+#! <XFORM_PARM PARM_NAME="REPAIR" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="ISSUE_ATTR_NAME" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ARC_ENDPOINT_TOLERANCE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="MISSING_TEXTURE_COORDINATES" PARM_VALUE="MISSING_TEXTURE_COORDINATES"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryValidator"/>
+#! <XFORM_PARM PARM_NAME="PLANAR_SURFACE_PARAMS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SOLID_VOID_REPAIR" PARM_VALUE="SOLID_VOID_REPAIR"/>
+#! <XFORM_PARM PARM_NAME="OGC_SIMPLE_CHECK" PARM_VALUE="OGC_SIMPLE_CHECK"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="TYPE_REPAIR_PARAMS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PLANAR_TOLERANCE_MODE" PARM_VALUE="Auto"/>
+#! <XFORM_PARM PARM_NAME="NAN_REMOVAL" PARM_VALUE="NAN_REMOVAL"/>
+#! <XFORM_PARM PARM_NAME="MISSING_VERTEX_NORMALS" PARM_VALUE="MISSING_VERTEX_NORMALS"/>
+#! <XFORM_PARM PARM_NAME="OGC_VALID_CHECK" PARM_VALUE="OGC_VALID_CHECK"/>
+#! <XFORM_PARM PARM_NAME="CONSECUTIVE_IDENTICAL_VERTICES_2D" PARM_VALUE="CONSECUTIVE_IDENTICAL_VERTICES_2D"/>
+#! <XFORM_PARM PARM_NAME="CONSECUTIVE_IDENTICAL_VERTICES_2D_PARAMS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="95"
+#! TYPE="Extender"
+#! VERSION="1"
+#! POSITION="3260 -416"
+#! ORDER="76"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="BEGINNING"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="END"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="STRETCHED"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Extender"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="LEN" PARM_VALUE="$(LEN)"/>
+#! <XFORM_PARM PARM_NAME="NUM_SEGS" PARM_VALUE="1"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="98"
+#! TYPE="Extender"
+#! VERSION="1"
+#! POSITION="3291 -785"
+#! ORDER="46"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="BEGINNING"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="END"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="STRETCHED"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Extender_2"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="LEN" PARM_VALUE="$(LEN)"/>
+#! <XFORM_PARM PARM_NAME="NUM_SEGS" PARM_VALUE="1"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="118"
+#! TYPE="Cloner"
+#! VERSION="0"
+#! POSITION="3276 -1369"
+#! ORDER="74"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="COPY"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="COPYATT" PARM_VALUE="_copynum"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Cloner"/>
+#! <XFORM_PARM PARM_NAME="COPIES" PARM_VALUE="1"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="99"
+#! TYPE="TopologyBuilder"
+#! VERSION="6"
+#! POSITION="5177 -891"
+#! ORDER="52"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="NODE"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_node_number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_node_angle{}.fme_arc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_node_angle{}.fme_arc_angle" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="LINE"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="AREA"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="_polygon_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_perimeter" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_area" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_lines" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <OUTPUT_FEAT NAME="UNIVERSE"/>
+#! <FEAT_COLLAPSED COLLAPSED="3"/>
+#! <XFORM_ATTR ATTR_NAME="_polygon_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_perimeter" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_area" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_lines" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="OVERLAPPING_MODE" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="PROP_ATTRS" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="ALL_EDGES" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TopologyBuilder_2"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="CLEAN_DATA" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="ALLOW_CYCLES" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="MAX" PARM_VALUE="0"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="151"
+#! TYPE="Intersector"
+#! VERSION="7"
+#! POSITION="4599 -1259"
+#! ORDER="55"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="INTERSECTED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="NODE"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="_node_number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="DUPLICATE_Z_NODES" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
+#! <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Intersector_2"/>
+#! <XFORM_PARM PARM_NAME="GRP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SEPARATE_COLLINEAR_SEGMENTS" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="PERFORM_SELF_INTERSECTION" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SEG_ATTR" PARM_VALUE="_segments"/>
+#! <XFORM_PARM PARM_NAME="OV_ATTR" PARM_VALUE="_overlaps"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="152"
+#! TYPE="GeometryValidator"
+#! VERSION="1"
+#! POSITION="4592 -896"
+#! ORDER="54"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="PASSED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="FAILED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="REPAIRED"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_PARM PARM_NAME="SHELL_VALIDATION" PARM_VALUE="SHELL_VALIDATION"/>
+#! <XFORM_PARM PARM_NAME="CHECK_HOLE_TOUCHING_POLYGON" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="DUP_COORDS_CHECK_Z" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="PLANAR_TOLERANCE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NULL_REMOVAL" PARM_VALUE="NULL_REMOVAL"/>
+#! <XFORM_PARM PARM_NAME="TYPE_REPAIR" PARM_VALUE="TYPE_REPAIR"/>
+#! <XFORM_PARM PARM_NAME="SELF_INTERSECTING" PARM_VALUE="SELF_INTERSECTING"/>
+#! <XFORM_PARM PARM_NAME="SELF_INTERSECTING_PARAMS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PRESETS" PARM_VALUE="All"/>
+#! <XFORM_PARM PARM_NAME="ARC_ENDPOINT_TOLERANCE_MODE" PARM_VALUE="Auto"/>
+#! <XFORM_PARM PARM_NAME="RULES" PARM_VALUE="NAN_REMOVAL%&quot;&quot;%&quot;Yes&quot;%NULL_REMOVAL%&quot;&quot;%&quot;Yes&quot;%CONSECUTIVE_IDENTICAL_VERTICES_2D%CONSECUTIVE_IDENTICAL_VERTICES_2D_PARAMS%&quot;Yes&quot;%TYPE_REPAIR%TYPE_REPAIR_PARAMS%&quot;Yes&quot;%SELF_INTERSECTING%&quot;&quot;%&quot;Yes&quot;%MISSING_VERTEX_NORMALS%&quot;&quot;%&quot;Yes&quot;%PLANAR_SURFACE%PLANAR_SURFACE_PARAMS%&quot;Yes&quot;%SHELL_VALIDATION%&quot;&quot;%&quot;Yes&quot;%SOLID_VOID_REPAIR%&quot;&quot;%&quot;Yes&quot;%OGC_SIMPLE_CHECK%&quot;&quot;%&quot;No&quot;%OGC_VALID_CHECK%&quot;&quot;%&quot;No&quot;%MISSING_TEXTURE_COORDINATES%&quot;&quot;%&quot;Yes&quot;"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PLANAR_SURFACE" PARM_VALUE="PLANAR_SURFACE"/>
+#! <XFORM_PARM PARM_NAME="REPAIR" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="ISSUE_ATTR_NAME" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ARC_ENDPOINT_TOLERANCE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="MISSING_TEXTURE_COORDINATES" PARM_VALUE="MISSING_TEXTURE_COORDINATES"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryValidator_2"/>
+#! <XFORM_PARM PARM_NAME="PLANAR_SURFACE_PARAMS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SOLID_VOID_REPAIR" PARM_VALUE="SOLID_VOID_REPAIR"/>
+#! <XFORM_PARM PARM_NAME="OGC_SIMPLE_CHECK" PARM_VALUE="OGC_SIMPLE_CHECK"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="TYPE_REPAIR_PARAMS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PLANAR_TOLERANCE_MODE" PARM_VALUE="Auto"/>
+#! <XFORM_PARM PARM_NAME="NAN_REMOVAL" PARM_VALUE="NAN_REMOVAL"/>
+#! <XFORM_PARM PARM_NAME="MISSING_VERTEX_NORMALS" PARM_VALUE="MISSING_VERTEX_NORMALS"/>
+#! <XFORM_PARM PARM_NAME="OGC_VALID_CHECK" PARM_VALUE="OGC_VALID_CHECK"/>
+#! <XFORM_PARM PARM_NAME="CONSECUTIVE_IDENTICAL_VERTICES_2D" PARM_VALUE="CONSECUTIVE_IDENTICAL_VERTICES_2D"/>
+#! <XFORM_PARM PARM_NAME="CONSECUTIVE_IDENTICAL_VERTICES_2D_PARAMS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="161"
+#! TYPE="Tester"
+#! VERSION="2"
+#! POSITION="5783 -886"
+#! ORDER="61"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="PASSED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="FAILED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
+#! <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
+#! <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&quot;(1 OR 2) AND 3&quot;"/>
+#! <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="COMPOSITE"/>
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Evaluate&lt;openparen&gt;abs&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;_left_edge&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt; = &lt;at&gt;Value&lt;openparen&gt;_arc_id&lt;closeparen&gt;&#10;TEST &lt;at&gt;Evaluate&lt;openparen&gt;abs&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;_right_edge&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt; = &lt;at&gt;Value&lt;openparen&gt;_arc_id&lt;closeparen&gt;&#10;TEST &lt;at&gt;Value&lt;openparen&gt;_smartcleaner_extended&lt;closeparen&gt; = 1"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="160"
+#! TYPE="AttributeRemover"
+#! VERSION="0"
+#! POSITION="5787 -1191"
+#! ORDER="56"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="_overlaps,_segments,_arc_id,_right_polygon,_left_polygon,_right_edge,_left_edge,_from_node,_to_node,_polygons"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="164"
+#! TYPE="TopologyBuilder"
+#! VERSION="6"
+#! POSITION="6424 -885"
+#! ORDER="57"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="NODE"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_node_number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_node_angle{}.fme_arc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_node_angle{}.fme_arc_angle" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="LINE"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="AREA"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="_polygon_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_perimeter" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_area" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_lines" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <OUTPUT_FEAT NAME="UNIVERSE"/>
+#! <FEAT_COLLAPSED COLLAPSED="3"/>
+#! <XFORM_ATTR ATTR_NAME="_polygon_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_perimeter" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_area" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_lines" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="OVERLAPPING_MODE" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="PROP_ATTRS" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="ALL_EDGES" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TopologyBuilder_3"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="CLEAN_DATA" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="ALLOW_CYCLES" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="MAX" PARM_VALUE="0"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="167"
+#! TYPE="Tester"
+#! VERSION="2"
+#! POSITION="7016 -1139"
+#! ORDER="59"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="PASSED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="FAILED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
+#! <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
+#! <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&quot;(1 OR 2) AND 3&quot;"/>
+#! <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="COMPOSITE"/>
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_2"/>
+#! <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Evaluate&lt;openparen&gt;abs&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;_left_edge&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt; = &lt;at&gt;Value&lt;openparen&gt;_arc_id&lt;closeparen&gt;&#10;TEST &lt;at&gt;Evaluate&lt;openparen&gt;abs&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;_right_edge&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt; = &lt;at&gt;Value&lt;openparen&gt;_arc_id&lt;closeparen&gt;&#10;TEST &lt;at&gt;Value&lt;openparen&gt;_length&lt;closeparen&gt; &lt; $(VAL)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="122"
+#! TYPE="LengthCalculator"
+#! VERSION="0"
+#! POSITION="7019 -882"
+#! ORDER="58"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_smartcleaner_extended" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="LEN_ATTR" PARM_VALUE="_length"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="LengthCalculator"/>
+#! <XFORM_PARM PARM_NAME="MULT" PARM_VALUE="1"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="DIM" PARM_VALUE="2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="168"
+#! TYPE="AttributeRemover"
+#! VERSION="0"
+#! POSITION="7624 -882"
+#! ORDER="60"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="_smartcleaner_extended,_arc_id,_right_polygon,_left_polygon,_right_edge,_left_edge,_from_node,_to_node,_polygons,_length"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_2"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="89"
+#! TYPE="TestFilter"
+#! VERSION="1"
+#! POSITION="2522 -737"
+#! ORDER="77"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="BOTH"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="BEGINNING"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="END"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#! <FEAT_COLLAPSED COLLAPSED="3"/>
+#! <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_arc_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_right_polygon" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_left_polygon" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_right_edge" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_left_edge" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_from_node" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_to_node" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="_polygons" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="BOOL_OP&lt;comma&gt;AND&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Evaluate&lt;lt&gt;openparen&lt;gt&gt;abs&lt;lt&gt;openparen&lt;gt&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_right_edge&lt;lt&gt;closeparen&lt;gt&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_arc_id&lt;lt&gt;closeparen&lt;gt&gt;&lt;lf&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Evaluate&lt;lt&gt;openparen&lt;gt&gt;abs&lt;lt&gt;openparen&lt;gt&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_left_edge&lt;lt&gt;closeparen&lt;gt&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_arc_id&lt;lt&gt;closeparen&lt;gt&gt;&lt;quote&gt;,BOTH,BOOL_OP&lt;comma&gt;AND&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Evaluate&lt;lt&gt;openparen&lt;gt&gt;abs&lt;lt&gt;openparen&lt;gt&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_left_edge&lt;lt&gt;closeparen&lt;gt&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_arc_id&lt;lt&gt;closeparen&lt;gt&gt;&lt;quote&gt;,BEGINNING,BOOL_OP&lt;comma&gt;AND&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Evaluate&lt;lt&gt;openparen&lt;gt&gt;abs&lt;lt&gt;openparen&lt;gt&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_right_edge&lt;lt&gt;closeparen&lt;gt&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_arc_id&lt;lt&gt;closeparen&lt;gt&gt;&lt;quote&gt;,END"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestFilter_2"/>
+#! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#! IDENTIFIER="126"
+#! NAME="&lt;REJECTED&gt;"
+#! POSITION="1348 -1731"
+#! COLLAPSED="false"
+#! IS_SOURCE="false"
+#! ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#! IDENTIFIER="1"
+#! NAME="INPUT"
+#! POSITION="52 -653"
+#! COLLAPSED="false"
+#! PUBLISHED="true"
+#! IS_SOURCE="true"
+#! ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#! IDENTIFIER="2"
+#! NAME="CLEANED"
+#! POSITION="8279 -968"
+#! COLLAPSED="false"
+#! IS_SOURCE="false"
+#! ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="84"
+#! SOURCE_NODE="34"
+#! TARGET_NODE="36"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="124"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="123"
+#! SOURCE_PORT_DESC="0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="127"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="128"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 2"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="129"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 3"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="130"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 4"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="131"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 5"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="132"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 6"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="133"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 7"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="134"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 8"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="135"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 9"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="136"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 10"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="137"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 11"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="138"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="126"
+#! SOURCE_PORT_DESC="fo 12"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="144"
+#! SOURCE_NODE="142"
+#! TARGET_NODE="140"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="145"
+#! SOURCE_NODE="123"
+#! TARGET_NODE="141"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="146"
+#! SOURCE_NODE="141"
+#! TARGET_NODE="142"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="143"
+#! SOURCE_NODE="141"
+#! TARGET_NODE="142"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="147"
+#! SOURCE_NODE="141"
+#! TARGET_NODE="142"
+#! SOURCE_PORT_DESC="fo 2"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="105"
+#! SOURCE_NODE="95"
+#! TARGET_NODE="34"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="106"
+#! SOURCE_NODE="98"
+#! TARGET_NODE="34"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="148"
+#! SOURCE_NODE="118"
+#! TARGET_NODE="36"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="153"
+#! SOURCE_NODE="152"
+#! TARGET_NODE="151"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="154"
+#! SOURCE_NODE="152"
+#! TARGET_NODE="151"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="156"
+#! SOURCE_NODE="152"
+#! TARGET_NODE="151"
+#! SOURCE_PORT_DESC="fo 2"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="157"
+#! SOURCE_NODE="36"
+#! TARGET_NODE="152"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="158"
+#! SOURCE_NODE="151"
+#! TARGET_NODE="99"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="162"
+#! SOURCE_NODE="99"
+#! TARGET_NODE="161"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="166"
+#! SOURCE_NODE="160"
+#! TARGET_NODE="164"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="170"
+#! SOURCE_NODE="164"
+#! TARGET_NODE="122"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="171"
+#! SOURCE_NODE="122"
+#! TARGET_NODE="167"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="172"
+#! SOURCE_NODE="168"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="86"
+#! SOURCE_NODE="140"
+#! TARGET_NODE="118"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="87"
+#! SOURCE_NODE="161"
+#! TARGET_NODE="160"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="88"
+#! SOURCE_NODE="167"
+#! TARGET_NODE="168"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="94"
+#! SOURCE_NODE="140"
+#! TARGET_NODE="89"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="96"
+#! SOURCE_NODE="89"
+#! TARGET_NODE="95"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="100"
+#! SOURCE_NODE="89"
+#! TARGET_NODE="95"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="101"
+#! SOURCE_NODE="89"
+#! TARGET_NODE="98"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="102"
+#! SOURCE_NODE="89"
+#! TARGET_NODE="98"
+#! SOURCE_PORT_DESC="fo 2"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </TRANSFORMER>
+#! 
+DEFAULT_MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_LEN 1
+DEFAULT_MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_VAL 1
+#! START_HEADER
+#! END_HEADER
+
+LOG_FILTER_MASK -17
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+DEFAULT_MACRO SmartCleaner_2013_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(SmartCleaner_2013_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(SmartCleaner_2013_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_INPUT1440635133 Input Splitter"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_INPUT"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_INPUT"
+# -------------------------------------------------------------------------
+
+INCLUDE [    if {"No" == "Yes"} {       puts "MACRO COLLECTION_HANDLING *";    } else {       puts "MACRO COLLECTION_HANDLING NOT_THIS_TIME";    } ]
+MACRO OUTPUT_POINT_FTYPE x
+MACRO OUTPUT_POINT_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_POINT"
+MACRO OUTPUT_LINE_FTYPE x
+MACRO OUTPUT_LINE_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_LINE"
+MACRO OUTPUT_AREA_FTYPE x
+MACRO OUTPUT_AREA_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_AREA"
+MACRO OUTPUT_ARC_FTYPE x
+MACRO OUTPUT_ARC_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_ARC"
+MACRO OUTPUT_TEXT_FTYPE x
+MACRO OUTPUT_TEXT_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_TEXT"
+MACRO OUTPUT_ELLIPSE_FTYPE x
+MACRO OUTPUT_ELLIPSE_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"
+MACRO OUTPUT_RASTER_FTYPE x
+MACRO OUTPUT_RASTER_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_RASTER"
+MACRO OUTPUT_POINTCLOUD_FTYPE x
+MACRO OUTPUT_POINTCLOUD_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"
+MACRO OUTPUT_SURFACE_FTYPE x
+MACRO OUTPUT_SURFACE_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_SURFACE"
+MACRO OUTPUT_SOLID_FTYPE x
+MACRO OUTPUT_SOLID_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_SOLID"
+MACRO OUTPUT_COLLECTION_FTYPE x
+MACRO OUTPUT_COLLECTION_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_COLLECTION"
+MACRO OUTPUT_NULL_FTYPE x
+MACRO OUTPUT_NULL_FTYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_NULL"
+Lookup $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_RouterTable    ""              "x"    fme_point       $(OUTPUT_POINT_FTYPE)    fme_line        $(OUTPUT_LINE_FTYPE)    fme_area        $(OUTPUT_AREA_FTYPE)    fme_arc         $(OUTPUT_ARC_FTYPE)    fme_text        $(OUTPUT_TEXT_FTYPE)    fme_ellipse     $(OUTPUT_ELLIPSE_FTYPE)    fme_raster      $(OUTPUT_RASTER_FTYPE)    fme_point_cloud $(OUTPUT_POINTCLOUD_FTYPE)    fme_surface     $(OUTPUT_SURFACE_FTYPE)    fme_solid       $(OUTPUT_SOLID_FTYPE)    fme_collection  $(OUTPUT_COLLECTION_FTYPE)    fme_no_geom     $(OUTPUT_NULL_FTYPE)
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_InputPassThrough    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_INPUT"    OUTPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___AllInput___       @Geometry(FIX_FMETYPE_FMEGEOMETRY)
+FACTORY_DEF * TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_InstanceTest    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___AllInput___    TEST @Geometry(IS_GEOMETRY_INSTANCE) == 1    OUTPUT PASSED FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_INSTANCE"    OUTPUT FAILED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___RestInput___
+FACTORY_DEF $(COLLECTION_HANDLING) TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_CollectionTest    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___RestInput___    TEST &fme_type == "fme_collection"    OUTPUT FAILED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Not_Collection___    OUTPUT PASSED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Collection___
+FACTORY_DEF $(COLLECTION_HANDLING) DeaggregateFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_Deagg    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Collection___    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    OUTPUT POINT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___    OUTPUT LINE FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___    OUTPUT POLYGON FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___    OUTPUT DONUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___    OUTPUT AGGREGATE FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___RestInput___    OUTPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Prepped___        $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_099b7d96_2eff_42e4_b9a1_108f15bd45021_targetFeatureType @Lookup($(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_RouterTable,&fme_type)
+
+FACTORY_DEF * TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_Router    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Prepped___    TEST &$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_099b7d96_2eff_42e4_b9a1_108f15bd45021_targetFeatureType != "x"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(&$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_099b7d96_2eff_42e4_b9a1_108f15bd45021_targetFeatureType)                                 @RemoveAttributes($(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_099b7d96_2eff_42e4_b9a1_108f15bd45021_targetFeatureType)
+
+# -------------------------------------------------------------------------
+
+INCLUDE [   set RULES_LIST [split {NAN_REMOVAL%""%"Yes"%NULL_REMOVAL%""%"Yes"%CONSECUTIVE_IDENTICAL_VERTICES_2D%CONSECUTIVE_IDENTICAL_VERTICES_2D_PARAMS%"Yes"%TYPE_REPAIR%TYPE_REPAIR_PARAMS%"Yes"%SELF_INTERSECTING%""%"Yes"%MISSING_VERTEX_NORMALS%""%"Yes"%PLANAR_SURFACE%PLANAR_SURFACE_PARAMS%"Yes"%SHELL_VALIDATION%""%"Yes"%SOLID_VOID_REPAIR%""%"Yes"%OGC_SIMPLE_CHECK%""%"No"%OGC_VALID_CHECK%""%"No"%MISSING_TEXTURE_COORDINATES%""%"Yes"} {%} ];   set RULE_MACRO_STRING "MACRO RULE_LOOKUP ";   foreach RULE_BIT $RULES_LIST {     if {[string compare $RULE_BIT NAN_REMOVAL]==0} { append RULE_MACRO_STRING "NAN_REMOVAL "; }     elseif {[string compare $RULE_BIT NULL_REMOVAL]==0} { append RULE_MACRO_STRING "NULL_REMOVAL "; }     elseif {[string compare $RULE_BIT CONSECUTIVE_IDENTICAL_VERTICES_2D]==0} { append RULE_MACRO_STRING "CONSECUTIVE_IDENTICAL_VERTICES_2D "; }     elseif {[string compare $RULE_BIT TYPE_REPAIR]==0} { append RULE_MACRO_STRING "TYPE_REPAIR "; }     elseif {[string compare $RULE_BIT SELF_INTERSECTING]==0} { append RULE_MACRO_STRING "SELF_INTERSECTING "; }     elseif {[string compare $RULE_BIT MISSING_VERTEX_NORMALS]==0} { append RULE_MACRO_STRING "MISSING_VERTEX_NORMALS "; }     elseif {[string compare $RULE_BIT PLANAR_SURFACE]==0} { append RULE_MACRO_STRING "PLANAR_SURFACE "; }     elseif {[string compare $RULE_BIT SHELL_VALIDATION]==0} { append RULE_MACRO_STRING "SHELL_VALIDATION "; }     elseif {[string compare $RULE_BIT SOLID_VOID_REPAIR]==0} { append RULE_MACRO_STRING "SOLID_VOID_REPAIR "; }     elseif {[string compare $RULE_BIT OGC_SIMPLE_CHECK]==0} { append RULE_MACRO_STRING "OGC_SIMPLE_CHECK "; }     elseif {[string compare $RULE_BIT OGC_VALID_CHECK]==0} { append RULE_MACRO_STRING "OGC_VALID_CHECK "; }     elseif {[string compare $RULE_BIT MISSING_TEXTURE_COORDINATES]==0} { append RULE_MACRO_STRING "MISSING_TEXTURE_COORDINATES "; };   };   puts $RULE_MACRO_STRING ]
+
+
+FACTORY_DEF * GeometryValidationFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_LINE"    ISSUES_TO_CHECK $(RULE_LOOKUP)    REPAIR_MODE    PARAMS CONSECUTIVE_IDENTICAL_VERTICES_2D AUTO_REFINE NO CONSECUTIVE_IDENTICAL_VERTICES_2D CHECK_Z No PLANAR_SURFACE TOLERANCE_MODE Auto PLANAR_SURFACE TOLERANCE <Unused> TYPE_REPAIR ARC_ENDPOINT_TOLERANCE_MODE Auto TYPE_REPAIR ARC_ENDPOINT_TOLERANCE <Unused> SELF_INTERSECTING CHECK_HOLE_TOUCHING_POLYGON No    OUTPUT VALID FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_PASSED"    OUTPUT INVALID FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_FAILED"    OUTPUT REPAIRED FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_REPAIRED"
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    if { ({No} == {Yes}) } {        puts {MACRO SELFINTERSECTIONFACTORY *};        puts {MACRO INTERSECTIONINPUT INPUT FEATURE_TYPE ___TOINTER___};    } else {        puts {MACRO SELFINTERSECTIONFACTORY IGNORED};        puts {MACRO INTERSECTIONINPUT INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_FAILED"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_PASSED"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_REPAIRED" };    }; ]
+FACTORY_DEF $(SELFINTERSECTIONFACTORY) IntersectionFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Intersector_Self    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_FAILED"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_PASSED"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_REPAIRED"    IGNORE_NODE_HEIGHTS YES    SELF_INTERSECTION_ONLY    MODE COMPLETE    OUTPUT SEGMENT FEATURE_TYPE ___TOINTER___
+FACTORY_DEF * IntersectionFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Intersector_ALL    $(INTERSECTIONINPUT)    OVERLAP_COUNT_ATTRIBUTE "_overlaps"    SEGMENT_COUNT_ATTRIBUTE "_segments"    SEPARATE_COLLINEAR_SEGMENTS No    NODE_NUMBER_ATTR _node_number    IGNORE_NODE_HEIGHTS YES    MODE COMPLETE    OUTPUT SEGMENT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Intersector_INTERSECTED"
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_OVERLAPPING_MODE
+INCLUDE [ if {{No} == {Yes}} { puts "MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_OVERLAPPING_MODE OVERLAPPING_DATA_PREFIX_ATTR _overlapping_input_data" } ]
+FACTORY_DEF * TopologyFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Intersector_INTERSECTED"    ARC_NUMBER_ATTR _arc_id    FROM_NODE_ATTR  _from_node    TO_NODE_ATTR    _to_node    RIGHT_POLY_ATTR _right_polygon    LEFT_POLY_ATTR  _left_polygon    RIGHT_EDGE_ATTR _right_edge    LEFT_EDGE_ATTR  _left_edge    POLYGON_NUMBER_ATTR _polygon_id    PERIMETER_ATTR  _perimeter    ARCS_ATTR       _lines    POLYGONS_ATTR   _polygons    AREA_ATTR       _area    NODES_ATTR      _nodes    NODE_NUMBER_ATTR _node_number    ANGLE_PREFIX_ATTR _node_angle    PROPAGATE_ATTRS No    ALLOW_CYCLES No    ASSUME_CLEAN_DATA Yes    $($(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_OVERLAPPING_MODE)    START_EDGES_ONLY No    MAX_COORDS      0    MODE COMPLETE    UNIVERSE_GEOMETRY yes    OUTPUT LINE FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE"
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder LINE Splitter"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE_0_7eg+7AuC5Wc="   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE_1_7eg+7AuC5Wc="
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Cloner    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE_0_7eg+7AuC5Wc="    NUMBER_OF_COPIES 1    COPY_NUMBER_ATTRIBUTE _copynum    OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Cloner_COPY"
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE_1_7eg+7AuC5Wc="    OUTPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TESTFILTERINPUTLINE_0
+
+FACTORY_DEF * TestFactory FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TestFactory_0 INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TESTFILTERINPUTLINE_0 TEST @EvaluateExpression(STRING_ENCODED,<at>Evaluate<openparen>abs<openparen><at>Value<openparen>_right_edge<closeparen><closeparen><closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) = @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_arc_id<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) ENCODED TEST @EvaluateExpression(STRING_ENCODED,<at>Evaluate<openparen>abs<openparen><at>Value<openparen>_left_edge<closeparen><closeparen><closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) = @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_arc_id<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) ENCODED BOOLEAN_OPERATOR AND COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_BOTH OUTPUT FAILED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TESTFILTERINPUTLINE_1
+FACTORY_DEF * TestFactory FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TestFactory_1 INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TESTFILTERINPUTLINE_1 TEST @EvaluateExpression(STRING_ENCODED,<at>Evaluate<openparen>abs<openparen><at>Value<openparen>_left_edge<closeparen><closeparen><closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) = @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_arc_id<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) ENCODED BOOLEAN_OPERATOR AND COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_BEGINNING OUTPUT FAILED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TESTFILTERINPUTLINE_2
+FACTORY_DEF * TestFactory FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TestFactory_2 INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TESTFILTERINPUTLINE_2 TEST @EvaluateExpression(STRING_ENCODED,<at>Evaluate<openparen>abs<openparen><at>Value<openparen>_right_edge<closeparen><closeparen><closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) = @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_arc_id<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) ENCODED BOOLEAN_OPERATOR AND COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_END OUTPUT FAILED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TESTFILTERINPUTLINE_3
+FACTORY_DEF * TeeFactory FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_<lt>UNFILTERED<gt> INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TESTFILTERINPUTLINE_3 OUTPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_<lt>UNFILTERED<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2 BOTH Splitter"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_BOTH"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_BOTH_0_GXp94x+PzN0="   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_BOTH_1_GXp94x+PzN0="
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2 <lt>UNFILTERED<gt> Output Nuker"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_<lt>UNFILTERED<gt>"
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ExtensionFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Extender    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_BEGINNING"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_BOTH_1_GXp94x+PzN0="    EXTENSION_LENGTH "@EvaluateExpression(FLOAT,$($(SmartCleaner_2013_WORKSPACE_NAME)_LEN$encode),$(SmartCleaner_2013_WORKSPACE_NAME)_Extender)"    SEGMENTS_TO_AVERAGE "1"    OUTPUT BEGINNING FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Extender_BEGINNING"
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ExtensionFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Extender_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_BOTH_0_GXp94x+PzN0="    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_END"    EXTENSION_LENGTH "@EvaluateExpression(FLOAT,$($(SmartCleaner_2013_WORKSPACE_NAME)_LEN$encode),$(SmartCleaner_2013_WORKSPACE_NAME)_Extender_2)"    SEGMENTS_TO_AVERAGE "1"    OUTPUT END FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Extender_2_END"
+
+# -------------------------------------------------------------------------
+
+Tcl2 proc $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2_ce592b89_f9ee_4f4f_98aa_c08e83d91ed91_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING_ENCODED} $attrVal {$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2}];         };         FME_SetAttribute $attrName [FME_DecodeText $attrVal];     }; };
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Extender_BEGINNING"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Extender_2_END"    OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2_OUTPUT"         "@Tcl2( $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2_ce592b89_f9ee_4f4f_98aa_c08e83d91ed91_attrSetter {(_smartcleaner_extended,1)} )"
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_3_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_3    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Cloner_COPY"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2_OUTPUT"    OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_3_OUTPUT"        @RemoveAttributes(_overlaps,_segments,_arc_id,_right_polygon,_left_polygon,_right_edge,_left_edge,_from_node,_to_node,_polygons,_copynum)        @RemoveAttributes(fme_regexp_match"$($(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_3_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+INCLUDE [   set RULES_LIST [split {NAN_REMOVAL%""%"Yes"%NULL_REMOVAL%""%"Yes"%CONSECUTIVE_IDENTICAL_VERTICES_2D%CONSECUTIVE_IDENTICAL_VERTICES_2D_PARAMS%"Yes"%TYPE_REPAIR%TYPE_REPAIR_PARAMS%"Yes"%SELF_INTERSECTING%""%"Yes"%MISSING_VERTEX_NORMALS%""%"Yes"%PLANAR_SURFACE%PLANAR_SURFACE_PARAMS%"Yes"%SHELL_VALIDATION%""%"Yes"%SOLID_VOID_REPAIR%""%"Yes"%OGC_SIMPLE_CHECK%""%"No"%OGC_VALID_CHECK%""%"No"%MISSING_TEXTURE_COORDINATES%""%"Yes"} {%} ];   set RULE_MACRO_STRING "MACRO RULE_LOOKUP ";   foreach RULE_BIT $RULES_LIST {     if {[string compare $RULE_BIT NAN_REMOVAL]==0} { append RULE_MACRO_STRING "NAN_REMOVAL "; }     elseif {[string compare $RULE_BIT NULL_REMOVAL]==0} { append RULE_MACRO_STRING "NULL_REMOVAL "; }     elseif {[string compare $RULE_BIT CONSECUTIVE_IDENTICAL_VERTICES_2D]==0} { append RULE_MACRO_STRING "CONSECUTIVE_IDENTICAL_VERTICES_2D "; }     elseif {[string compare $RULE_BIT TYPE_REPAIR]==0} { append RULE_MACRO_STRING "TYPE_REPAIR "; }     elseif {[string compare $RULE_BIT SELF_INTERSECTING]==0} { append RULE_MACRO_STRING "SELF_INTERSECTING "; }     elseif {[string compare $RULE_BIT MISSING_VERTEX_NORMALS]==0} { append RULE_MACRO_STRING "MISSING_VERTEX_NORMALS "; }     elseif {[string compare $RULE_BIT PLANAR_SURFACE]==0} { append RULE_MACRO_STRING "PLANAR_SURFACE "; }     elseif {[string compare $RULE_BIT SHELL_VALIDATION]==0} { append RULE_MACRO_STRING "SHELL_VALIDATION "; }     elseif {[string compare $RULE_BIT SOLID_VOID_REPAIR]==0} { append RULE_MACRO_STRING "SOLID_VOID_REPAIR "; }     elseif {[string compare $RULE_BIT OGC_SIMPLE_CHECK]==0} { append RULE_MACRO_STRING "OGC_SIMPLE_CHECK "; }     elseif {[string compare $RULE_BIT OGC_VALID_CHECK]==0} { append RULE_MACRO_STRING "OGC_VALID_CHECK "; }     elseif {[string compare $RULE_BIT MISSING_TEXTURE_COORDINATES]==0} { append RULE_MACRO_STRING "MISSING_TEXTURE_COORDINATES "; };   };   puts $RULE_MACRO_STRING ]
+
+
+FACTORY_DEF * GeometryValidationFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_3_OUTPUT"    ISSUES_TO_CHECK $(RULE_LOOKUP)    REPAIR_MODE    PARAMS CONSECUTIVE_IDENTICAL_VERTICES_2D AUTO_REFINE NO CONSECUTIVE_IDENTICAL_VERTICES_2D CHECK_Z No PLANAR_SURFACE TOLERANCE_MODE Auto PLANAR_SURFACE TOLERANCE <Unused> TYPE_REPAIR ARC_ENDPOINT_TOLERANCE_MODE Auto TYPE_REPAIR ARC_ENDPOINT_TOLERANCE <Unused> SELF_INTERSECTING CHECK_HOLE_TOUCHING_POLYGON No    OUTPUT VALID FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_2_PASSED"    OUTPUT INVALID FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_2_FAILED"    OUTPUT REPAIRED FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_2_REPAIRED"
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    if { ({No} == {Yes}) } {        puts {MACRO SELFINTERSECTIONFACTORY *};        puts {MACRO INTERSECTIONINPUT INPUT FEATURE_TYPE ___TOINTER___};    } else {        puts {MACRO SELFINTERSECTIONFACTORY IGNORED};        puts {MACRO INTERSECTIONINPUT INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_2_PASSED"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_2_REPAIRED"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_2_FAILED" };    }; ]
+FACTORY_DEF $(SELFINTERSECTIONFACTORY) IntersectionFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Intersector_2_Self    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_2_PASSED"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_2_REPAIRED"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryValidator_2_FAILED"    IGNORE_NODE_HEIGHTS YES    SELF_INTERSECTION_ONLY    MODE COMPLETE    OUTPUT SEGMENT FEATURE_TYPE ___TOINTER___
+FACTORY_DEF * IntersectionFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Intersector_2_ALL    $(INTERSECTIONINPUT)    OVERLAP_COUNT_ATTRIBUTE "_overlaps"    SEGMENT_COUNT_ATTRIBUTE "_segments"    SEPARATE_COLLINEAR_SEGMENTS No    NODE_NUMBER_ATTR _node_number    IGNORE_NODE_HEIGHTS YES    MODE COMPLETE    OUTPUT SEGMENT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Intersector_2_INTERSECTED"
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_2_OVERLAPPING_MODE
+INCLUDE [ if {{No} == {Yes}} { puts "MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_2_OVERLAPPING_MODE OVERLAPPING_DATA_PREFIX_ATTR _overlapping_input_data" } ]
+FACTORY_DEF * TopologyFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Intersector_2_INTERSECTED"    ARC_NUMBER_ATTR _arc_id    FROM_NODE_ATTR  _from_node    TO_NODE_ATTR    _to_node    RIGHT_POLY_ATTR _right_polygon    LEFT_POLY_ATTR  _left_polygon    RIGHT_EDGE_ATTR _right_edge    LEFT_EDGE_ATTR  _left_edge    POLYGON_NUMBER_ATTR _polygon_id    PERIMETER_ATTR  _perimeter    ARCS_ATTR       _lines    POLYGONS_ATTR   _polygons    AREA_ATTR       _area    NODES_ATTR      _nodes    NODE_NUMBER_ATTR _node_number    ANGLE_PREFIX_ATTR _node_angle    PROPAGATE_ATTRS No    ALLOW_CYCLES No    ASSUME_CLEAN_DATA Yes    $($(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_2_OVERLAPPING_MODE)    START_EDGES_ONLY No    MAX_COORDS      0    MODE COMPLETE    UNIVERSE_GEOMETRY yes    OUTPUT LINE FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_2_LINE"
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Tester    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_2_LINE"    TEST @EvaluateExpression(STRING_ENCODED,<at>Evaluate<openparen>abs<openparen><at>Value<openparen>_left_edge<closeparen><closeparen><closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_Tester) = @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_arc_id<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_Tester) ENCODED TEST @EvaluateExpression(STRING_ENCODED,<at>Evaluate<openparen>abs<openparen><at>Value<openparen>_right_edge<closeparen><closeparen><closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_Tester) = @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_arc_id<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_Tester) ENCODED TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_smartcleaner_extended<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_Tester) = 1 ENCODED    BOOLEAN_OPERATOR COMPOSITE    COMPOSITE_TEST_EXPR "(1 OR 2) AND 3"    OUTPUT FAILED FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Tester_FAILED"
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Tester_FAILED"    OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_OUTPUT"        @RemoveAttributes(_overlaps,_segments,_arc_id,_right_polygon,_left_polygon,_right_edge,_left_edge,_from_node,_to_node,_polygons)        @RemoveAttributes(fme_regexp_match"$($(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_3_OVERLAPPING_MODE
+INCLUDE [ if {{No} == {Yes}} { puts "MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_3_OVERLAPPING_MODE OVERLAPPING_DATA_PREFIX_ATTR _overlapping_input_data" } ]
+FACTORY_DEF * TopologyFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_3    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_OUTPUT"    ARC_NUMBER_ATTR _arc_id    FROM_NODE_ATTR  _from_node    TO_NODE_ATTR    _to_node    RIGHT_POLY_ATTR _right_polygon    LEFT_POLY_ATTR  _left_polygon    RIGHT_EDGE_ATTR _right_edge    LEFT_EDGE_ATTR  _left_edge    POLYGON_NUMBER_ATTR _polygon_id    PERIMETER_ATTR  _perimeter    ARCS_ATTR       _lines    POLYGONS_ATTR   _polygons    AREA_ATTR       _area    NODES_ATTR      _nodes    NODE_NUMBER_ATTR _node_number    ANGLE_PREFIX_ATTR _node_angle    PROPAGATE_ATTRS No    ALLOW_CYCLES No    ASSUME_CLEAN_DATA Yes    $($(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_3_OVERLAPPING_MODE)    START_EDGES_ONLY No    MAX_COORDS      0    MODE COMPLETE    UNIVERSE_GEOMETRY yes    OUTPUT LINE FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_3_LINE"
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_LengthCalculator    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_3_LINE"    OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_LengthCalculator_OUTPUT"         "_length" @Length(2,1)
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Tester_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_LengthCalculator_OUTPUT"    TEST @EvaluateExpression(STRING_ENCODED,<at>Evaluate<openparen>abs<openparen><at>Value<openparen>_left_edge<closeparen><closeparen><closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_Tester_2) = @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_arc_id<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_Tester_2) ENCODED TEST @EvaluateExpression(STRING_ENCODED,<at>Evaluate<openparen>abs<openparen><at>Value<openparen>_right_edge<closeparen><closeparen><closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_Tester_2) = @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_arc_id<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_Tester_2) ENCODED TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_length<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_Tester_2) < @EvaluateExpression(STRING_ENCODED,$($(SmartCleaner_2013_WORKSPACE_NAME)_VAL$encode),$(SmartCleaner_2013_WORKSPACE_NAME)_Tester_2) ENCODED    BOOLEAN_OPERATOR COMPOSITE    COMPOSITE_TEST_EXPR "(1 OR 2) AND 3"    OUTPUT FAILED FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Tester_2_FAILED"
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Tester_2_FAILED"    OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(_smartcleaner_extended,_arc_id,_right_polygon,_left_polygon,_right_edge,_left_edge,_from_node,_to_node,_polygons,_length)        @RemoveAttributes(fme_regexp_match"$($(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP)")
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_<REJECTED>1440635133 Output Collector"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_NULL"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_ARC"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_POINT"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_TEXT"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_AREA"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_COLLECTION"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_SURFACE"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_RASTER"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_SOLID"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_INSTANCE"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_<REJECTED>"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_CLEANED1440635133 Output Collector"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_CLEANED"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(SmartCleaner_2013_WORKSPACE_NAME))}]

@@ -1,0 +1,38 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 22.08.2012 09:24:14-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="utilcore_Abstract_NetworkFeature">
+  <gml:description>&lt;i&gt;NetworkFeature&lt;/i&gt; is an abstract concept which maps topographic network components onto respective General Feature Model (GFM, ISO 19109) feature types. It allows for the modeling of thematic properties as well as the definition of taxonomies and partonomies of network components. Hence, it forms the base for the semantic modeling of concrete network features in various infrastructures such as gas, power, or water supply networks.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_NetworkFeature</gml:identifier>
+  <gml:name>utilcore:Abstract_NetworkFeature</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Abstract_NetworkFeature_topoGraph">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_NetworkFeature:association-role:topoGraph</gml:identifier>
+      <gml:name>utilcore:topoGraph</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcore:FeatureGraph" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Abstract_NetworkFeature_consistsOf">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_NetworkFeature:association-role:consistsOf</gml:identifier>
+      <gml:name>utilcore:consistsOf</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:utilcore:Abstract_NetworkFeature" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="utilcore_Abstract_NetworkFeature_connectedCityObject">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:utilcore:Abstract_NetworkFeature:association-role:connectedCityObject</gml:identifier>
+      <gml:name>utilcore:connectedCityObject</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:core:_CityObject" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:core:_CityObject" />
+</TypeDefinition>

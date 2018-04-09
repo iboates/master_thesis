@@ -21,7 +21,7 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   DESTINATION_ROUTING_FILE=""
 #!   BEGIN_TCL=""
-#!   FME_DOCUMENT_PRIORGUID="53658611-3f78-42d9-89f9-484d62259cdf,f75168d1-28e4-4a38-9ddc-e61c82a38b9c,a7cb4c0c-339d-4319-9203-301fc57e8b21,fb0bc165-b0f4-4aa2-9fd8-059c5ff2f61a,b402945e-5d54-43f0-8af4-0f7948deb41e,2bb432ef-353b-4ee9-9200-fa6c965b9bac,0d5a21a7-94ee-4b9f-81bc-8b4460909296,43b61353-6085-4417-b31b-565d68243f71,94450f10-47cc-11e7-b557-40e230b7519d,4f6ad148-4882-11e7-8271-40e230b7519d,9c9ff602-4885-11e7-8271-40e230b7519d,200284e7-c877-4b17-9816-00aea025973b,a0e850c2-0afd-4cb5-b37f-1957523b3268,19b1c051-348d-4f68-be43-980742409477,a74b8a3a-1817-42ad-be68-39e8faa37cf2,ab8608c4-882a-46fe-a5aa-52c9604708ea,a5639562-f36e-4fb8-bb0d-d5f13d1437c4,ba9dd3aa-4713-4767-a4b7-0138576568ba,4fff1da4-b39d-4e7c-9aab-6c3256d5a41b,3ca99353-2b6f-4b65-8587-a008e00a30b2,04519f1f-ef03-4aa4-840a-ed04b3965f3d,04a3de54-d957-48a6-bad7-b37b3ec57509,548258ba-5b59-11e7-9f4e-7824afca2075,ee7a9bd2-6255-11e7-9e72-7824afca2075,a8cd17e0-62fa-11e7-bb4b-7824afca2075,6def4a12-630e-11e7-bb4b-7824afca2075,12d59278-631b-11e7-bb4b-7824afca2075,2c270d00-63f3-11e7-a6bf-7824afca2075,28fd2448-6416-11e7-a6bf-7824afca2075,c89991e2-648b-11e7-b3a6-7824afca2075,494ca2e6-64ca-11e7-b3a6-7824afca2075,c3e47c8c-687a-11e7-a289-7824afca2075,3c022c04-79fc-11e7-8c66-7824afca2075,92f0fff8-7a89-11e7-8ab8-7824afca2075,f717886a-7a95-11e7-8ab8-7824afca2075,4efc9bf6-7df7-11e7-ae06-7824afca2075,754099f4-7e7c-11e7-a12c-7824afca2075,da923182-7e81-11e7-a12c-7824afca2075,f3232604-7e84-11e7-a12c-7824afca2075,68d46474-7e87-11e7-a12c-7824afca2075,c5efdb04-82b8-11e7-a209-7824afca2075,61416036-82ba-11e7-a209-7824afca2075,696e7ba2-9f95-11e7-84f8-7824afca2075,e2456a54-9f95-11e7-84f8-7824afca2075,c393ef78-a1e7-11e7-a25c-40e230b7519d,2dacd4c4-371b-11e8-9f54-40e230b7519d,ec6b159c-371b-11e8-9f54-40e230b7519d,7d3f5f68-371e-11e8-9f54-40e230b7519d,ad4ecbb4-37e4-11e8-904f-40e230b7519d,e8d2b7ea-37f3-11e8-904f-40e230b7519d,f93ba69a-38b2-11e8-a9b4-40e230b7519d,fd13bb0c-39a4-11e8-b6a4-7824afca2075,3a1e1278-39a9-11e8-b6a4-7824afca2075,8eb70062-39b1-11e8-b6a4-7824afca2075,5e2d3bcf-e59d-49f2-b75a-bfca24f3555d,2b5e4089-7047-47e5-97f7-843c0cf83d74"
+#!   FME_DOCUMENT_PRIORGUID="53658611-3f78-42d9-89f9-484d62259cdf,f75168d1-28e4-4a38-9ddc-e61c82a38b9c,a7cb4c0c-339d-4319-9203-301fc57e8b21,fb0bc165-b0f4-4aa2-9fd8-059c5ff2f61a,b402945e-5d54-43f0-8af4-0f7948deb41e,2bb432ef-353b-4ee9-9200-fa6c965b9bac,0d5a21a7-94ee-4b9f-81bc-8b4460909296,43b61353-6085-4417-b31b-565d68243f71,94450f10-47cc-11e7-b557-40e230b7519d,4f6ad148-4882-11e7-8271-40e230b7519d,9c9ff602-4885-11e7-8271-40e230b7519d,200284e7-c877-4b17-9816-00aea025973b,a0e850c2-0afd-4cb5-b37f-1957523b3268,19b1c051-348d-4f68-be43-980742409477,a74b8a3a-1817-42ad-be68-39e8faa37cf2,ab8608c4-882a-46fe-a5aa-52c9604708ea,a5639562-f36e-4fb8-bb0d-d5f13d1437c4,ba9dd3aa-4713-4767-a4b7-0138576568ba,4fff1da4-b39d-4e7c-9aab-6c3256d5a41b,3ca99353-2b6f-4b65-8587-a008e00a30b2,04519f1f-ef03-4aa4-840a-ed04b3965f3d,04a3de54-d957-48a6-bad7-b37b3ec57509,548258ba-5b59-11e7-9f4e-7824afca2075,ee7a9bd2-6255-11e7-9e72-7824afca2075,a8cd17e0-62fa-11e7-bb4b-7824afca2075,6def4a12-630e-11e7-bb4b-7824afca2075,12d59278-631b-11e7-bb4b-7824afca2075,2c270d00-63f3-11e7-a6bf-7824afca2075,28fd2448-6416-11e7-a6bf-7824afca2075,c89991e2-648b-11e7-b3a6-7824afca2075,494ca2e6-64ca-11e7-b3a6-7824afca2075,c3e47c8c-687a-11e7-a289-7824afca2075,3c022c04-79fc-11e7-8c66-7824afca2075,92f0fff8-7a89-11e7-8ab8-7824afca2075,f717886a-7a95-11e7-8ab8-7824afca2075,4efc9bf6-7df7-11e7-ae06-7824afca2075,754099f4-7e7c-11e7-a12c-7824afca2075,da923182-7e81-11e7-a12c-7824afca2075,f3232604-7e84-11e7-a12c-7824afca2075,68d46474-7e87-11e7-a12c-7824afca2075,c5efdb04-82b8-11e7-a209-7824afca2075,61416036-82ba-11e7-a209-7824afca2075,696e7ba2-9f95-11e7-84f8-7824afca2075,e2456a54-9f95-11e7-84f8-7824afca2075,c393ef78-a1e7-11e7-a25c-40e230b7519d,2dacd4c4-371b-11e8-9f54-40e230b7519d,ec6b159c-371b-11e8-9f54-40e230b7519d,7d3f5f68-371e-11e8-9f54-40e230b7519d,ad4ecbb4-37e4-11e8-904f-40e230b7519d,e8d2b7ea-37f3-11e8-904f-40e230b7519d,f93ba69a-38b2-11e8-a9b4-40e230b7519d,fd13bb0c-39a4-11e8-b6a4-7824afca2075,3a1e1278-39a9-11e8-b6a4-7824afca2075,8eb70062-39b1-11e8-b6a4-7824afca2075,5e2d3bcf-e59d-49f2-b75a-bfca24f3555d,2b5e4089-7047-47e5-97f7-843c0cf83d74,d6927dfa-8d15-415a-a390-3dc598b6fe26"
 #!   USE_MARKDOWN=""
 #!   END_TCL=""
 #!   WARN_INVALID_XFORM_PARAM="Yes"
@@ -32,10 +32,10 @@
 #!   LAST_SAVE_BUILD="FME(R) 2017.1.1.0 (20170929 - Build 17650 - WIN64)"
 #!   DOC_TOP_LEFT="-14280.1 -13848"
 #!   PYTHON_COMPATIBILITY="27"
-#!   ZOOM_SCALE="81"
-#!   FME_DOCUMENT_GUID="d6927dfa-8d15-415a-a390-3dc598b6fe26"
+#!   ZOOM_SCALE="55"
+#!   FME_DOCUMENT_GUID="e4dde046-a14c-42fb-9e5e-669af7b7ad2d"
 #!   SHOW_INFO_NODES="true"
-#!   VIEW_POSITION="-5447.59 1832.58"
+#!   VIEW_POSITION="-8897.82 -6994.39"
 #!   DOC_EXTENTS="13894.4 17050.4"
 #!   FME_BUILD_NUM="17650"
 #!   TERMINATE_REJECTED="NO"
@@ -47,7 +47,7 @@
 #!   IGNORE_READER_FAILURE="No"
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
-#!   LAST_SAVE_DATE="2018-04-09T15:24:29"
+#!   LAST_SAVE_DATE="2018-04-09T15:57:52"
 #!   TITLE=""
 #!   FME_REPROJECTION_ENGINE="FME"
 #!   MARKDOWN_DESCRIPTION=""
@@ -4491,8 +4491,8 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="408"
 #!   FEAT_GEOMTYPE="shape_point"
-#!   POSITION="-12758.6 -10291.8"
-#!   BOUNDING_RECT="-12758.6 -10291.8 -1 -1"
+#!   POSITION="-13052.6 -10291.8"
+#!   BOUNDING_RECT="-13052.6 -10291.8 723.96 71"
 #!   ORDER="5e+14"
 #!   COLLAPSED="true"
 #!   KEYWORD="ESRISHAPE_3"
@@ -5784,7 +5784,7 @@
 #!   BOUNDING_RECT="-11290.4 3202.36 5999.44 2654.85"
 #!   STICKY="true"
 #!   COLOUR="0.203922,0.00392157,0.0431373"
-#!   CONTENTS="92 416 458 420 418 492 20 553 61 197 15 63 16 40 200 64 26 417 561 136 421 423 415 560 422 80 212 25 65 562 414 62 111 425 419 "
+#!   CONTENTS="553 16 458 20 421 422 136 25 64 61 197 417 26 80 200 420 92 414 560 40 492 423 65 62 418 15 63 561 419 416 562 111 415 425 212 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="151"
@@ -5795,7 +5795,7 @@
 #!   BOUNDING_RECT="-11264.1 341.383 8753.21 3941.42"
 #!   STICKY="true"
 #!   COLOUR="0.439216,0.564706,0.364706"
-#!   CONTENTS="535 22 454 546 118 120 428 441 445 627 169 51 170 28 332 145 49 126 433 431 545 635 434 547 570 45 452 618 79 436 13 31 456 30 542 329 103 331 453 437 89 101 543 435 191 175 554 32 628 125 451 146 176 444 632 430 633 448 98 427 447 330 48 159 625 27 449 439 397 328 327 47 429 165 167 52 166 534 569 78 128 46 626 634 630 629 50 12 443 548 97 455 413 432 172 23 442 129 161 438 446 96 29 53 396 "
+#!   CONTENTS="628 446 444 445 27 329 170 535 542 634 629 455 441 51 626 439 429 635 554 172 97 396 52 570 397 145 101 447 50 442 22 159 632 126 454 176 449 31 448 169 437 432 452 547 89 435 327 627 456 427 332 431 328 543 161 128 118 125 548 191 534 451 79 546 175 98 28 45 165 438 103 32 625 166 618 433 120 430 443 434 96 78 436 167 633 330 49 13 569 47 331 630 413 46 48 29 53 146 23 453 30 12 129 545 428 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="159"
@@ -5806,7 +5806,7 @@
 #!   BOUNDING_RECT="-8794.51 -2377.3 2691.48 1133.29"
 #!   STICKY="true"
 #!   COLOUR="0.439216,0.564706,0.364706"
-#!   CONTENTS="47 431 430 635 433 48 118 432 45 120 46 "
+#!   CONTENTS="47 46 48 432 433 45 118 635 120 430 431 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="173"
@@ -5817,7 +5817,7 @@
 #!   BOUNDING_RECT="-11252.7 -3633.78 8769.15 1482.49"
 #!   STICKY="true"
 #!   COLOUR="0.0156863,0.00784314,0.392157"
-#!   CONTENTS="405 59 404 57 41 56 465 112 464 467 43 131 148 54 468 117 462 58 115 130 135 461 460 116 466 55 44 132 459 42 463 60 133 "
+#!   CONTENTS="117 465 466 55 459 461 57 460 44 405 58 112 463 130 116 42 133 59 43 132 41 54 56 468 135 464 462 148 115 131 60 404 467 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="412"
@@ -5828,7 +5828,7 @@
 #!   BOUNDING_RECT="-14280.1 -1490.31 2740.24 1186.33"
 #!   STICKY="true"
 #!   COLOUR="0.231373,0.67451,0.647059"
-#!   CONTENTS="344 407 345 565 24 398 552 346 406 342 "
+#!   CONTENTS="342 406 398 24 552 407 345 565 344 346 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="414"
@@ -5839,7 +5839,7 @@
 #!   BOUNDING_RECT="-10498.7 2295.91 554 552.133"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="80 15 16 "
+#!   CONTENTS="16 80 15 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="417"
@@ -5850,7 +5850,7 @@
 #!   BOUNDING_RECT="-9779.85 2295.91 554 552.133"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="92 25 26 "
+#!   CONTENTS="25 92 26 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="419"
@@ -5861,7 +5861,7 @@
 #!   BOUNDING_RECT="-9076.25 2295.91 554 552.133"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="62 61 136 "
+#!   CONTENTS="61 136 62 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="427"
@@ -5883,7 +5883,7 @@
 #!   BOUNDING_RECT="-9846.95 -925.779 564.999 550.902"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="27 96 28 "
+#!   CONTENTS="28 27 96 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="429"
@@ -5894,7 +5894,7 @@
 #!   BOUNDING_RECT="-9210.42 -925.779 554 552.133"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="30 29 98 "
+#!   CONTENTS="30 98 29 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="434"
@@ -5905,7 +5905,7 @@
 #!   BOUNDING_RECT="-5911.3 -2822.13 1224.02 609.433"
 #!   STICKY="true"
 #!   COLOUR="0.203922,0.611765,0.0431373"
-#!   CONTENTS="50 51 126 52 125 "
+#!   CONTENTS="51 126 52 125 50 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="448"
@@ -5916,7 +5916,7 @@
 #!   BOUNDING_RECT="-7607.73 -545.668 1321.97 932.244"
 #!   STICKY="true"
 #!   COLOUR="0.964706,0.847059,0.721569"
-#!   CONTENTS="444 23 191 89 22 "
+#!   CONTENTS="444 191 22 89 23 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="453"
@@ -5927,7 +5927,7 @@
 #!   BOUNDING_RECT="-5617.07 153.75 554 518.007"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="146 161 145 "
+#!   CONTENTS="146 145 161 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="459"
@@ -5938,7 +5938,7 @@
 #!   BOUNDING_RECT="-10332.4 -4210.63 554 564.071"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="112 43 44 "
+#!   CONTENTS="43 44 112 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="466"
@@ -5949,7 +5949,7 @@
 #!   BOUNDING_RECT="-5979.3 -3989.75 1224.02 597.755"
 #!   STICKY="true"
 #!   COLOUR="0.203922,0.611765,0.0431373"
-#!   CONTENTS="56 132 58 131 57 "
+#!   CONTENTS="131 56 132 58 57 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="572"
@@ -5960,7 +5960,7 @@
 #!   BOUNDING_RECT="-8863.02 -7302.28 554 564.071"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="568 571 567 "
+#!   CONTENTS="568 567 571 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="583"
@@ -5971,7 +5971,7 @@
 #!   BOUNDING_RECT="-9522.32 -7302.28 554 564.071"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="501 450 536 "
+#!   CONTENTS="536 501 450 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="636"
@@ -5982,7 +5982,7 @@
 #!   BOUNDING_RECT="-9533.32 -7934.86 564.999 550.902"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="616 617 619 "
+#!   CONTENTS="617 619 616 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="649"
@@ -5993,7 +5993,7 @@
 #!   BOUNDING_RECT="-8863.02 -7934.86 554 564.071"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="647 648 646 "
+#!   CONTENTS="646 647 648 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="663"
@@ -6004,7 +6004,7 @@
 #!   BOUNDING_RECT="-3926.84 -8144.23 1224.02 597.755"
 #!   STICKY="true"
 #!   COLOUR="0.203922,0.611765,0.0431373"
-#!   CONTENTS="658 661 659 662 660 "
+#!   CONTENTS="661 660 662 658 659 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="702"
@@ -6015,7 +6015,7 @@
 #!   BOUNDING_RECT="-4979.67 -6906.8 1894.73 635.289"
 #!   STICKY="true"
 #!   COLOUR="0.411765,0.537255,0.847059"
-#!   CONTENTS="541 689 682 686 688 684 537 687 685 "
+#!   CONTENTS="686 537 541 684 688 687 685 682 689 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="644"
@@ -6026,7 +6026,7 @@
 #!   BOUNDING_RECT="-5339.59 -7789.04 679.419 952.951"
 #!   STICKY="true"
 #!   COLOUR="0.701961,0.701961,0.811765"
-#!   CONTENTS="638 639 642 640 643 "
+#!   CONTENTS="638 640 639 643 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="645"
@@ -6037,7 +6037,7 @@
 #!   BOUNDING_RECT="-4570.21 -8014 1947.56 762.303"
 #!   STICKY="true"
 #!   COLOUR="0.74902,0.027451,0.411765"
-#!   CONTENTS="656 658 664 661 654 659 662 660 675 663 "
+#!   CONTENTS="656 661 663 660 662 664 675 658 654 659 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="692"
@@ -6048,7 +6048,7 @@
 #!   BOUNDING_RECT="-4254.38 -7689.05 1169.43 265.933"
 #!   STICKY="true"
 #!   COLOUR="0.14902,0.682353,0.627451"
-#!   CONTENTS="498 674 672 "
+#!   CONTENTS="674 498 672 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="693"
@@ -6059,7 +6059,7 @@
 #!   BOUNDING_RECT="-4500.38 -8797.12 1850.13 507.554"
 #!   STICKY="true"
 #!   COLOUR="0.839216,0.886275,0.631373"
-#!   CONTENTS="669 678 680 679 676 667 670 666 668 "
+#!   CONTENTS="680 668 669 679 667 676 670 678 666 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="694"
@@ -6070,7 +6070,7 @@
 #!   BOUNDING_RECT="-11177 -6751.4 8746.1 2670.54"
 #!   STICKY="true"
 #!   COLOUR="0.839216,0.34902,0.0156863"
-#!   CONTENTS="583 660 662 501 644 585 649 616 640 656 652 653 666 450 498 658 540 661 646 702 648 678 650 689 568 572 638 675 685 642 699 668 687 684 637 651 617 537 679 682 680 643 686 536 654 564 571 673 659 541 698 677 639 672 667 700 670 669 693 692 647 619 663 645 539 676 567 588 657 701 664 636 683 674 688 "
+#!   CONTENTS="585 501 684 572 643 700 751 660 686 668 675 677 664 679 638 667 680 652 692 687 636 654 571 661 498 672 658 567 540 678 617 666 649 583 651 688 663 541 682 648 674 637 616 685 588 662 564 536 537 689 659 653 644 698 701 693 539 670 640 568 647 639 646 650 645 669 673 702 683 699 676 619 657 656 450 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="326"
@@ -6081,7 +6081,7 @@
 #!   BOUNDING_RECT="-4274.39 1775.64 1514.36 1229.64"
 #!   STICKY="true"
 #!   COLOUR="0.176471,0.0784314,0.356863"
-#!   CONTENTS="608 589 611 723 749 582 586 590 603 609 579 602 604 615 606 610 593 614 605 612 "
+#!   CONTENTS="579 610 611 749 586 608 604 589 602 606 750 612 593 582 603 605 723 614 609 590 615 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="385"
@@ -6092,7 +6092,7 @@
 #!   BOUNDING_RECT="-7311.24 -5594.46 554 564.071"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="368 356 355 "
+#!   CONTENTS="356 368 355 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="484"
@@ -6103,7 +6103,7 @@
 #!   BOUNDING_RECT="-10843.2 -10224.1 554 562.732"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="476 426 469 "
+#!   CONTENTS="469 476 426 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="485"
@@ -6125,7 +6125,7 @@
 #!   BOUNDING_RECT="-11513.5 -10856.7 554 562.732"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="471 470 478 "
+#!   CONTENTS="471 478 470 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="487"
@@ -6136,7 +6136,7 @@
 #!   BOUNDING_RECT="-10843.2 -10856.7 554 562.732"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="472 473 480 "
+#!   CONTENTS="472 480 473 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="503"
@@ -6147,7 +6147,7 @@
 #!   BOUNDING_RECT="-9042.09 -10224.1 1171.54 636.006"
 #!   STICKY="true"
 #!   COLOUR="0.964706,0.847059,0.721569"
-#!   CONTENTS="497 500 490 493 491 "
+#!   CONTENTS="493 500 490 497 491 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="620"
@@ -6158,7 +6158,7 @@
 #!   BOUNDING_RECT="-7580.25 -11348.9 1224.02 597.755"
 #!   STICKY="true"
 #!   COLOUR="0.203922,0.611765,0.0431373"
-#!   CONTENTS="577 544 533 531 578 "
+#!   CONTENTS="533 578 577 531 544 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="621"
@@ -6169,7 +6169,7 @@
 #!   BOUNDING_RECT="-8993 -10993.8 679.419 1396.66"
 #!   STICKY="true"
 #!   COLOUR="0.701961,0.701961,0.811765"
-#!   CONTENTS="558 488 713 529 528 715 551 "
+#!   CONTENTS="551 713 488 529 558 528 715 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="622"
@@ -6180,7 +6180,7 @@
 #!   BOUNDING_RECT="-8223.62 -11218.7 1947.56 762.303"
 #!   STICKY="true"
 #!   COLOUR="0.74902,0.027451,0.411765"
-#!   CONTENTS="577 566 559 549 620 530 544 533 531 578 "
+#!   CONTENTS="533 578 577 559 531 530 566 620 544 549 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="707"
@@ -6191,7 +6191,7 @@
 #!   BOUNDING_RECT="-8206.36 -12071.4 1850.13 507.554"
 #!   STICKY="true"
 #!   COLOUR="0.839216,0.886275,0.631373"
-#!   CONTENTS="706 696 704 705 703 691 695 697 681 "
+#!   CONTENTS="691 704 703 696 681 695 706 705 697 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="718"
@@ -6202,7 +6202,7 @@
 #!   BOUNDING_RECT="-11139.2 -12655 554 562.732"
 #!   STICKY="true"
 #!   COLOUR="0.87451,0.258824,0.219608"
-#!   CONTENTS="717 712 716 "
+#!   CONTENTS="712 717 716 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="736"
@@ -6213,7 +6213,7 @@
 #!   BOUNDING_RECT="-6656.02 -12925.5 655.378 597.755"
 #!   STICKY="true"
 #!   COLOUR="0.203922,0.611765,0.0431373"
-#!   CONTENTS="735 737 744 "
+#!   CONTENTS="735 744 737 "
 #! />
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
@@ -13002,6 +13002,40 @@
 #!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="_relationships&lt;opencurly&gt;0&lt;closecurly&gt;.CityFurnitureID utility_connected_city_object RENAME_SET_DEFAULT "/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="751"
+#!   TYPE="Bufferer"
+#!   VERSION="13"
+#!   POSITION="-5919.24 -7846.39"
+#!   BOUNDING_RECT="-5919.24 -7846.39 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17650"
+#! >
+#!     <OUTPUT_FEAT NAME="BUFFERED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Cable_NodeID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="Cable_NodeID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="MITER_LIMIT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ANGLE" PARM_VALUE="22.5"/>
+#!     <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Bufferer_2"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CAP_STYLE" PARM_VALUE="Round"/>
+#!     <XFORM_PARM PARM_NAME="CORNER_STYLE" PARM_VALUE="Round"/>
+#!     <XFORM_PARM PARM_NAME="OFFSET" PARM_VALUE="0.01"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FME_PROCESS_GROUPS_ORDERED" PARM_VALUE="No"/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
@@ -14941,11 +14975,11 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="642"
+#!   IDENTIFIER="752"
 #!   SOURCE_NODE="639"
-#!   TARGET_NODE="638"
+#!   TARGET_NODE="751"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 1 Supplier"
+#!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -15408,6 +15442,17 @@
 #!   TARGET_NODE="607"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="753"
+#!   SOURCE_NODE="751"
+#!   TARGET_NODE="638"
+#!   SOURCE_PORT_DESC="fo 0 BUFFERED"
+#!   TARGET_PORT_DESC="fi 1 Supplier"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -18167,6 +18212,15 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_7    INPUT  FEATURE_
 FACTORY_DEF * TeeFactory   FACTORY_NAME "StringConcatenator_7 OUTPUT Splitter"   INPUT FEATURE_TYPE StringConcatenator_7_OUTPUT   OUTPUT FEATURE_TYPE StringConcatenator_7_OUTPUT_0_r/MPwfxu1kg=   OUTPUT FEATURE_TYPE StringConcatenator_7_OUTPUT_1_+8TSE++Mu9M=   OUTPUT FEATURE_TYPE StringConcatenator_7_OUTPUT_2_0RQClPt5jEE=
 # -------------------------------------------------------------------------
 
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_5    INPUT  FEATURE_TYPE StringConcatenator_7_OUTPUT_0_r/MPwfxu1kg=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "utility_usage<opencurly>0<closecurly>" "SET_TO" "distribution" }      ATTR_ACTION { "" "utility_function<opencurly>0<closecurly>" "SET_TO" "distribution" }      ATTR_ACTION { "" "gml_name" "SET_TO" "Electric<space>Network" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_5_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_3    INPUT  FEATURE_TYPE AttributeCreator_5_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "Network_ID" "gml_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT
+
+# -------------------------------------------------------------------------
+
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_9    INPUT  FEATURE_TYPE StringConcatenator_7_OUTPUT_1_+8TSE++Mu9M=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "transportedMedium" }      ATTR_ACTION { "" "utility_type" "SET_TO" "singlePhaseAlternatingCurrent" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_9_OUTPUT
 
 
@@ -18182,15 +18236,6 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_24    INPUT  FEA
 # -------------------------------------------------------------------------
 
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_2    INPUT  FEATURE_TYPE AttributeCreator_24_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "NetworkGraph_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "Network_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_5    INPUT  FEATURE_TYPE StringConcatenator_7_OUTPUT_0_r/MPwfxu1kg=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "utility_usage<opencurly>0<closecurly>" "SET_TO" "distribution" }      ATTR_ACTION { "" "utility_function<opencurly>0<closecurly>" "SET_TO" "distribution" }      ATTR_ACTION { "" "gml_name" "SET_TO" "Electric<space>Network" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_5_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_3    INPUT  FEATURE_TYPE AttributeCreator_5_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "Network_ID" "gml_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT
 
 # -------------------------------------------------------------------------
 
@@ -18266,6 +18311,19 @@ FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger_9    INPUT REFERE
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureMerger_9 MERGED Splitter"   INPUT FEATURE_TYPE FeatureMerger_9_MERGED   OUTPUT FEATURE_TYPE FeatureMerger_9_MERGED_0_AlWjnhEMlj8=   OUTPUT FEATURE_TYPE FeatureMerger_9_MERGED_1_JTWZ/f9TDaM=   OUTPUT FEATURE_TYPE FeatureMerger_9_MERGED_2_zJqZeCRoVs0=
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryRemover_2    INPUT  FEATURE_TYPE FeatureMerger_9_MERGED_1_JTWZ/f9TDaM=    OUTPUT FEATURE_TYPE GeometryRemover_2_OUTPUT         @RemoveGeometry()
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_15    INPUT  FEATURE_TYPE GeometryRemover_2_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "featureGraphMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_15_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_17    INPUT  FEATURE_TYPE AttributeCreator_15_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "FeatureGraph_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "NetworkGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_17_OUTPUT
+
+# -------------------------------------------------------------------------
+
 INCLUDE [    if { {CARTESIAN} == {CARTESIAN} } {       puts {MACRO Offsetter_3_OFFSET @Offset(REJECTABLE,"0","0","10")};    } elseif { {CARTESIAN} == {POLAR} } {       puts {MACRO Offsetter_3_OFFSET @Offset(REJECTABLE,"CARTESIAN","<Unused>","<Unused>")};    } elseif { {CARTESIAN} == {SPHERICAL} } {       puts {MACRO Offsetter_3_OFFSET @Offset(REJECTABLE,"CARTESIAN","<Unused>","<Unused>","<Unused>")};    } else {       puts {MACRO Offsetter_3_OFFSET @Offset(REJECTABLE,"0","0","10")};    } ]
 FACTORY_DEF * TeeFactory    FACTORY_NAME Offsetter_3_Offsetter    INPUT  FEATURE_TYPE FeatureMerger_9_MERGED_0_AlWjnhEMlj8=       @RenameAttributes(FME_STRICT,___fme_rejection_code___,fme_rejection_code)    OUTPUT FEATURE_TYPE ___TOREJECTOR___       $(Offsetter_3_OFFSET)
 FACTORY_DEF * TestFactory    FACTORY_NAME Offsetter_3_Rejector    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(fme_rejection_code) != ""    OUTPUT FAILED FEATURE_TYPE Offsetter_3_Offset       @RenameAttributes(FME_STRICT,fme_rejection_code,___fme_rejection_code___)
@@ -18279,7 +18337,7 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_12    INPUT  FEA
 # -------------------------------------------------------------------------
 
 
-Tcl2 proc GeometryPropertySetter_4_6be95e4a_a64a_4325_8a80_08e9e9d584d62_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_4_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc GeometryPropertySetter_4_f8f78d2c_3d8c_43af_87b9_ac47e411db042_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_4_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 INCLUDE [    set macroLine "MACRO GeometryPropertySetter_4_SRC_ATTRS_EXP ";    foreach attr [split "citygml_lod_name"] { append macroLine ",$attr"; };    puts $macroLine; ]
 FACTORY_DEF * GQueryFactory    FACTORY_NAME GeometryPropertySetter_4_GQuery    INPUT  FEATURE_TYPE AttributeCreator_12_OUTPUT    ACTION SET_TRAITS    PARAMETER yes citygml_lod_name    OUTPUT RESULT FEATURE_TYPE GeometryPropertySetter_4___RemoveAttrs___
 FACTORY_DEF NOT_THIS_TIME TeeFactory    FACTORY_NAME GeometryPropertySetter_4_AttrRemover    INPUT FEATURE_TYPE GeometryPropertySetter_4___RemoveAttrs___    OUTPUT FEATURE_TYPE *       @RemoveAttributes(fme_encoded"$(GeometryPropertySetter_4_SRC_ATTRS_EXP)")
@@ -18317,19 +18375,6 @@ FACTORY_DEF {*} SpatialRelationshipFactory    FACTORY_NAME SpatialRelator_3    I
 # -------------------------------------------------------------------------
 
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_26    INPUT  FEATURE_TYPE SpatialRelator_3_Output 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "_relationships<opencurly>0<closecurly>.CityFurnitureID" "utility_connected_city_object" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_26_OUTPUT
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryRemover_2    INPUT  FEATURE_TYPE FeatureMerger_9_MERGED_1_JTWZ/f9TDaM=    OUTPUT FEATURE_TYPE GeometryRemover_2_OUTPUT         @RemoveGeometry()
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_15    INPUT  FEATURE_TYPE GeometryRemover_2_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "featureGraphMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_15_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_17    INPUT  FEATURE_TYPE AttributeCreator_15_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "FeatureGraph_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "NetworkGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_17_OUTPUT
 
 # -------------------------------------------------------------------------
 
@@ -18380,7 +18425,7 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_23    INPUT  FEA
 # -------------------------------------------------------------------------
 
 
-Tcl2 proc GeometryPropertySetter_6_1f316db4_c996_4f76_847f_114e833f1f9b2_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_6_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc GeometryPropertySetter_6_65d30bc0_340c_49ad_b2a2_2527a17a69ca2_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_6_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 INCLUDE [    set macroLine "MACRO GeometryPropertySetter_6_SRC_ATTRS_EXP ";    foreach attr [split "citygml_lod_name"] { append macroLine ",$attr"; };    puts $macroLine; ]
 FACTORY_DEF * GQueryFactory    FACTORY_NAME GeometryPropertySetter_6_GQuery    INPUT  FEATURE_TYPE AttributeCreator_23_OUTPUT    ACTION SET_TRAITS    PARAMETER yes citygml_lod_name    OUTPUT RESULT FEATURE_TYPE GeometryPropertySetter_6___RemoveAttrs___
 FACTORY_DEF NOT_THIS_TIME TeeFactory    FACTORY_NAME GeometryPropertySetter_6_AttrRemover    INPUT FEATURE_TYPE GeometryPropertySetter_6___RemoveAttrs___    OUTPUT FEATURE_TYPE *       @RemoveAttributes(fme_encoded"$(GeometryPropertySetter_6_SRC_ATTRS_EXP)")
@@ -18516,7 +18561,7 @@ MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_LEN 1
 MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_VAL 1
 DEFAULT_MACRO SmartCleaner_2013_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(SmartCleaner_2013_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(SmartCleaner_2013_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_INPUT1523280269 Input Splitter"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_INPUT"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_INPUT"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_INPUT1523282272 Input Splitter"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_INPUT"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_INPUT"
 # -------------------------------------------------------------------------
 
 INCLUDE [    if {"No" == "Yes"} {       puts "MACRO COLLECTION_HANDLING *";    } else {       puts "MACRO COLLECTION_HANDLING NOT_THIS_TIME";    } ]
@@ -18550,9 +18595,9 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Geo
 FACTORY_DEF * TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_InstanceTest    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___AllInput___    TEST @Geometry(IS_GEOMETRY_INSTANCE) == 1    OUTPUT PASSED FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_INSTANCE"    OUTPUT FAILED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___RestInput___
 FACTORY_DEF $(COLLECTION_HANDLING) TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_CollectionTest    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___RestInput___    TEST &fme_type == "fme_collection"    OUTPUT FAILED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Not_Collection___    OUTPUT PASSED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Collection___
 FACTORY_DEF $(COLLECTION_HANDLING) DeaggregateFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_Deagg    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Collection___    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    OUTPUT POINT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___    OUTPUT LINE FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___    OUTPUT POLYGON FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___    OUTPUT DONUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___    OUTPUT AGGREGATE FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___RestInput___    OUTPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Prepped___        $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_bbcbd7de_0228_4095_86a1_adba8b5dd5322_targetFeatureType @Lookup($(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_RouterTable,&fme_type)
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___RestInput___    OUTPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Prepped___        $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_63fe206f_1b6f_4bc5_bd3f_0fa92bff7f8a2_targetFeatureType @Lookup($(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_RouterTable,&fme_type)
 
-FACTORY_DEF * TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_Router    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Prepped___    TEST &$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_bbcbd7de_0228_4095_86a1_adba8b5dd5322_targetFeatureType != "x"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(&$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_bbcbd7de_0228_4095_86a1_adba8b5dd5322_targetFeatureType)                                 @RemoveAttributes($(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_bbcbd7de_0228_4095_86a1_adba8b5dd5322_targetFeatureType)
+FACTORY_DEF * TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_Router    INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter___Prepped___    TEST &$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_63fe206f_1b6f_4bc5_bd3f_0fa92bff7f8a2_targetFeatureType != "x"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(&$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_63fe206f_1b6f_4bc5_bd3f_0fa92bff7f8a2_targetFeatureType)                                 @RemoveAttributes($(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_63fe206f_1b6f_4bc5_bd3f_0fa92bff7f8a2_targetFeatureType)
 
 # -------------------------------------------------------------------------
 
@@ -18576,6 +18621,11 @@ FACTORY_DEF * TopologyFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder LINE Splitter"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE_0_2KCTRCv65PY="   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE_1_DtWofmvzyKk="
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Cloner_CheckCopies    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE_0_2KCTRCv65PY="    TEST "1" TYPE INT ENCODED    OUTPUT PASSED FEATURE_TYPE __toOutput__
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Cloner_Cloner    INPUT FEATURE_TYPE __toOutput__    NUMBER_OF_COPIES "1"    COPY_NUMBER_ATTRIBUTE _copynum    OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Cloner_COPY"
+
+# -------------------------------------------------------------------------
+
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE_1_DtWofmvzyKk="    OUTPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TESTFILTERINPUTLINE_0
 
 FACTORY_DEF * TestFactory FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TestFactory_0 INPUT FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TESTFILTERINPUTLINE_0 TEST @EvaluateExpression(STRING_ENCODED,<at>Evaluate<openparen>abs<openparen><at>Value<openparen>_right_edge<closeparen><closeparen><closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) = @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_arc_id<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) ENCODED TEST @EvaluateExpression(STRING_ENCODED,<at>Evaluate<openparen>abs<openparen><at>Value<openparen>_left_edge<closeparen><closeparen><closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) = @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_arc_id<closeparen>,$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2) ENCODED BOOLEAN_OPERATOR AND COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_BOTH OUTPUT FAILED FEATURE_TYPE $(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_TESTFILTERINPUTLINE_1
@@ -18592,14 +18642,9 @@ FACTORY_DEF * ExtensionFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAM
 FACTORY_DEF * ExtensionFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Extender_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_BOTH_1_T0DHH3Y7ohQ="    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TestFilter_2_END"    EXTENSION_LENGTH "@EvaluateExpression(FLOAT,$($(SmartCleaner_2013_WORKSPACE_NAME)_LEN$encode),$(SmartCleaner_2013_WORKSPACE_NAME)_Extender_2)"    SEGMENTS_TO_AVERAGE "1"    REJECT_INVALID_GEOM Yes    OUTPUT END FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Extender_2_END"
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2_8d7a9b65_05cf_4476_a7fc_39b2bdb5a6aa2_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING_ENCODED} $attrVal {$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2}];         };         FME_SetAttribute $attrName [FME_DecodeText $attrVal];     }; };
+Tcl2 proc $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2_c62ad78e_fbb3_4463_bbc4_17afc5e9c0392_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING_ENCODED} $attrVal {$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2}];         };         FME_SetAttribute $attrName [FME_DecodeText $attrVal];     }; };
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Extender_BEGINNING"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Extender_2_END"    OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2_OUTPUT"         "@Tcl2( $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2_8d7a9b65_05cf_4476_a7fc_39b2bdb5a6aa2_attrSetter {(_smartcleaner_extended,1)} )"
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Cloner_CheckCopies    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_TopologyBuilder_LINE_0_2KCTRCv65PY="    TEST "1" TYPE INT ENCODED    OUTPUT PASSED FEATURE_TYPE __toOutput__
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Cloner_Cloner    INPUT FEATURE_TYPE __toOutput__    NUMBER_OF_COPIES "1"    COPY_NUMBER_ATTRIBUTE _copynum    OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Cloner_COPY"
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Extender_BEGINNING"    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Extender_2_END"    OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2_OUTPUT"         "@Tcl2( $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeCreator_2_c62ad78e_fbb3_4463_bbc4_17afc5e9c0392_attrSetter {(_smartcleaner_extended,1)} )"
 
 # -------------------------------------------------------------------------
 
@@ -18652,8 +18697,8 @@ FACTORY_DEF * TestFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_Te
 INCLUDE [    set macroLine "MACRO $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_2    INPUT  FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_Tester_2_FAILED"    OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(_smartcleaner_extended,_arc_id,_right_polygon,_left_polygon,_right_edge,_left_edge,_from_node,_to_node,_polygons,_length)        @RemoveAttributes(fme_regexp_match"$($(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP)")
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_<REJECTED>1523280269 Output Collector"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_POINT"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_ARC"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_AREA"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_TEXT"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_RASTER"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_SURFACE"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_SOLID"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_COLLECTION"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_NULL"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_INSTANCE"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_<REJECTED>"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_CLEANED1523280269 Output Collector"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_CLEANED"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_<REJECTED>1523282272 Output Collector"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_POINT"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_ARC"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_AREA"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_TEXT"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_RASTER"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_SURFACE"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_SOLID"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_COLLECTION"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_NULL"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_GeometryFilter_INSTANCE"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_<REJECTED>"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SmartCleaner_2013_WORKSPACE_NAME)_CLEANED1523282272 Output Collector"   INPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(SmartCleaner_2013_WORKSPACE_NAME)_CLEANED"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(SmartCleaner_2013_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "SmartCleaner_2013 CLEANED Output Renamer/Nuker"   INPUT FEATURE_TYPE SmartCleaner_2013_CLEANED   OUTPUT FEATURE_TYPE SmartCleaner_2013_CLEANED
 FACTORY_DEF * TeeFactory   FACTORY_NAME "SmartCleaner_2013 <REJECTED> Output Renamer/Nuker"   INPUT FEATURE_TYPE SmartCleaner_2013_<REJECTED>
@@ -18710,6 +18755,20 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_5    INPUT  FEATURE_
 FACTORY_DEF * TeeFactory   FACTORY_NAME "StringConcatenator_5 OUTPUT Splitter"   INPUT FEATURE_TYPE StringConcatenator_5_OUTPUT   OUTPUT FEATURE_TYPE StringConcatenator_5_OUTPUT_0_CsHLfXxQcjs=   OUTPUT FEATURE_TYPE StringConcatenator_5_OUTPUT_1_AqC8v+EYxTg=   OUTPUT FEATURE_TYPE StringConcatenator_5_OUTPUT_2_DH96rdmuc1g=
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryRemover_5    INPUT  FEATURE_TYPE StringConcatenator_5_OUTPUT_0_CsHLfXxQcjs=    OUTPUT FEATURE_TYPE GeometryRemover_5_OUTPUT         @RemoveGeometry()
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_4    INPUT  FEATURE_TYPE GeometryRemover_5_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "featureGraphMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_4    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "FeatureGraph_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "NetworkGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_4_OUTPUT
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer_4 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_4_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_4_OUTPUT_0_kUiVYwZ5XIo=   OUTPUT FEATURE_TYPE AttributeRenamer_4_OUTPUT_1_bKfuQ4qNEH8=
+# -------------------------------------------------------------------------
+
 INCLUDE [    if { {CARTESIAN} == {CARTESIAN} } {       puts {MACRO Offsetter_OFFSET @Offset(REJECTABLE,"0","0","10")};    } elseif { {CARTESIAN} == {POLAR} } {       puts {MACRO Offsetter_OFFSET @Offset(REJECTABLE,"CARTESIAN","<Unused>","<Unused>")};    } elseif { {CARTESIAN} == {SPHERICAL} } {       puts {MACRO Offsetter_OFFSET @Offset(REJECTABLE,"CARTESIAN","<Unused>","<Unused>","<Unused>")};    } else {       puts {MACRO Offsetter_OFFSET @Offset(REJECTABLE,"0","0","10")};    } ]
 FACTORY_DEF * TeeFactory    FACTORY_NAME Offsetter_Offsetter    INPUT  FEATURE_TYPE StringConcatenator_5_OUTPUT_2_DH96rdmuc1g=       @RenameAttributes(FME_STRICT,___fme_rejection_code___,fme_rejection_code)    OUTPUT FEATURE_TYPE ___TOREJECTOR___       $(Offsetter_OFFSET)
 FACTORY_DEF * TestFactory    FACTORY_NAME Offsetter_Rejector    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(fme_rejection_code) != ""    OUTPUT FAILED FEATURE_TYPE Offsetter_Offset       @RenameAttributes(FME_STRICT,fme_rejection_code,___fme_rejection_code___)
@@ -18723,7 +18782,7 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_2    INPUT  FEAT
 # -------------------------------------------------------------------------
 
 
-Tcl2 proc GeometryPropertySetter_b7b2154e_b12e_4fc0_9398_78d4c8e941ed2_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc GeometryPropertySetter_c4d5bbaf_0a37_4775_b35c_6efb6ddddc432_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 INCLUDE [    set macroLine "MACRO GeometryPropertySetter_SRC_ATTRS_EXP ";    foreach attr [split "citygml_lod_name"] { append macroLine ",$attr"; };    puts $macroLine; ]
 FACTORY_DEF * GQueryFactory    FACTORY_NAME GeometryPropertySetter_GQuery    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    ACTION SET_TRAITS    PARAMETER yes citygml_lod_name    OUTPUT RESULT FEATURE_TYPE GeometryPropertySetter___RemoveAttrs___
 FACTORY_DEF NOT_THIS_TIME TeeFactory    FACTORY_NAME GeometryPropertySetter_AttrRemover    INPUT FEATURE_TYPE GeometryPropertySetter___RemoveAttrs___    OUTPUT FEATURE_TYPE *       @RemoveAttributes(fme_encoded"$(GeometryPropertySetter_SRC_ATTRS_EXP)")
@@ -18764,20 +18823,6 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_20    INPUT  FEATURE
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryRemover_5    INPUT  FEATURE_TYPE StringConcatenator_5_OUTPUT_0_CsHLfXxQcjs=    OUTPUT FEATURE_TYPE GeometryRemover_5_OUTPUT         @RemoveGeometry()
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_4    INPUT  FEATURE_TYPE GeometryRemover_5_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "featureGraphMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_4    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "FeatureGraph_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "NetworkGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_4_OUTPUT
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer_4 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_4_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_4_OUTPUT_0_kUiVYwZ5XIo=   OUTPUT FEATURE_TYPE AttributeRenamer_4_OUTPUT_1_bKfuQ4qNEH8=
-# -------------------------------------------------------------------------
-
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_15_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_15_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_15_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_15_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_15_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_15_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_15_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_15_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_15_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 
 FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_15    INPUT REFERENCER FEATURE_TYPE StringConcatenator_20_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_4_OUTPUT_1_bKfuQ4qNEH8=    REFERENCE_INFO $(FeatureMerger_15_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Cable_ID<closeparen>,FeatureMerger_15) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Cable_ID<closeparen>,FeatureMerger_15) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_15_MERGED
@@ -18814,23 +18859,23 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME Cable_VectorSetterUpper    INPUT FEATUR
 # do it through TCL. This should allow this transformer to be used with a
 # Desktop license, even though ThinPointCloud requires Professional.
 
-Tcl2 proc Cable_c66de5f4_6f2d_4bd9_878d_106d955593b22_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME Cable___PointCloudThinner    INPUT FEATURE_TYPE Cable___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Cable_c66de5f4_6f2d_4bd9_878d_106d955593b22_thinPointCloud")
-Tcl2 proc Cable_c66de5f4_6f2d_4bd9_878d_106d955593b22_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME Cable_RasterSetterUpper    INPUT FEATURE_TYPE Cable___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Cable_c66de5f4_6f2d_4bd9_878d_106d955593b22_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
+Tcl2 proc Cable_e098c2a9_a384_4ddb_bab9_9d150304a5952_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Cable___PointCloudThinner    INPUT FEATURE_TYPE Cable___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Cable_e098c2a9_a384_4ddb_bab9_9d150304a5952_thinPointCloud")
+Tcl2 proc Cable_e098c2a9_a384_4ddb_bab9_9d150304a5952_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Cable_RasterSetterUpper    INPUT FEATURE_TYPE Cable___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Cable_e098c2a9_a384_4ddb_bab9_9d150304a5952_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
 # Now route all the features into the recorder, changing their
 # feature type to the transformer name so that they view nicely
-# Cable_c66de5f4_6f2d_4bd9_878d_106d955593b22_VIS_FEAT_TYPE changes the feature types
+# Cable_e098c2a9_a384_4ddb_bab9_9d150304a5952_VIS_FEAT_TYPE changes the feature types
 # of the features being visualized.
 
-DEFAULT_MACRO Cable_c66de5f4_6f2d_4bd9_878d_106d955593b22_VIS_FEAT_TYPE Cable$(CATMAC)
+DEFAULT_MACRO Cable_e098c2a9_a384_4ddb_bab9_9d150304a5952_VIS_FEAT_TYPE Cable$(CATMAC)
 DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
 DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
 # [PR#45549] The Data Inspector will limit the maximum number of features
 # it reads on WIN32, so we will correspondingly limit the number of
 # features we record here using the MAX_FEATURES_TO_RECORD directive.
 
-FACTORY_DEF * RecorderFactory    FACTORY_NAME Cable_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(Cable_c66de5f4_6f2d_4bd9_878d_106d955593b22_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA utility_function,varchar<openparen>255<closeparen>,utility_status,varchar<openparen>255<closeparen>,utility_function_of_line,varchar<openparen>255<closeparen>,utility_location_quality,varchar<openparen>255<closeparen>,utility_elevation_quality,varchar<openparen>255<closeparen>,gml_parent_id,varchar<openparen>255<closeparen>,gml_id,varchar<openparen>255<closeparen>,utility_has_material<opencurly>0<closecurly>.xlink_href,varchar<openparen>255<closeparen>,utility_topo_graph_xlink_href,varchar<openparen>255<closeparen>,citygml_feature_role,varchar<openparen>255<closeparen>,citygml_lod_name,varchar<openparen>255<closeparen>,id,varchar<openparen>255<closeparen>,type,varchar<openparen>255<closeparen>,_creation_instance,varchar<openparen>255<closeparen>,NetworkGraph_ID,varchar<openparen>255<closeparen>,_edge_id,varchar<openparen>255<closeparen>,_right_face,varchar<openparen>255<closeparen>,_left_face,varchar<openparen>255<closeparen>,_right_edge,varchar<openparen>255<closeparen>,_left_edge,varchar<openparen>255<closeparen>,_from_node,varchar<openparen>255<closeparen>,_to_node,varchar<openparen>255<closeparen>,_faces,varchar<openparen>255<closeparen>,InteriorFeatureLink_ID,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+FACTORY_DEF * RecorderFactory    FACTORY_NAME Cable_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(Cable_e098c2a9_a384_4ddb_bab9_9d150304a5952_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA utility_function,varchar<openparen>255<closeparen>,utility_status,varchar<openparen>255<closeparen>,utility_function_of_line,varchar<openparen>255<closeparen>,utility_location_quality,varchar<openparen>255<closeparen>,utility_elevation_quality,varchar<openparen>255<closeparen>,gml_parent_id,varchar<openparen>255<closeparen>,gml_id,varchar<openparen>255<closeparen>,utility_has_material<opencurly>0<closecurly>.xlink_href,varchar<openparen>255<closeparen>,utility_topo_graph_xlink_href,varchar<openparen>255<closeparen>,citygml_feature_role,varchar<openparen>255<closeparen>,citygml_lod_name,varchar<openparen>255<closeparen>,id,varchar<openparen>255<closeparen>,type,varchar<openparen>255<closeparen>,_creation_instance,varchar<openparen>255<closeparen>,NetworkGraph_ID,varchar<openparen>255<closeparen>,_edge_id,varchar<openparen>255<closeparen>,_right_face,varchar<openparen>255<closeparen>,_left_face,varchar<openparen>255<closeparen>,_right_edge,varchar<openparen>255<closeparen>,_left_edge,varchar<openparen>255<closeparen>,_from_node,varchar<openparen>255<closeparen>,_to_node,varchar<openparen>255<closeparen>,_faces,varchar<openparen>255<closeparen>,InteriorFeatureLink_ID,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
 
 # -------------------------------------------------------------------------
 
@@ -18956,6 +19001,122 @@ FACTORY_DEF * RecorderFactory    FACTORY_NAME elec_interfeaturelinks_Recorder   
 
 # -------------------------------------------------------------------------
 
+INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE StringConcatenator_6_OUTPUT_3_fvoIPRnmwkM=    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(fme_encoded,_node_number,Network_ID,NetworkGraph_ID,_creation_instance,_element_index,fme_arc_id,id,type,fme_arc_angle)        @RemoveAttributes(fme_pcre_match"$(AttributeRemover_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_13    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "Node_ID" "Cable_NodeID" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_13_OUTPUT
+
+# -------------------------------------------------------------------------
+
+
+INCLUDE [if { ("JOIN_ROUND" == "JOIN_MITER") } {         } else {             puts "MACRO MITER_TO_USE 0"         }         ]
+FACTORY_DEF {*} PolygonDissolveFactory    INPUT  FEATURE_TYPE AttributeRenamer_13_OUTPUT    FACTORY_NAME Bufferer_2    PRE_BUFFER "0.01" "22.5" "CAP_ROUND" "JOIN_ROUND" "$(MITER_TO_USE)" FULL    DISSOLVE_MODE GEOS    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    OUTPUT POLYGON FEATURE_TYPE Bufferer_2_BUFFERED    OUTPUT NON_POLYGON FEATURE_TYPE Bufferer_2_BUFFERED
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} SpatialRelationshipFactory    FACTORY_NAME SpatialRelator    INPUT BASE FEATURE_TYPE FeatureMerger_2_MERGED_1_vTDIdYgpypM=    INPUT CANDIDATE FEATURE_TYPE Bufferer_2_BUFFERED    PREDICATE "INTERSECTS"    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    SUCCESS_ATTR "_related_candidates"    REJECT_INVALID_GEOM Yes    REJECT_INVALID_PREDICATES Yes    REJECT_RASTERS No    CUSTOM_MULTI_HANDLING Yes    CURVE_BOUNDARY_RULE ENDPOINTS_MOD2    CALCULATE_CARDINALITY No    MERGE_INCOMING_ATTR YES    ATTR_ACCUM_MODE HANDLE_CONFLICT    ATTR_CONFLICT_RES ORIGINAL_IF_CONFLICT    INCOMING_ATTR_PREFIX "<Unused>"    OUTPUT TAGGED FEATURE_TYPE SpatialRelator_Output
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SpatialRelator Output Splitter"   INPUT FEATURE_TYPE SpatialRelator_Output   OUTPUT FEATURE_TYPE SpatialRelator_Output_0_Zt/koDaSfXg=   OUTPUT FEATURE_TYPE SpatialRelator_Output_1_iTCVv1Mebdw=   OUTPUT FEATURE_TYPE SpatialRelator_Output_2_VWDiDCuBhho=
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_29    INPUT  FEATURE_TYPE SpatialRelator_Output_1_iTCVv1Mebdw=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "nodeMember" }      ATTR_ACTION { "" "utility_type" "SET_TO" "exterior" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_29_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_31    INPUT  FEATURE_TYPE AttributeCreator_29_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "Node_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "FeatureGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_31_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME 3DForcer_6    INPUT  FEATURE_TYPE AttributeRenamer_31_OUTPUT    OUTPUT FEATURE_TYPE ___TOREJECTOR___         @ZValue("0", "No", ___fme_rejection_code___)
+FACTORY_DEF * TestFactory    FACTORY_NAME 3DForcer_6_Rejector    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(___fme_rejection_code___) != ""    OUTPUT FAILED FEATURE_TYPE 3DForcer_6_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_26    INPUT  FEATURE_TYPE 3DForcer_6_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_lod_name" "SET_TO" "realization" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_26_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+
+Tcl2 proc GeometryPropertySetter_7_97af1ea6_f68a_4693_be51_911438b85dd02_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_7_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+INCLUDE [    set macroLine "MACRO GeometryPropertySetter_7_SRC_ATTRS_EXP ";    foreach attr [split "citygml_lod_name"] { append macroLine ",$attr"; };    puts $macroLine; ]
+FACTORY_DEF * GQueryFactory    FACTORY_NAME GeometryPropertySetter_7_GQuery    INPUT  FEATURE_TYPE AttributeCreator_26_OUTPUT    ACTION SET_TRAITS    PARAMETER yes citygml_lod_name    OUTPUT RESULT FEATURE_TYPE GeometryPropertySetter_7___RemoveAttrs___
+FACTORY_DEF NOT_THIS_TIME TeeFactory    FACTORY_NAME GeometryPropertySetter_7_AttrRemover    INPUT FEATURE_TYPE GeometryPropertySetter_7___RemoveAttrs___    OUTPUT FEATURE_TYPE *       @RemoveAttributes(fme_encoded"$(GeometryPropertySetter_7_SRC_ATTRS_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryPropertySetter_7_Outputter    INPUT FEATURE_TYPE GeometryPropertySetter_7___RemoveAttrs___    OUTPUT FEATURE_TYPE GeometryPropertySetter_7_SET
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryPropertySetter_7 SET Splitter"   INPUT FEATURE_TYPE GeometryPropertySetter_7_SET   OUTPUT FEATURE_TYPE GeometryPropertySetter_7_SET_0_5L9yV9Zb3SE=   OUTPUT FEATURE_TYPE GeometryPropertySetter_7_SET_1_v6Gb2wBoYi4=
+# -------------------------------------------------------------------------
+
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+FACTORY_DEF * InspectorFactory    FACTORY_NAME terminalelement_node_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE GeometryPropertySetter_7_SET_1_v6Gb2wBoYi4=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY    GROUP_ATTRIBUTE_PREFIX terminalelement_node    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME terminalelement_node_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA citygml_lod_name,varchar<openparen>255<closeparen>,gml_id,varchar<openparen>255<closeparen>,gml_parent_id,varchar<openparen>255<closeparen>,citygml_feature_role,varchar<openparen>255<closeparen>,utility_type,varchar<openparen>255<closeparen>,utility_connected_city_object,varchar<openparen>255<closeparen>,ElectricalTerminalElementID,varchar<openparen>255<closeparen>,InterFeatureLink_ID,varchar<openparen>255<closeparen>,_creation_instance,varchar<openparen>255<closeparen>,Network_ID,varchar<openparen>255<closeparen>,NetworkGraph_ID,varchar<openparen>255<closeparen>,Cable_NodeID,varchar<openparen>255<closeparen>,_related_candidates,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_28    INPUT  FEATURE_TYPE SpatialRelator_Output_0_Zt/koDaSfXg=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "featureGraphMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_28_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_20    INPUT  FEATURE_TYPE AttributeCreator_28_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "FeatureGraph_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "NetworkGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_20_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_30    INPUT  FEATURE_TYPE SpatialRelator_Output_2_VWDiDCuBhho=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "linkMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_30_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_32    INPUT  FEATURE_TYPE AttributeCreator_30_OUTPUT    OUTPUT FEATURE_TYPE AttributeRenamer_32_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL_ENCODED, Node_ID,utility_start_xlink_href,,Cable_NodeID,utility_end_xlink_href,,InterFeatureLink_ID,gml_id,,NetworkGraph_ID,gml_parent_id,)
+
+
+# -------------------------------------------------------------------------
+
+
+Tcl2 proc StringConcatenator_25_evaluator {} {    if {{SELECTED} == {OUTGOING}} {      set attr [FME_DecodeText {<Unused>}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {utility_start_xlink_href};      if {[string length $attrAll] == 0} { return; };      set attrs [split {utility_start_xlink_href} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"#<at>Value<openparen>utility_start_xlink_href<closeparen>"};    };    lappend parmList {StringConcatenator_25};    eval FME_Execute $parmList; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_25    INPUT  FEATURE_TYPE AttributeRenamer_32_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_25_OUTPUT         @Tcl2("StringConcatenator_25_evaluator ")
+
+
+# -------------------------------------------------------------------------
+
+
+Tcl2 proc StringConcatenator_26_evaluator {} {    if {{SELECTED} == {OUTGOING}} {      set attr [FME_DecodeText {<Unused>}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {utility_end_xlink_href};      if {[string length $attrAll] == 0} { return; };      set attrs [split {utility_end_xlink_href} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"#<at>Value<openparen>utility_end_xlink_href<closeparen>"};    };    lappend parmList {StringConcatenator_26};    eval FME_Execute $parmList; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_26    INPUT  FEATURE_TYPE StringConcatenator_25_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_26_OUTPUT         @Tcl2("StringConcatenator_26_evaluator ")
+
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "StringConcatenator_26 OUTPUT Splitter"   INPUT FEATURE_TYPE StringConcatenator_26_OUTPUT   OUTPUT FEATURE_TYPE StringConcatenator_26_OUTPUT_0_wemCoLRWeho=   OUTPUT FEATURE_TYPE StringConcatenator_26_OUTPUT_1_uDzptUf2l5Q=   OUTPUT FEATURE_TYPE StringConcatenator_26_OUTPUT_2_CXNKjfLYysI=
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryRemover_6 (Disabled) Nuker"   INPUT FEATURE_TYPE StringConcatenator_26_OUTPUT_0_wemCoLRWeho=
+# -------------------------------------------------------------------------
+
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+FACTORY_DEF * InspectorFactory    FACTORY_NAME terminalelement_interfeaturelink_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE StringConcatenator_26_OUTPUT_2_CXNKjfLYysI=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY    GROUP_ATTRIBUTE_PREFIX terminalelement_interfeaturelink    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME terminalelement_interfeaturelink_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA citygml_feature_role,varchar<openparen>255<closeparen>,utility_connected_city_object,varchar<openparen>255<closeparen>,ElectricalTerminalElementID,varchar<openparen>255<closeparen>,utility_start_xlink_href,varchar<openparen>255<closeparen>,FeatureGraph_ID,varchar<openparen>255<closeparen>,gml_id,varchar<openparen>255<closeparen>,_creation_instance,varchar<openparen>255<closeparen>,Network_ID,varchar<openparen>255<closeparen>,gml_parent_id,varchar<openparen>255<closeparen>,utility_end_xlink_href,varchar<openparen>255<closeparen>,_related_candidates,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+
+# -------------------------------------------------------------------------
+
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_3_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_3_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_3_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_3_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_3_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_3_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_3_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_3_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_3_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 
 FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_3    INPUT REFERENCER FEATURE_TYPE StringConcatenator_5_OUTPUT_1_AqC8v+EYxTg=    INPUT REFERENCEE FEATURE_TYPE StringConcatenator_6_OUTPUT_0_6JqpnAG7AwM=    REFERENCE_INFO $(FeatureMerger_3_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_edge_id<closeparen>,FeatureMerger_3) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fme_arc_id<closeparen>,FeatureMerger_3) AUTO @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_from_node<closeparen>,FeatureMerger_3) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_node_number<closeparen>,FeatureMerger_3) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_3_MERGED
@@ -18963,6 +19124,138 @@ FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_3    INPUT REFERENC
 # -------------------------------------------------------------------------
 
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_6    INPUT  FEATURE_TYPE FeatureMerger_3_MERGED 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "Node_ID" "utility_start_xlink_href" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_6_OUTPUT
+
+# -------------------------------------------------------------------------
+
+INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_4    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_6_OUTPUT    INPUT REFERENCEE FEATURE_TYPE StringConcatenator_6_OUTPUT_1_MU91q8JR044=    REFERENCE_INFO $(FeatureMerger_4_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_edge_id<closeparen>,FeatureMerger_4) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fme_arc_id<closeparen>,FeatureMerger_4) AUTO @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_to_node<closeparen>,FeatureMerger_4) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_node_number<closeparen>,FeatureMerger_4) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_4_MERGED
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_7    INPUT  FEATURE_TYPE FeatureMerger_4_MERGED 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "Node_ID" "utility_end_xlink_href" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer_7 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT_0_KsdHrea8LHE=   OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT_1_kDuB+R9fA3s=   OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT_2_kjsd0wtKIXg=
+# -------------------------------------------------------------------------
+
+INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_5    INPUT REFERENCER FEATURE_TYPE StringConcatenator_6_OUTPUT_2_KMXqmVYQzOo=    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_7_OUTPUT_1_kDuB+R9fA3s=    REFERENCE_INFO $(FeatureMerger_5_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Node_ID<closeparen>,FeatureMerger_5) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>utility_start_xlink_href<closeparen>,FeatureMerger_5) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_5_MERGED    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_5_NOT_MERGED
+
+# -------------------------------------------------------------------------
+
+INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_6_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_6    INPUT REFERENCER FEATURE_TYPE FeatureMerger_5_NOT_MERGED    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_7_OUTPUT_2_kjsd0wtKIXg=    REFERENCE_INFO $(FeatureMerger_6_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Node_ID<closeparen>,FeatureMerger_6) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>utility_end_xlink_href<closeparen>,FeatureMerger_6) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_6_MERGED
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_11    INPUT  FEATURE_TYPE FeatureMerger_5_MERGED    INPUT  FEATURE_TYPE FeatureMerger_6_MERGED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "utility_type" "SET_TO" "exterior" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_11_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME 3DForcer_3    INPUT  FEATURE_TYPE AttributeCreator_11_OUTPUT    OUTPUT FEATURE_TYPE ___TOREJECTOR___         @ZValue("0", "No", ___fme_rejection_code___)
+FACTORY_DEF * TestFactory    FACTORY_NAME 3DForcer_3_Rejector    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(___fme_rejection_code___) != ""    OUTPUT FAILED FEATURE_TYPE 3DForcer_3_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_7    INPUT  FEATURE_TYPE 3DForcer_3_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_lod_name" "SET_TO" "realization" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_7_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+
+Tcl2 proc GeometryPropertySetter_3_f6ec7191_e385_4f0f_9d38_cd8a5ae1f9192_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_3_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+INCLUDE [    set macroLine "MACRO GeometryPropertySetter_3_SRC_ATTRS_EXP ";    foreach attr [split "citygml_lod_name"] { append macroLine ",$attr"; };    puts $macroLine; ]
+FACTORY_DEF * GQueryFactory    FACTORY_NAME GeometryPropertySetter_3_GQuery    INPUT  FEATURE_TYPE AttributeCreator_7_OUTPUT    ACTION SET_TRAITS    PARAMETER yes citygml_lod_name    OUTPUT RESULT FEATURE_TYPE GeometryPropertySetter_3___RemoveAttrs___
+FACTORY_DEF NOT_THIS_TIME TeeFactory    FACTORY_NAME GeometryPropertySetter_3_AttrRemover    INPUT FEATURE_TYPE GeometryPropertySetter_3___RemoveAttrs___    OUTPUT FEATURE_TYPE *       @RemoveAttributes(fme_encoded"$(GeometryPropertySetter_3_SRC_ATTRS_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryPropertySetter_3_Outputter    INPUT FEATURE_TYPE GeometryPropertySetter_3___RemoveAttrs___    OUTPUT FEATURE_TYPE GeometryPropertySetter_3_SET
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_8    INPUT  FEATURE_TYPE GeometryPropertySetter_3_SET    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "nodeMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_8_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_9    INPUT  FEATURE_TYPE AttributeCreator_8_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "Node_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "FeatureGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_9_OUTPUT
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer_9 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_9_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_9_OUTPUT_0_XB3Iv/wWoOU=   OUTPUT FEATURE_TYPE AttributeRenamer_9_OUTPUT_1_fCJV5FD8yF0=
+# -------------------------------------------------------------------------
+
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+FACTORY_DEF * InspectorFactory    FACTORY_NAME cable_node_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeRenamer_9_OUTPUT_1_fCJV5FD8yF0=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY    GROUP_ATTRIBUTE_PREFIX cable_node    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME cable_node_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA gml_id,varchar<openparen>255<closeparen>,gml_parent_id,varchar<openparen>255<closeparen>,citygml_feature_role,varchar<openparen>255<closeparen>,citygml_lod_name,varchar<openparen>255<closeparen>,utility_type,varchar<openparen>255<closeparen>,id,varchar<openparen>255<closeparen>,type,varchar<openparen>255<closeparen>,_creation_instance,varchar<openparen>255<closeparen>,Network_ID,varchar<openparen>255<closeparen>,NetworkGraph_ID,varchar<openparen>255<closeparen>,_node_number,varchar<openparen>255<closeparen>,fme_arc_id,varchar<openparen>255<closeparen>,fme_arc_angle,varchar<openparen>255<closeparen>,_element_index,varchar<openparen>255<closeparen>,utility_end_xlink_href,varchar<openparen>255<closeparen>,utility_start_xlink_href,varchar<openparen>255<closeparen>,_edge_id,varchar<openparen>255<closeparen>,_right_face,varchar<openparen>255<closeparen>,_left_face,varchar<openparen>255<closeparen>,_right_edge,varchar<openparen>255<closeparen>,_left_edge,varchar<openparen>255<closeparen>,_from_node,varchar<openparen>255<closeparen>,_to_node,varchar<openparen>255<closeparen>,_faces,varchar<openparen>255<closeparen>,Cable_ID,varchar<openparen>255<closeparen>,InteriorFeatureLink_ID,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME 3DForcer_2    INPUT  FEATURE_TYPE AttributeRenamer_7_OUTPUT_0_KsdHrea8LHE=    OUTPUT FEATURE_TYPE ___TOREJECTOR___         @ZValue("0", "No", ___fme_rejection_code___)
+FACTORY_DEF * TestFactory    FACTORY_NAME 3DForcer_2_Rejector    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(___fme_rejection_code___) != ""    OUTPUT FAILED FEATURE_TYPE 3DForcer_2_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_3    INPUT  FEATURE_TYPE 3DForcer_2_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_lod_name" "SET_TO" "realization" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+
+Tcl2 proc GeometryPropertySetter_2_fc71ed4f_3410_42f7_bec1_00f4c2503de22_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_2_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+INCLUDE [    set macroLine "MACRO GeometryPropertySetter_2_SRC_ATTRS_EXP ";    foreach attr [split "citygml_lod_name"] { append macroLine ",$attr"; };    puts $macroLine; ]
+FACTORY_DEF * GQueryFactory    FACTORY_NAME GeometryPropertySetter_2_GQuery    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    ACTION SET_TRAITS    PARAMETER yes citygml_lod_name    OUTPUT RESULT FEATURE_TYPE GeometryPropertySetter_2___RemoveAttrs___
+FACTORY_DEF NOT_THIS_TIME TeeFactory    FACTORY_NAME GeometryPropertySetter_2_AttrRemover    INPUT FEATURE_TYPE GeometryPropertySetter_2___RemoveAttrs___    OUTPUT FEATURE_TYPE *       @RemoveAttributes(fme_encoded"$(GeometryPropertySetter_2_SRC_ATTRS_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryPropertySetter_2_Outputter    INPUT FEATURE_TYPE GeometryPropertySetter_2___RemoveAttrs___    OUTPUT FEATURE_TYPE GeometryPropertySetter_2_SET
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_6    INPUT  FEATURE_TYPE GeometryPropertySetter_2_SET    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "linkMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_6_OUTPUT
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_8    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "InteriorFeatureLink_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "FeatureGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_8_OUTPUT
+
+# -------------------------------------------------------------------------
+
+
+Tcl2 proc StringConcatenator_22_evaluator {} {    if {{SELECTED} == {OUTGOING}} {      set attr [FME_DecodeText {<Unused>}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {utility_start_xlink_href};      if {[string length $attrAll] == 0} { return; };      set attrs [split {utility_start_xlink_href} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"#<at>Value<openparen>utility_start_xlink_href<closeparen>"};    };    lappend parmList {StringConcatenator_22};    eval FME_Execute $parmList; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_22    INPUT  FEATURE_TYPE AttributeRenamer_8_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_22_OUTPUT         @Tcl2("StringConcatenator_22_evaluator ")
+
+
+# -------------------------------------------------------------------------
+
+
+Tcl2 proc StringConcatenator_21_evaluator {} {    if {{SELECTED} == {OUTGOING}} {      set attr [FME_DecodeText {<Unused>}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {utility_end_xlink_href};      if {[string length $attrAll] == 0} { return; };      set attrs [split {utility_end_xlink_href} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"#<at>Value<openparen>utility_end_xlink_href<closeparen>"};    };    lappend parmList {StringConcatenator_21};    eval FME_Execute $parmList; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_21    INPUT  FEATURE_TYPE StringConcatenator_22_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_21_OUTPUT         @Tcl2("StringConcatenator_21_evaluator ")
+
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "StringConcatenator_21 OUTPUT Splitter"   INPUT FEATURE_TYPE StringConcatenator_21_OUTPUT   OUTPUT FEATURE_TYPE StringConcatenator_21_OUTPUT_0_ppX7eqXE7BY=   OUTPUT FEATURE_TYPE StringConcatenator_21_OUTPUT_1_Mk96B5wCnTU=
+# -------------------------------------------------------------------------
+
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+FACTORY_DEF * InspectorFactory    FACTORY_NAME cable_interiorfeaturelink_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE StringConcatenator_21_OUTPUT_1_Mk96B5wCnTU=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY    GROUP_ATTRIBUTE_PREFIX cable_interiorfeaturelink    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME cable_interiorfeaturelink_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA gml_id,varchar<openparen>255<closeparen>,gml_parent_id,varchar<openparen>255<closeparen>,citygml_feature_role,varchar<openparen>255<closeparen>,citygml_lod_name,varchar<openparen>255<closeparen>,utility_end_xlink_href,varchar<openparen>255<closeparen>,utility_start_xlink_href,varchar<openparen>255<closeparen>,id,varchar<openparen>255<closeparen>,type,varchar<openparen>255<closeparen>,_creation_instance,varchar<openparen>255<closeparen>,Network_ID,varchar<openparen>255<closeparen>,NetworkGraph_ID,varchar<openparen>255<closeparen>,_edge_id,varchar<openparen>255<closeparen>,_right_face,varchar<openparen>255<closeparen>,_left_face,varchar<openparen>255<closeparen>,_right_edge,varchar<openparen>255<closeparen>,_left_edge,varchar<openparen>255<closeparen>,_from_node,varchar<openparen>255<closeparen>,_to_node,varchar<openparen>255<closeparen>,_faces,varchar<openparen>255<closeparen>,Cable_ID,varchar<openparen>255<closeparen>,_node_number,varchar<openparen>255<closeparen>,fme_arc_id,varchar<openparen>255<closeparen>,fme_arc_angle,varchar<openparen>255<closeparen>,_element_index,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
 
 # -------------------------------------------------------------------------
 
@@ -19032,254 +19325,11 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_16    INPUT  FEA
 # -------------------------------------------------------------------------
 
 
-Tcl2 proc GeometryPropertySetter_5_c598aa01_4d2d_441a_ad64_53aba84eb2782_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_5_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc GeometryPropertySetter_5_e6a6545a_0e57_4027_902e_6525e965d3cc2_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_5_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 INCLUDE [    set macroLine "MACRO GeometryPropertySetter_5_SRC_ATTRS_EXP ";    foreach attr [split "citygml_lod_name"] { append macroLine ",$attr"; };    puts $macroLine; ]
 FACTORY_DEF * GQueryFactory    FACTORY_NAME GeometryPropertySetter_5_GQuery    INPUT  FEATURE_TYPE AttributeCreator_16_OUTPUT    ACTION SET_TRAITS    PARAMETER yes citygml_lod_name    OUTPUT RESULT FEATURE_TYPE GeometryPropertySetter_5___RemoveAttrs___
 FACTORY_DEF NOT_THIS_TIME TeeFactory    FACTORY_NAME GeometryPropertySetter_5_AttrRemover    INPUT FEATURE_TYPE GeometryPropertySetter_5___RemoveAttrs___    OUTPUT FEATURE_TYPE *       @RemoveAttributes(fme_encoded"$(GeometryPropertySetter_5_SRC_ATTRS_EXP)")
 FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryPropertySetter_5_Outputter    INPUT FEATURE_TYPE GeometryPropertySetter_5___RemoveAttrs___    OUTPUT FEATURE_TYPE GeometryPropertySetter_5_SET
-
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE StringConcatenator_6_OUTPUT_3_fvoIPRnmwkM=    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(fme_encoded,_node_number,Network_ID,NetworkGraph_ID,_creation_instance,_element_index,fme_arc_id,id,type,fme_arc_angle)        @RemoveAttributes(fme_pcre_match"$(AttributeRemover_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_13    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "Node_ID" "Cable_NodeID" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_13_OUTPUT
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} SpatialRelationshipFactory    FACTORY_NAME SpatialRelator    INPUT BASE FEATURE_TYPE FeatureMerger_2_MERGED_1_vTDIdYgpypM=    INPUT CANDIDATE FEATURE_TYPE AttributeRenamer_13_OUTPUT    PREDICATE "INTERSECTS"    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    SUCCESS_ATTR "_related_candidates"    REJECT_INVALID_GEOM Yes    REJECT_INVALID_PREDICATES Yes    REJECT_RASTERS No    CUSTOM_MULTI_HANDLING Yes    CURVE_BOUNDARY_RULE ENDPOINTS_MOD2    CALCULATE_CARDINALITY No    MERGE_INCOMING_ATTR YES    ATTR_ACCUM_MODE HANDLE_CONFLICT    ATTR_CONFLICT_RES ORIGINAL_IF_CONFLICT    INCOMING_ATTR_PREFIX "<Unused>"    OUTPUT TAGGED FEATURE_TYPE SpatialRelator_Output
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "SpatialRelator Output Splitter"   INPUT FEATURE_TYPE SpatialRelator_Output   OUTPUT FEATURE_TYPE SpatialRelator_Output_0_Zt/koDaSfXg=   OUTPUT FEATURE_TYPE SpatialRelator_Output_1_iTCVv1Mebdw=   OUTPUT FEATURE_TYPE SpatialRelator_Output_2_VWDiDCuBhho=
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_30    INPUT  FEATURE_TYPE SpatialRelator_Output_2_VWDiDCuBhho=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "linkMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_30_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_32    INPUT  FEATURE_TYPE AttributeCreator_30_OUTPUT    OUTPUT FEATURE_TYPE AttributeRenamer_32_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL_ENCODED, Node_ID,utility_start_xlink_href,,Cable_NodeID,utility_end_xlink_href,,InterFeatureLink_ID,gml_id,,NetworkGraph_ID,gml_parent_id,)
-
-
-# -------------------------------------------------------------------------
-
-
-Tcl2 proc StringConcatenator_25_evaluator {} {    if {{SELECTED} == {OUTGOING}} {      set attr [FME_DecodeText {<Unused>}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {utility_start_xlink_href};      if {[string length $attrAll] == 0} { return; };      set attrs [split {utility_start_xlink_href} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"#<at>Value<openparen>utility_start_xlink_href<closeparen>"};    };    lappend parmList {StringConcatenator_25};    eval FME_Execute $parmList; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_25    INPUT  FEATURE_TYPE AttributeRenamer_32_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_25_OUTPUT         @Tcl2("StringConcatenator_25_evaluator ")
-
-
-# -------------------------------------------------------------------------
-
-
-Tcl2 proc StringConcatenator_26_evaluator {} {    if {{SELECTED} == {OUTGOING}} {      set attr [FME_DecodeText {<Unused>}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {utility_end_xlink_href};      if {[string length $attrAll] == 0} { return; };      set attrs [split {utility_end_xlink_href} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"#<at>Value<openparen>utility_end_xlink_href<closeparen>"};    };    lappend parmList {StringConcatenator_26};    eval FME_Execute $parmList; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_26    INPUT  FEATURE_TYPE StringConcatenator_25_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_26_OUTPUT         @Tcl2("StringConcatenator_26_evaluator ")
-
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "StringConcatenator_26 OUTPUT Splitter"   INPUT FEATURE_TYPE StringConcatenator_26_OUTPUT   OUTPUT FEATURE_TYPE StringConcatenator_26_OUTPUT_0_wemCoLRWeho=   OUTPUT FEATURE_TYPE StringConcatenator_26_OUTPUT_1_uDzptUf2l5Q=   OUTPUT FEATURE_TYPE StringConcatenator_26_OUTPUT_2_CXNKjfLYysI=
-# -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryRemover_6 (Disabled) Nuker"   INPUT FEATURE_TYPE StringConcatenator_26_OUTPUT_0_wemCoLRWeho=
-# -------------------------------------------------------------------------
-
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-FACTORY_DEF * InspectorFactory    FACTORY_NAME terminalelement_interfeaturelink_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE StringConcatenator_26_OUTPUT_2_CXNKjfLYysI=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY    GROUP_ATTRIBUTE_PREFIX terminalelement_interfeaturelink    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-# [PR#45549] The Data Inspector will limit the maximum number of features
-# it reads on WIN32, so we will correspondingly limit the number of
-# features we record here using the MAX_FEATURES_TO_RECORD directive.
-
-FACTORY_DEF * RecorderFactory    FACTORY_NAME terminalelement_interfeaturelink_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA citygml_feature_role,varchar<openparen>255<closeparen>,utility_connected_city_object,varchar<openparen>255<closeparen>,ElectricalTerminalElementID,varchar<openparen>255<closeparen>,utility_start_xlink_href,varchar<openparen>255<closeparen>,FeatureGraph_ID,varchar<openparen>255<closeparen>,gml_id,varchar<openparen>255<closeparen>,_creation_instance,varchar<openparen>255<closeparen>,Network_ID,varchar<openparen>255<closeparen>,gml_parent_id,varchar<openparen>255<closeparen>,utility_end_xlink_href,varchar<openparen>255<closeparen>,_related_candidates,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_28    INPUT  FEATURE_TYPE SpatialRelator_Output_0_Zt/koDaSfXg=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "featureGraphMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_28_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_20    INPUT  FEATURE_TYPE AttributeCreator_28_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "FeatureGraph_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "NetworkGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_20_OUTPUT
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_29    INPUT  FEATURE_TYPE SpatialRelator_Output_1_iTCVv1Mebdw=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "nodeMember" }      ATTR_ACTION { "" "utility_type" "SET_TO" "exterior" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_29_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_31    INPUT  FEATURE_TYPE AttributeCreator_29_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "Node_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "FeatureGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_31_OUTPUT
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME 3DForcer_6    INPUT  FEATURE_TYPE AttributeRenamer_31_OUTPUT    OUTPUT FEATURE_TYPE ___TOREJECTOR___         @ZValue("0", "No", ___fme_rejection_code___)
-FACTORY_DEF * TestFactory    FACTORY_NAME 3DForcer_6_Rejector    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(___fme_rejection_code___) != ""    OUTPUT FAILED FEATURE_TYPE 3DForcer_6_OUTPUT
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_26    INPUT  FEATURE_TYPE 3DForcer_6_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_lod_name" "SET_TO" "realization" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_26_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-
-Tcl2 proc GeometryPropertySetter_7_ae84ed8e_9c38_4bda_92db_ba23085893612_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_7_}];       set domainName $xFormName$domainName;    };    return $domainName; }
-INCLUDE [    set macroLine "MACRO GeometryPropertySetter_7_SRC_ATTRS_EXP ";    foreach attr [split "citygml_lod_name"] { append macroLine ",$attr"; };    puts $macroLine; ]
-FACTORY_DEF * GQueryFactory    FACTORY_NAME GeometryPropertySetter_7_GQuery    INPUT  FEATURE_TYPE AttributeCreator_26_OUTPUT    ACTION SET_TRAITS    PARAMETER yes citygml_lod_name    OUTPUT RESULT FEATURE_TYPE GeometryPropertySetter_7___RemoveAttrs___
-FACTORY_DEF NOT_THIS_TIME TeeFactory    FACTORY_NAME GeometryPropertySetter_7_AttrRemover    INPUT FEATURE_TYPE GeometryPropertySetter_7___RemoveAttrs___    OUTPUT FEATURE_TYPE *       @RemoveAttributes(fme_encoded"$(GeometryPropertySetter_7_SRC_ATTRS_EXP)")
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryPropertySetter_7_Outputter    INPUT FEATURE_TYPE GeometryPropertySetter_7___RemoveAttrs___    OUTPUT FEATURE_TYPE GeometryPropertySetter_7_SET
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryPropertySetter_7 SET Splitter"   INPUT FEATURE_TYPE GeometryPropertySetter_7_SET   OUTPUT FEATURE_TYPE GeometryPropertySetter_7_SET_0_5L9yV9Zb3SE=   OUTPUT FEATURE_TYPE GeometryPropertySetter_7_SET_1_v6Gb2wBoYi4=
-# -------------------------------------------------------------------------
-
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-FACTORY_DEF * InspectorFactory    FACTORY_NAME terminalelement_node_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE GeometryPropertySetter_7_SET_1_v6Gb2wBoYi4=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY    GROUP_ATTRIBUTE_PREFIX terminalelement_node    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-# [PR#45549] The Data Inspector will limit the maximum number of features
-# it reads on WIN32, so we will correspondingly limit the number of
-# features we record here using the MAX_FEATURES_TO_RECORD directive.
-
-FACTORY_DEF * RecorderFactory    FACTORY_NAME terminalelement_node_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA citygml_lod_name,varchar<openparen>255<closeparen>,gml_id,varchar<openparen>255<closeparen>,gml_parent_id,varchar<openparen>255<closeparen>,citygml_feature_role,varchar<openparen>255<closeparen>,utility_type,varchar<openparen>255<closeparen>,utility_connected_city_object,varchar<openparen>255<closeparen>,ElectricalTerminalElementID,varchar<openparen>255<closeparen>,InterFeatureLink_ID,varchar<openparen>255<closeparen>,_creation_instance,varchar<openparen>255<closeparen>,Network_ID,varchar<openparen>255<closeparen>,NetworkGraph_ID,varchar<openparen>255<closeparen>,Cable_NodeID,varchar<openparen>255<closeparen>,_related_candidates,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
-
-# -------------------------------------------------------------------------
-
-INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_4    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_6_OUTPUT    INPUT REFERENCEE FEATURE_TYPE StringConcatenator_6_OUTPUT_1_MU91q8JR044=    REFERENCE_INFO $(FeatureMerger_4_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_edge_id<closeparen>,FeatureMerger_4) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fme_arc_id<closeparen>,FeatureMerger_4) AUTO @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_to_node<closeparen>,FeatureMerger_4) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_node_number<closeparen>,FeatureMerger_4) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_4_MERGED
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_7    INPUT  FEATURE_TYPE FeatureMerger_4_MERGED 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "Node_ID" "utility_end_xlink_href" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer_7 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT_0_KsdHrea8LHE=   OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT_1_kDuB+R9fA3s=   OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT_2_kjsd0wtKIXg=
-# -------------------------------------------------------------------------
-
-INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_5    INPUT REFERENCER FEATURE_TYPE StringConcatenator_6_OUTPUT_2_KMXqmVYQzOo=    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_7_OUTPUT_1_kDuB+R9fA3s=    REFERENCE_INFO $(FeatureMerger_5_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Node_ID<closeparen>,FeatureMerger_5) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>utility_start_xlink_href<closeparen>,FeatureMerger_5) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_5_MERGED    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_5_NOT_MERGED
-
-# -------------------------------------------------------------------------
-
-INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_6_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_6    INPUT REFERENCER FEATURE_TYPE FeatureMerger_5_NOT_MERGED    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_7_OUTPUT_2_kjsd0wtKIXg=    REFERENCE_INFO $(FeatureMerger_6_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Node_ID<closeparen>,FeatureMerger_6) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>utility_end_xlink_href<closeparen>,FeatureMerger_6) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_6_MERGED
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_11    INPUT  FEATURE_TYPE FeatureMerger_5_MERGED    INPUT  FEATURE_TYPE FeatureMerger_6_MERGED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "utility_type" "SET_TO" "exterior" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_11_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME 3DForcer_3    INPUT  FEATURE_TYPE AttributeCreator_11_OUTPUT    OUTPUT FEATURE_TYPE ___TOREJECTOR___         @ZValue("0", "No", ___fme_rejection_code___)
-FACTORY_DEF * TestFactory    FACTORY_NAME 3DForcer_3_Rejector    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(___fme_rejection_code___) != ""    OUTPUT FAILED FEATURE_TYPE 3DForcer_3_OUTPUT
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_7    INPUT  FEATURE_TYPE 3DForcer_3_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_lod_name" "SET_TO" "realization" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_7_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-
-Tcl2 proc GeometryPropertySetter_3_dd0a96ba_6d32_48e4_91ab_1f66e5f9d0982_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_3_}];       set domainName $xFormName$domainName;    };    return $domainName; }
-INCLUDE [    set macroLine "MACRO GeometryPropertySetter_3_SRC_ATTRS_EXP ";    foreach attr [split "citygml_lod_name"] { append macroLine ",$attr"; };    puts $macroLine; ]
-FACTORY_DEF * GQueryFactory    FACTORY_NAME GeometryPropertySetter_3_GQuery    INPUT  FEATURE_TYPE AttributeCreator_7_OUTPUT    ACTION SET_TRAITS    PARAMETER yes citygml_lod_name    OUTPUT RESULT FEATURE_TYPE GeometryPropertySetter_3___RemoveAttrs___
-FACTORY_DEF NOT_THIS_TIME TeeFactory    FACTORY_NAME GeometryPropertySetter_3_AttrRemover    INPUT FEATURE_TYPE GeometryPropertySetter_3___RemoveAttrs___    OUTPUT FEATURE_TYPE *       @RemoveAttributes(fme_encoded"$(GeometryPropertySetter_3_SRC_ATTRS_EXP)")
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryPropertySetter_3_Outputter    INPUT FEATURE_TYPE GeometryPropertySetter_3___RemoveAttrs___    OUTPUT FEATURE_TYPE GeometryPropertySetter_3_SET
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_8    INPUT  FEATURE_TYPE GeometryPropertySetter_3_SET    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "nodeMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_8_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_9    INPUT  FEATURE_TYPE AttributeCreator_8_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "Node_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "FeatureGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_9_OUTPUT
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer_9 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_9_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_9_OUTPUT_0_XB3Iv/wWoOU=   OUTPUT FEATURE_TYPE AttributeRenamer_9_OUTPUT_1_fCJV5FD8yF0=
-# -------------------------------------------------------------------------
-
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-FACTORY_DEF * InspectorFactory    FACTORY_NAME cable_node_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeRenamer_9_OUTPUT_1_fCJV5FD8yF0=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY    GROUP_ATTRIBUTE_PREFIX cable_node    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-# [PR#45549] The Data Inspector will limit the maximum number of features
-# it reads on WIN32, so we will correspondingly limit the number of
-# features we record here using the MAX_FEATURES_TO_RECORD directive.
-
-FACTORY_DEF * RecorderFactory    FACTORY_NAME cable_node_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA gml_id,varchar<openparen>255<closeparen>,gml_parent_id,varchar<openparen>255<closeparen>,citygml_feature_role,varchar<openparen>255<closeparen>,citygml_lod_name,varchar<openparen>255<closeparen>,utility_type,varchar<openparen>255<closeparen>,id,varchar<openparen>255<closeparen>,type,varchar<openparen>255<closeparen>,_creation_instance,varchar<openparen>255<closeparen>,Network_ID,varchar<openparen>255<closeparen>,NetworkGraph_ID,varchar<openparen>255<closeparen>,_node_number,varchar<openparen>255<closeparen>,fme_arc_id,varchar<openparen>255<closeparen>,fme_arc_angle,varchar<openparen>255<closeparen>,_element_index,varchar<openparen>255<closeparen>,utility_end_xlink_href,varchar<openparen>255<closeparen>,utility_start_xlink_href,varchar<openparen>255<closeparen>,_edge_id,varchar<openparen>255<closeparen>,_right_face,varchar<openparen>255<closeparen>,_left_face,varchar<openparen>255<closeparen>,_right_edge,varchar<openparen>255<closeparen>,_left_edge,varchar<openparen>255<closeparen>,_from_node,varchar<openparen>255<closeparen>,_to_node,varchar<openparen>255<closeparen>,_faces,varchar<openparen>255<closeparen>,Cable_ID,varchar<openparen>255<closeparen>,InteriorFeatureLink_ID,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME 3DForcer_2    INPUT  FEATURE_TYPE AttributeRenamer_7_OUTPUT_0_KsdHrea8LHE=    OUTPUT FEATURE_TYPE ___TOREJECTOR___         @ZValue("0", "No", ___fme_rejection_code___)
-FACTORY_DEF * TestFactory    FACTORY_NAME 3DForcer_2_Rejector    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(___fme_rejection_code___) != ""    OUTPUT FAILED FEATURE_TYPE 3DForcer_2_OUTPUT
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_3    INPUT  FEATURE_TYPE 3DForcer_2_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_lod_name" "SET_TO" "realization" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-
-Tcl2 proc GeometryPropertySetter_2_690f27ed_e25f_4cbd_b380_a550acc781e52_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_2_}];       set domainName $xFormName$domainName;    };    return $domainName; }
-INCLUDE [    set macroLine "MACRO GeometryPropertySetter_2_SRC_ATTRS_EXP ";    foreach attr [split "citygml_lod_name"] { append macroLine ",$attr"; };    puts $macroLine; ]
-FACTORY_DEF * GQueryFactory    FACTORY_NAME GeometryPropertySetter_2_GQuery    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    ACTION SET_TRAITS    PARAMETER yes citygml_lod_name    OUTPUT RESULT FEATURE_TYPE GeometryPropertySetter_2___RemoveAttrs___
-FACTORY_DEF NOT_THIS_TIME TeeFactory    FACTORY_NAME GeometryPropertySetter_2_AttrRemover    INPUT FEATURE_TYPE GeometryPropertySetter_2___RemoveAttrs___    OUTPUT FEATURE_TYPE *       @RemoveAttributes(fme_encoded"$(GeometryPropertySetter_2_SRC_ATTRS_EXP)")
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryPropertySetter_2_Outputter    INPUT FEATURE_TYPE GeometryPropertySetter_2___RemoveAttrs___    OUTPUT FEATURE_TYPE GeometryPropertySetter_2_SET
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_6    INPUT  FEATURE_TYPE GeometryPropertySetter_2_SET    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "citygml_feature_role" "SET_TO" "linkMember" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_6_OUTPUT
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeRenamer_8    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "InteriorFeatureLink_ID" "gml_id" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "FeatureGraph_ID" "gml_parent_id" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_8_OUTPUT
-
-# -------------------------------------------------------------------------
-
-
-Tcl2 proc StringConcatenator_22_evaluator {} {    if {{SELECTED} == {OUTGOING}} {      set attr [FME_DecodeText {<Unused>}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {utility_start_xlink_href};      if {[string length $attrAll] == 0} { return; };      set attrs [split {utility_start_xlink_href} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"#<at>Value<openparen>utility_start_xlink_href<closeparen>"};    };    lappend parmList {StringConcatenator_22};    eval FME_Execute $parmList; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_22    INPUT  FEATURE_TYPE AttributeRenamer_8_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_22_OUTPUT         @Tcl2("StringConcatenator_22_evaluator ")
-
-
-# -------------------------------------------------------------------------
-
-
-Tcl2 proc StringConcatenator_21_evaluator {} {    if {{SELECTED} == {OUTGOING}} {      set attr [FME_DecodeText {<Unused>}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {utility_end_xlink_href};      if {[string length $attrAll] == 0} { return; };      set attrs [split {utility_end_xlink_href} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"#<at>Value<openparen>utility_end_xlink_href<closeparen>"};    };    lappend parmList {StringConcatenator_21};    eval FME_Execute $parmList; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_21    INPUT  FEATURE_TYPE StringConcatenator_22_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_21_OUTPUT         @Tcl2("StringConcatenator_21_evaluator ")
-
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "StringConcatenator_21 OUTPUT Splitter"   INPUT FEATURE_TYPE StringConcatenator_21_OUTPUT   OUTPUT FEATURE_TYPE StringConcatenator_21_OUTPUT_0_ppX7eqXE7BY=   OUTPUT FEATURE_TYPE StringConcatenator_21_OUTPUT_1_Mk96B5wCnTU=
-# -------------------------------------------------------------------------
-
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-FACTORY_DEF * InspectorFactory    FACTORY_NAME cable_interiorfeaturelink_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE StringConcatenator_21_OUTPUT_1_Mk96B5wCnTU=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY    GROUP_ATTRIBUTE_PREFIX cable_interiorfeaturelink    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-# [PR#45549] The Data Inspector will limit the maximum number of features
-# it reads on WIN32, so we will correspondingly limit the number of
-# features we record here using the MAX_FEATURES_TO_RECORD directive.
-
-FACTORY_DEF * RecorderFactory    FACTORY_NAME cable_interiorfeaturelink_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA gml_id,varchar<openparen>255<closeparen>,gml_parent_id,varchar<openparen>255<closeparen>,citygml_feature_role,varchar<openparen>255<closeparen>,citygml_lod_name,varchar<openparen>255<closeparen>,utility_end_xlink_href,varchar<openparen>255<closeparen>,utility_start_xlink_href,varchar<openparen>255<closeparen>,id,varchar<openparen>255<closeparen>,type,varchar<openparen>255<closeparen>,_creation_instance,varchar<openparen>255<closeparen>,Network_ID,varchar<openparen>255<closeparen>,NetworkGraph_ID,varchar<openparen>255<closeparen>,_edge_id,varchar<openparen>255<closeparen>,_right_face,varchar<openparen>255<closeparen>,_left_face,varchar<openparen>255<closeparen>,_right_edge,varchar<openparen>255<closeparen>,_left_edge,varchar<openparen>255<closeparen>,_from_node,varchar<openparen>255<closeparen>,_to_node,varchar<openparen>255<closeparen>,_faces,varchar<openparen>255<closeparen>,Cable_ID,varchar<openparen>255<closeparen>,_node_number,varchar<openparen>255<closeparen>,fme_arc_id,varchar<openparen>255<closeparen>,fme_arc_angle,varchar<openparen>255<closeparen>,_element_index,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
 
 # -------------------------------------------------------------------------
 

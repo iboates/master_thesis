@@ -5,8 +5,13 @@ from src.UtilityNetworkADE2DB import import_Network
 
 if __name__ == "__main__":
 
+<<<<<<< HEAD
     conn = psycopg2.connect("host=eif-pg-96-01 dbname=isaac_thesis user=isaac_thesis_serviceaccount password=z23jIfZXKaoUrG8F")
     # conn = psycopg2.connect("host=localhost dbname=unade user=postgres password=postgres")
+=======
+#     conn = psycopg2.connect("host=localhost dbname=unade user=postgres password=postgres")
+    conn = psycopg2.connect("host=eif-pg-96-01 dbname=isaac_thesis user=isaac_thesis_serviceaccount password=z23jIfZXKaoUrG8F")
+>>>>>>> dev
 
     # conn.autocommit = True
 

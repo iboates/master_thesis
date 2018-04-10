@@ -880,7 +880,23 @@ def import_TerminalElement(terminalelement, networkgraph, cur):
     # IMPORT TERMINALELEMENT
     # ==============================================================================================================
 
-    # TODO: once buildings are added, need to get their id via the connectedCityObject property gml id
+    # First we have to get the id of the connectedCityObject (not the gmlid)
+    
+    get_cityobject_sql = sql.SQL("""
+    
+        SELECT
+            id
+        FROM
+            citydb.cityobject
+        WHERE
+            gmlid = %(connectedCityObject)s
+    
+    """)
+    
+    cur.execute(get_cityobject_sql, terminalelement_sql_dict)
+    connectedcityobject_id = cur.fetchone()[0]
+    terminalelement_sql_dict['connectedCityObject'] = connectedcityobject_id
+    
     insert_terminalelement_sql = sql.SQL("""
 
         SELECT citydb_view.utn9_insert_ntw_feat_term_elem(
@@ -888,7 +904,7 @@ def import_TerminalElement(terminalelement, networkgraph, cur):
             status := %(status)s,
             location_quality := %(locationQuality)s,
             elevation_quality := %(elevationQuality)s,
-            /*cityobject_id := %(connectedCityObject)s,*/
+            cityobject_id := %(connectedCityObject)s,
             geom := ST_GeomFromText(%(geom)s,26910)
         );
 
@@ -956,7 +972,7 @@ def import_TerminalElement(terminalelement, networkgraph, cur):
 
 def import_SimpleFunctionalElement(simplefunctionalelement, networkgraph, cur):
     
-    simplefunctionalelement_sql_dict = {}
+    simplefunctionalelement_sql_dict = {"connectedCityObject": 'NULL'}
     featuregraph_sql_dict = {}
     node_sql_dict_list = []
 
@@ -1049,13 +1065,35 @@ def import_SimpleFunctionalElement(simplefunctionalelement, networkgraph, cur):
     # IMPORT SIMPLEFUNCTIONALELEMENT
     # ==============================================================================================================
 
-    # TODO: once buildings are added, need to get their id via the connectedCityObject property gml id
+    # First we have to get the id of the connectedCityObject (not the gmlid)
+    
+    get_cityobject_sql = sql.SQL("""
+    
+        SELECT
+            id
+        FROM
+            citydb.cityobject
+        WHERE
+            gmlid = %(connectedCityObject)s
+    
+    """)
+    
+    cur.execute(get_cityobject_sql, simplefunctionalelement_sql_dict)
+    connectedcityobject_result = cur.fetchone()
+    if connectedcityobject_result:
+        print("i found a simplefunctionalelement ({0}) with a connected city object ({1})".format(simplefunctionalelement_gmlid,  connectedcityobject_result[0]))
+        connectedcityobject_id = connectedcityobject_result[0]
+    else:
+        connectedcityobject_id = None
+    simplefunctionalelement_sql_dict['connectedCityObject'] = connectedcityobject_id
+
     insert_simplefunctionalelement_sql = sql.SQL("""
 
             SELECT citydb_view.utn9_insert_ntw_feat_simple_funct_elem(
                 gmlid := %(gmlid)s,
                 name := %(name)s,
                 status := %(status)s,
+                cityobject_id := %(connectedCityObject)s,
                 geom := ST_GeomFromText(%(geom)s,26910)
             );
 

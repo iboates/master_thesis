@@ -147,7 +147,7 @@ def getAllConnectedTerminalElementIds(cur, network_id, source=None):
                         citydb_view.utn9_network AS net,
                         citydb_view.utn9_network_graph AS ng
                     WHERE
-                        net.name = ''Water Network''
+                        net.id = ' || %(network_id)s || '
                         AND
                         ng.network_id = net.id
                         AND
@@ -182,7 +182,7 @@ def getAllConnectedTerminalElementIds(cur, network_id, source=None):
                         citydb_view.utn9_network AS net,
                         citydb_view.utn9_network_graph AS ng
                     WHERE
-                        net.name = ''Water Network''
+                        net.id = ' || %(network_id)s || '
                         AND
                         ng.network_id = net.id
                         AND
@@ -201,12 +201,12 @@ def getAllConnectedTerminalElementIds(cur, network_id, source=None):
         
                 /* Exclude links that come from a feature that is status=''outOfService'' */
                 WHERE start_node_id NOT IN (SELECT
-                                    n.id AS n_id
-                                FROM
+                                n.id AS n_id
+                            FROM
                                 citydb_view.utn9_node AS n,
                                 citydb_view.utn9_feature_graph AS fg,
                                 citydb.utn9_network_feature AS nf
-                                WHERE
+                            WHERE
                                 nf.status = ''outOfService''
                                 AND
                                 n.feat_graph_id = fg.id
@@ -255,7 +255,7 @@ def getAllConnectedTerminalElementIds(cur, network_id, source=None):
                     citydb_view.utn9_network AS net,
                     citydb_view.utn9_network_graph AS ng
                 WHERE
-                    net.name = 'Water Network'
+                    net.id = %(network_id)s
                     AND
                     ng.network_id = net.id
                     AND
@@ -291,7 +291,9 @@ def getAllConnectedTerminalElementIds(cur, network_id, source=None):
     
     """)
     
-    cur.execute(query, {"network_id": network_id})
+    cur.execute(query, {
+        "network_id": network_id
+    })
     
     return releaseResult(cur)
 
@@ -307,8 +309,9 @@ if __name__ == "__main__":
 #     print(getPropertyById(cur, [14, 15, 16], 'name'))
 #     print(getPropertyById(cur, (14, 15, 16), 'name'))
 #     print(getAllIdsByCriteria(cur, "RoundPipe", "status", "inUse"))
-#     setPropertyById(cur, [435,436,437], "status", "outOfService")
-    print(getAllConnectedTerminalElementIds(cur, 177))
+    setPropertyById(cur, 495, "status", "outOfService")
+    conn.commit()
+    print(len(getAllConnectedTerminalElementIds(cur, 177)))
     
     
     # conn.commit()
